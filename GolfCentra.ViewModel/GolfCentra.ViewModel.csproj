@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DF61467-9F3F-41FE-875B-8887B30FDAD2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GolfCentra.ViewModel</RootNamespace>
+    <AssemblyName>GolfCentra.ViewModel</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUsViewModel.cs" />
+    <Compile Include="Admin\ApiClientViewModel.cs" />
+    <Compile Include="Admin\BlockSlotRangeViewModel.cs" />
+    <Compile Include="Admin\BlockSlotViewModel.cs" />
+    <Compile Include="Admin\BookingEquipmentMappingViewModel.cs" />
+    <Compile Include="Admin\BookingPlayerDetailViewModel.cs" />
+    <Compile Include="Admin\BookingPricingViewModel.cs" />
+    <Compile Include="Admin\BookingStatusViewModel.cs" />
+    <Compile Include="Admin\BookingTypeViewModel.cs" />
+    <Compile Include="Admin\BookingViewModel.cs" />
+    <Compile Include="Admin\BucketTaxMappingViewModel.cs" />
+    <Compile Include="Admin\BucketViewModel.cs" />
+    <Compile Include="Admin\CouponViewModel.cs" />
+    <Compile Include="Admin\CoursePairingViewModel.cs" />
+    <Compile Include="Admin\CourseTaxMappingViewModel.cs" />
+    <Compile Include="Admin\DailyActivityViewModel.cs" />
+    <Compile Include="Admin\DashBoardTopBarViewModel.cs" />
+    <Compile Include="Admin\DayTypeViewModel.cs" />
+    <Compile Include="Admin\EmployeeViewModel.cs" />
+    <Compile Include="Admin\EquipmentTaxMappingViewModel.cs" />
+    <Compile Include="Admin\EquipmentViewModel.cs" />
+    <Compile Include="Admin\FireBase\FireBaseModel.cs" />
+    <Compile Include="Admin\FireBase\FireBaseViewModel.cs" />
+    <Compile Include="Admin\GenderTypeViewModel.cs" />
+    <Compile Include="Admin\GolferViewModel.cs" />
+    <Compile Include="Admin\HoleTypeViewModel.cs" />
+    <Compile Include="Admin\HoleViewModel.cs" />
+    <Compile Include="Admin\ImportGolferExcelReportModel.cs" />
+    <Compile Include="Admin\LoginActivity\SessionActivityPageViewModel.cs" />
+    <Compile Include="Admin\LoginActivity\SessionActivityViewModel.cs" />
+    <Compile Include="Admin\LoginActivity\SessionDetailViewModel.cs" />
+    <Compile Include="Admin\MaritalStatusViewModel.cs" />
+    <Compile Include="Admin\MemberTypeViewModel.cs" />
+    <Compile Include="Admin\NotificationGolferViewModel.cs" />
+    <Compile Include="Admin\PageViewModel.cs" />
+    <Compile Include="Admin\EmployeeTypeViewModel.cs" />
+    <Compile Include="Admin\PaymentGatewayControlViewModel.cs" />
+    <Compile Include="Admin\PermissionMainViewModel.cs" />
+    <Compile Include="Admin\PermissionViewModel.cs" />
+    <Compile Include="Admin\PricingTaxMappingViewModel.cs" />
+    <Compile Include="Admin\PricingViewModel.cs" />
+    <Compile Include="Admin\PromotionViewModel.cs" />
+    <Compile Include="Admin\ReportingViewModel.cs" />
+    <Compile Include="Admin\SalutationViewModel.cs" />
+    <Compile Include="Admin\SaveBookingViewModel.cs" />
+    <Compile Include="Admin\ScoreDetailsViewModel.cs" />
+    <Compile Include="Admin\ScoreSearchViewModel.cs" />
+    <Compile Include="Admin\ScoreViewModel.cs" />
+    <Compile Include="Admin\SessionMasterViewModel.cs" />
+    <Compile Include="Admin\SlotBlockReasonViewModel.cs" />
+    <Compile Include="Admin\SlotViewModel.cs" />
+    <Compile Include="Admin\TaxManagementViewModel.cs" />
+    <Compile Include="Admin\TeeSheetViewModel.cs" />
+    <Compile Include="Admin\TeeViewModel.cs" />
+    <Compile Include="Admin\TimeFormatViewModel.cs" />
+    <Compile Include="Admin\UpdatePricingViewModel.cs" />
+    <Compile Include="Admin\WDDRUpdatePriceViewModel.cs" />
+    <Compile Include="Admin\WDH18UpdatePriceViewModel.cs" />
+    <Compile Include="Admin\WDH27UpdatePriceViewModel.cs" />
+    <Compile Include="Admin\WDH9UpdatePriceViewModel.cs" />
+    <Compile Include="Admin\WEDRUpdatePriceViewModel.cs" />
+    <Compile Include="Admin\WEH18UpdatePriceViewModel.cs" />
+    <Compile Include="Admin\WEH27UpdatePriceViewModel.cs" />
+    <Compile Include="Admin\WEH9UpdatePriceViewModel.cs" />
+    <Compile Include="ApiClientViewModel.cs" />
+    <Compile Include="AppVersionViewModel.cs" />
+    <Compile Include="BookingConditionViewModel.cs" />
+    <Compile Include="BookingEquipmentMappingViewModel.cs" />
+    <Compile Include="BookingPlayerDetailViewModel.cs" />
+    <Compile Include="BookingPricingViewModel.cs" />
+    <Compile Include="BookingViewModel.cs" />
+    <Compile Include="BucketViewModel.cs" />
+    <Compile Include="CommonViewModel.cs" />
+    <Compile Include="ContactUsViewModel.cs" />
+    <Compile Include="CouponViewModel.cs" />
+    <Compile Include="CourseTaxMappingViewModel.cs" />
+    <Compile Include="CourseTeeViewModel.cs" />
+    <Compile Include="CurrencyExchangeViewModel.cs" />
+    <Compile Include="GenderTypeViewModel.cs" />
+    <Compile Include="GolferViewModel.cs" />
+    <Compile Include="HoleViewModel.cs" />
+    <Compile Include="MailerModel.cs" />
+    <Compile Include="MailerViewModel.cs" />
+    <Compile Include="MemberTypeViewModel.cs" />
+    <Compile Include="PaymentGatewayControlViewModel.cs" />
+    <Compile Include="PaymentViewModel.cs" />
+    <Compile Include="PaytmCheckSumViewModel.cs" />
+    <Compile Include="PhoneCodeViewModel.cs" />
+    <Compile Include="PromotionsEquipmentViewModel.cs" />
+    <Compile Include="PromotionViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuleAndRegulationViewModel.cs" />
+    <Compile Include="SalutationViewModel.cs" />
+    <Compile Include="ScoreDetailsViewModel.cs" />
+    <Compile Include="ScoreViewModel.cs" />
+    <Compile Include="SessionSlotViewModel.cs" />
+    <Compile Include="SlotDetailsViewModel.cs" />
+    <Compile Include="SlotViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

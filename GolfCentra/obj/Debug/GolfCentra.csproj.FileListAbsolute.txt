@@ -1,0 +1,661 @@
+H:\Golf Centra\GolfCentra\GolfCentra\bin\ApplicationInsights.config
+H:\Golf Centra\GolfCentra\GolfCentra\bin\GolfCentra.dll.config
+H:\Golf Centra\GolfCentra\GolfCentra\bin\GolfCentra.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\GolfCentra.pdb
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\csc.exe
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\csc.exe.config
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\csc.rsp
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\csi.exe
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\csi.exe.config
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\csi.rsp
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\Microsoft.Win32.Primitives.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.AppContext.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Console.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.Process.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.IO.Compression.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.IO.Pipes.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Reflection.Metadata.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Security.AccessControl.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Security.Claims.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Security.Principal.Windows.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Threading.Thread.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.ValueTuple.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XmlDocument.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XPath.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\vbc.exe
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\vbc.exe.config
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\vbc.rsp
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\VBCSCompiler.exe
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\VBCSCompiler.exe.config
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Antlr3.Runtime.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AI.Agent.Intercept.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AI.DependencyCollector.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AI.Web.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AI.WindowsServer.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.ApplicationInsights.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Core.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.Cookies.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.OAuth.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Web.Infrastructure.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Newtonsoft.Json.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Owin.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Diagnostics.DiagnosticSource.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Net.Http.Formatting.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Helpers.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Http.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Http.Owin.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Http.WebHost.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Mvc.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Optimization.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Razor.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.WebPages.Deployment.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.WebPages.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.WebPages.Razor.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\WebGrease.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Core.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.Cookies.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.OAuth.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Net.Http.Formatting.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Http.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Http.Owin.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Newtonsoft.Json.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Helpers.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Http.WebHost.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Mvc.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Optimization.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Razor.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.WebPages.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.WebPages.Deployment.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.WebPages.Razor.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Antlr3.Runtime.pdb
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Diagnostics.DiagnosticSource.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AI.DependencyCollector.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AI.WindowsServer.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.AI.Web.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\Golf Centra\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csproj.CoreCompileInputs.cache
+H:\Golf Centra\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csproj.CopyComplete
+H:\Golf Centra\GolfCentra\GolfCentra\obj\Debug\GolfCentra.dll
+H:\Golf Centra\GolfCentra\GolfCentra\obj\Debug\GolfCentra.pdb
+H:\Golf Centra\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csprojAssemblyReference.cache
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.Cors.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\System.Web.Cors.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\Microsoft.Owin.Cors.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\GolfCentra.Business.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\GolfCentra.Business.pdb
+H:\Golf Centra\GolfCentra\GolfCentra\bin\GolfCentra.Core.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\EntityFramework.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\GolfCentra.Core.pdb
+H:\Golf Centra\GolfCentra\GolfCentra\bin\GolfCentra.Core.dll.config
+H:\Golf Centra\GolfCentra\GolfCentra\bin\EntityFramework.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\EntityFramework.SqlServer.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\EntityFramework.SqlServer.xml
+H:\Golf Centra\GolfCentra\GolfCentra\bin\GolfCentra.ViewModel.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\GolfCentra.ViewModel.pdb
+H:\Golf Centra\GolfCentra\GolfCentra\bin\roslyn\System.Collections.Immutable.dll
+H:\Golf Centra\GolfCentra\GolfCentra\bin\paytm.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\ApplicationInsights.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\GolfCentra.dll.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\GolfCentra.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\GolfCentra.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\csc.exe
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\csc.exe.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\csc.rsp
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\csi.exe
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\csi.exe.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\csi.rsp
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\Microsoft.Win32.Primitives.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.AppContext.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Collections.Immutable.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Console.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.Process.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.IO.Compression.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.IO.Pipes.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Reflection.Metadata.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Security.AccessControl.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Security.Claims.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Security.Principal.Windows.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Threading.Thread.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.ValueTuple.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XmlDocument.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XPath.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\vbc.exe
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\vbc.exe.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\vbc.rsp
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\VBCSCompiler.exe
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\roslyn\VBCSCompiler.exe.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Antlr3.Runtime.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\EntityFramework.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\EntityFramework.SqlServer.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\GolfCentra.Business.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\GolfCentra.Core.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\GolfCentra.ViewModel.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AI.Agent.Intercept.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AI.DependencyCollector.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AI.Web.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AI.WindowsServer.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.ApplicationInsights.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Core.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.Cors.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.Cookies.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.OAuth.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Web.Infrastructure.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Newtonsoft.Json.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Owin.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\paytm.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Diagnostics.DiagnosticSource.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Net.Http.Formatting.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Cors.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Helpers.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Http.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Http.Owin.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Http.WebHost.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Mvc.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Optimization.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Razor.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.WebPages.Deployment.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.WebPages.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.WebPages.Razor.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\WebGrease.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\EntityFramework.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\EntityFramework.SqlServer.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\GolfCentra.Business.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\GolfCentra.Core.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\GolfCentra.Core.dll.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\GolfCentra.ViewModel.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Core.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.Cors.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.Cookies.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.OAuth.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Net.Http.Formatting.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Http.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Http.Owin.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Newtonsoft.Json.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Helpers.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Http.WebHost.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Mvc.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Optimization.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.Razor.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.WebPages.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.WebPages.Deployment.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Web.WebPages.Razor.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Antlr3.Runtime.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\System.Diagnostics.DiagnosticSource.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AI.DependencyCollector.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AI.WindowsServer.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.AI.Web.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csprojAssemblyReference.cache
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csproj.CoreCompileInputs.cache
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csproj.CopyComplete
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\obj\Debug\GolfCentra.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra\obj\Debug\GolfCentra.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\ApplicationInsights.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\GolfCentra.dll.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\GolfCentra.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\GolfCentra.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\csc.exe
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\csc.exe.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\csc.rsp
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\csi.exe
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\csi.exe.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\csi.rsp
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\Microsoft.Win32.Primitives.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.AppContext.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Console.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.Process.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.IO.Compression.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.IO.Pipes.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Reflection.Metadata.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Security.AccessControl.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Security.Claims.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Security.Principal.Windows.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Threading.Thread.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.ValueTuple.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XmlDocument.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XPath.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\vbc.exe
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\vbc.exe.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\vbc.rsp
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\VBCSCompiler.exe
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\VBCSCompiler.exe.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Antlr3.Runtime.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\EntityFramework.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\EntityFramework.SqlServer.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\GolfCentra.Business.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\GolfCentra.Core.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\GolfCentra.ViewModel.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AI.Agent.Intercept.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AI.DependencyCollector.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AI.Web.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AI.WindowsServer.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.ApplicationInsights.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Core.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.Cors.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.Cookies.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.OAuth.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Web.Infrastructure.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Newtonsoft.Json.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Owin.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\paytm.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Diagnostics.DiagnosticSource.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Net.Http.Formatting.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Cors.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Helpers.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Http.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Http.Owin.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Http.WebHost.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Mvc.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Optimization.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Razor.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.WebPages.Deployment.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.WebPages.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.WebPages.Razor.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\WebGrease.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\EntityFramework.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\EntityFramework.SqlServer.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\GolfCentra.Business.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\GolfCentra.Core.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\GolfCentra.Core.dll.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\GolfCentra.ViewModel.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Core.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.Cors.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.Cookies.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.OAuth.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Net.Http.Formatting.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Http.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Http.Owin.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Newtonsoft.Json.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Helpers.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Http.WebHost.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Mvc.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Optimization.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.Razor.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.WebPages.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.WebPages.Deployment.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Web.WebPages.Razor.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Antlr3.Runtime.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\System.Diagnostics.DiagnosticSource.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AI.DependencyCollector.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AI.WindowsServer.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.AI.Web.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csprojAssemblyReference.cache
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csproj.CoreCompileInputs.cache
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csproj.CopyComplete
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\obj\Debug\GolfCentra.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\obj\Debug\GolfCentra.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra\bin\roslyn\System.Collections.Immutable.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\ApplicationInsights.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\GolfCentra.dll.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\GolfCentra.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\GolfCentra.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\csc.exe
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\csc.exe.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\csc.rsp
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\csi.exe
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\csi.exe.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\csi.rsp
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\Microsoft.Win32.Primitives.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.AppContext.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Collections.Immutable.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Console.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.Process.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.IO.Compression.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.IO.Pipes.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Reflection.Metadata.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Security.AccessControl.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Security.Claims.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Security.Principal.Windows.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Threading.Thread.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.ValueTuple.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XmlDocument.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XPath.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\vbc.exe
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\vbc.exe.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\vbc.rsp
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\VBCSCompiler.exe
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\roslyn\VBCSCompiler.exe.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Antlr3.Runtime.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\EntityFramework.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\EntityFramework.SqlServer.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\GolfCentra.Business.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\GolfCentra.Core.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\GolfCentra.ViewModel.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AI.Agent.Intercept.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AI.DependencyCollector.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AI.Web.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AI.WindowsServer.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.ApplicationInsights.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Core.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.Cors.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.Cookies.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.OAuth.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Web.Infrastructure.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Newtonsoft.Json.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Owin.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\paytm.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Diagnostics.DiagnosticSource.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Net.Http.Formatting.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Cors.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Helpers.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Http.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Http.Owin.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Http.WebHost.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Mvc.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Optimization.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Razor.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.WebPages.Deployment.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.WebPages.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.WebPages.Razor.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\WebGrease.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\EntityFramework.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\EntityFramework.SqlServer.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\GolfCentra.Business.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\GolfCentra.Core.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\GolfCentra.Core.dll.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\GolfCentra.ViewModel.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Core.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.Cors.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.Cookies.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.OAuth.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Net.Http.Formatting.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Http.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Http.Owin.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Newtonsoft.Json.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Helpers.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Http.WebHost.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Mvc.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Optimization.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.Razor.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.WebPages.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.WebPages.Deployment.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Web.WebPages.Razor.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Antlr3.Runtime.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\System.Diagnostics.DiagnosticSource.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AI.DependencyCollector.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AI.WindowsServer.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.AI.Web.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csprojAssemblyReference.cache
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csproj.CoreCompileInputs.cache
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csproj.CopyComplete
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\obj\Debug\GolfCentra.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra\obj\Debug\GolfCentra.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csproj.CoreCompileInputs.cache
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csprojAssemblyReference.cache
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\ApplicationInsights.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\GolfCentra.dll.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\GolfCentra.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\GolfCentra.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\csc.exe
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\csc.exe.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\csc.rsp
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\csi.exe
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\csi.exe.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\csi.rsp
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\Microsoft.Win32.Primitives.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.AppContext.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Collections.Immutable.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Console.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.Process.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.IO.Compression.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.IO.Pipes.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Reflection.Metadata.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Security.AccessControl.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Security.Claims.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Security.Principal.Windows.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Threading.Thread.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.ValueTuple.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XmlDocument.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XPath.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\vbc.exe
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\vbc.exe.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\vbc.rsp
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\VBCSCompiler.exe
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\roslyn\VBCSCompiler.exe.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Antlr3.Runtime.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\EntityFramework.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\EntityFramework.SqlServer.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\GolfCentra.Business.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\GolfCentra.Core.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\GolfCentra.ViewModel.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AI.Agent.Intercept.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AI.DependencyCollector.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AI.Web.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AI.WindowsServer.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.ApplicationInsights.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Core.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.Cors.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.Cookies.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.OAuth.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Web.Infrastructure.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Newtonsoft.Json.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Owin.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\paytm.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Diagnostics.DiagnosticSource.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Net.Http.Formatting.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Cors.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Helpers.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Http.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Http.Owin.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Http.WebHost.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Mvc.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Optimization.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Razor.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.WebPages.Deployment.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.WebPages.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.WebPages.Razor.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\WebGrease.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\EntityFramework.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\EntityFramework.SqlServer.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\GolfCentra.Business.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\GolfCentra.Core.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\GolfCentra.Core.dll.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\GolfCentra.ViewModel.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Core.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.Cors.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.Cookies.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.Owin.Security.OAuth.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Net.Http.Formatting.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Http.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Http.Owin.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Newtonsoft.Json.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Helpers.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Http.WebHost.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Mvc.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Optimization.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.Razor.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.WebPages.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.WebPages.Deployment.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Web.WebPages.Razor.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Antlr3.Runtime.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\System.Diagnostics.DiagnosticSource.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AI.DependencyCollector.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AI.WindowsServer.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.AI.Web.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\obj\Debug\GolfCentra.csproj.CopyComplete
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\obj\Debug\GolfCentra.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\obj\Debug\GolfCentra.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\ExcelDataReader.DataSet.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\ExcelDataReader.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\ExcelDataReader.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\ExcelDataReader.DataSet.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\BCrypt.Net.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra\bin\BCrypt.Net.xml

@@ -1,0 +1,92 @@
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Business.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Business.pdb
+H:\Golf Centra\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csprojAssemblyReference.cache
+H:\Golf Centra\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csproj.CoreCompileInputs.cache
+H:\Golf Centra\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.pdb
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\EntityFramework.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.pdb
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.dll.config
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\EntityFramework.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csproj.CopyComplete
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.ViewModel.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.ViewModel.pdb
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\Newtonsoft.Json.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\System.Net.Http.Formatting.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\Newtonsoft.Json.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Business\bin\Debug\System.Net.Http.Formatting.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csprojAssemblyReference.cache
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csproj.CoreCompileInputs.cache
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Business.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Business.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.ViewModel.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\Newtonsoft.Json.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\System.Net.Http.Formatting.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\EntityFramework.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.ViewModel.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\Newtonsoft.Json.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\System.Net.Http.Formatting.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\bin\Debug\EntityFramework.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csproj.CopyComplete
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Business.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Business.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.ViewModel.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\Newtonsoft.Json.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\System.Net.Http.Formatting.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\EntityFramework.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.ViewModel.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\Newtonsoft.Json.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\System.Net.Http.Formatting.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\bin\Debug\EntityFramework.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csprojAssemblyReference.cache
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csproj.CoreCompileInputs.cache
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csproj.CopyComplete
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csprojAssemblyReference.cache
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csproj.CoreCompileInputs.cache
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Business.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Business.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.ViewModel.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\Newtonsoft.Json.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\System.Net.Http.Formatting.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\EntityFramework.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.ViewModel.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\Newtonsoft.Json.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\System.Net.Http.Formatting.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\bin\Debug\EntityFramework.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csproj.CopyComplete
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csproj.CoreCompileInputs.cache
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csprojAssemblyReference.cache
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Business.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Business.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.ViewModel.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\Newtonsoft.Json.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\System.Net.Http.Formatting.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\EntityFramework.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\GolfCentra.ViewModel.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\Newtonsoft.Json.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\System.Net.Http.Formatting.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\EntityFramework.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.csproj.CopyComplete
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\obj\Debug\GolfCentra.Business.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\BCrypt.Net.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Business\bin\Debug\BCrypt.Net.xml

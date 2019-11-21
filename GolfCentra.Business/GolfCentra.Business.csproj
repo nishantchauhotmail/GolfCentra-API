@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CB66186-25C6-4B04-AAB6-D645512D96B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GolfCentra.Business</RootNamespace>
+    <AssemblyName>GolfCentra.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GolfCentra.Core">
+      <HintPath>..\GolfCentra.Core\bin\Debug\GolfCentra.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GolfCentra.ViewModel">
+      <HintPath>..\GolfCentra.ViewModel\bin\Debug\GolfCentra.ViewModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.2.3.18\lib\net452\Microsoft.Rest.ClientRuntime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="paytm">
+      <HintPath>bin\paytm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.6\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessAdmin\Implementation\BookingService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\BucketService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\CouponService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\CoursePairingService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\EmployeeService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\EquipmentService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\GenderTypeService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\GolferService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\HoleInformationService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\EmployeeTypeService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\MaritalStatusService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\MemberTypeService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\PageService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\PaymentGatewayService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\PermissionService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\PricingService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\PromotionService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\ReportingService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\ScoreService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\SendPushNotificationService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\SessionActivityService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\SessionService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\SlotBlockReasonService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\SlotReservationService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\TaxManagementService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\TeeSheetService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\TimeFormatService.cs" />
+    <Compile Include="BusinessAdmin\Implementation\TimeSlotService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IBookingService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IBucketService.cs" />
+    <Compile Include="BusinessAdmin\Interface\ICouponService.cs" />
+    <Compile Include="BusinessAdmin\Interface\ICoursePairingService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IEmployeeService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IEquipmentService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IGenderTypeService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IGolferService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IHoleInformationService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IEmployeeTypeService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IMaritalStatusService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IMemberTypeService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IPageService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IPermissionService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IPricingService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IPromotionService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IReportingService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IScoreService.cs" />
+    <Compile Include="BusinessAdmin\Interface\ISendPushNotificationService.cs" />
+    <Compile Include="BusinessAdmin\Interface\ISessionActivityService.cs" />
+    <Compile Include="BusinessAdmin\Interface\ISessionService.cs" />
+    <Compile Include="BusinessAdmin\Interface\ISlotBlockReasonService.cs" />
+    <Compile Include="BusinessAdmin\Interface\ISlotReservationService.cs" />
+    <Compile Include="BusinessAdmin\Interface\ITaxManagementService.cs" />
+    <Compile Include="BusinessAdmin\Interface\ITeeSheetService.cs" />
+    <Compile Include="BusinessAdmin\Interface\ITimeFormatService.cs" />
+    <Compile Include="BusinessAdmin\Interface\ITimeSlotService.cs" />
+    <Compile Include="BusinessAdmin\Interface\IPaymentGatewayService.cs" />
+    <Compile Include="Business\Implementation\APIClientVaildationService.cs" />
+    <Compile Include="Business\Implementation\AppVersionService.cs" />
+    <Compile Include="Business\Implementation\BookingDetailService.cs" />
+    <Compile Include="Business\Implementation\BookingService.cs" />
+    <Compile Include="Business\Implementation\CourseDetailsService.cs" />
+    <Compile Include="Business\Implementation\GolferAccountService.cs" />
+    <Compile Include="Business\Implementation\PaytmPaymentService.cs" />
+    <Compile Include="Business\Implementation\PromotionsCouponService.cs" />
+    <Compile Include="Business\Implementation\CreateBookingService.cs" />
+    <Compile Include="Business\Implementation\ScoreService.cs" />
+    <Compile Include="Business\Implementation\StaticPageService.cs" />
+    <Compile Include="Business\Interface\IAPIClientVaildationService.cs" />
+    <Compile Include="Business\Interface\IAppVersionService.cs" />
+    <Compile Include="Business\Interface\IBookingDetailService.cs" />
+    <Compile Include="Business\Interface\IBookingService.cs" />
+    <Compile Include="Business\Interface\ICourseDetailsService.cs" />
+    <Compile Include="Business\Interface\IGolferAccountService.cs" />
+    <Compile Include="Business\Interface\IPaytmPaymentService.cs" />
+    <Compile Include="Business\Interface\IPromotionsCouponService.cs" />
+    <Compile Include="Business\Interface\IScoreService.cs" />
+    <Compile Include="Business\Interface\IStaticPageService.cs" />
+    <Compile Include="Common\AddSessionActivity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

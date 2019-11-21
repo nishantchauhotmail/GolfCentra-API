@@ -1,0 +1,3486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GolfCentraModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="GolfCentraEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AboutUs" EntityType="GolfCentraModel.AboutU" />
+    <EntitySet Name="Actions" EntityType="GolfCentraModel.Action" />
+    <EntitySet Name="ActionRights" EntityType="GolfCentraModel.ActionRight" />
+    <EntitySet Name="APIClients" EntityType="GolfCentraModel.APIClient" />
+    <EntitySet Name="AppVersions" EntityType="GolfCentraModel.AppVersion" />
+    <EntitySet Name="BlockSlots" EntityType="GolfCentraModel.BlockSlot" />
+    <EntitySet Name="BlockSlotRanges" EntityType="GolfCentraModel.BlockSlotRange" />
+    <EntitySet Name="Bookings" EntityType="GolfCentraModel.Booking" />
+    <EntitySet Name="BookingCourseTaxMappings" EntityType="GolfCentraModel.BookingCourseTaxMapping" />
+    <EntitySet Name="BookingEquipmentMappings" EntityType="GolfCentraModel.BookingEquipmentMapping" />
+    <EntitySet Name="BookingPlayerDetails" EntityType="GolfCentraModel.BookingPlayerDetail" />
+    <EntitySet Name="BookingPlayerMappings" EntityType="GolfCentraModel.BookingPlayerMapping" />
+    <EntitySet Name="BookingStatus" EntityType="GolfCentraModel.BookingStatu" />
+    <EntitySet Name="BookingTypes" EntityType="GolfCentraModel.BookingType" />
+    <EntitySet Name="BucketDetails" EntityType="GolfCentraModel.BucketDetail" />
+    <EntitySet Name="BucketTaxMappings" EntityType="GolfCentraModel.BucketTaxMapping" />
+    <EntitySet Name="Countries" EntityType="GolfCentraModel.Country" />
+    <EntitySet Name="Coupons" EntityType="GolfCentraModel.Coupon" />
+    <EntitySet Name="CouponTypes" EntityType="GolfCentraModel.CouponType" />
+    <EntitySet Name="Courses" EntityType="GolfCentraModel.Course" />
+    <EntitySet Name="CourseNames" EntityType="GolfCentraModel.CourseName" />
+    <EntitySet Name="CoursePairings" EntityType="GolfCentraModel.CoursePairing" />
+    <EntitySet Name="CourseTaxMappings" EntityType="GolfCentraModel.CourseTaxMapping" />
+    <EntitySet Name="Currencies" EntityType="GolfCentraModel.Currency" />
+    <EntitySet Name="DayTypes" EntityType="GolfCentraModel.DayType" />
+    <EntitySet Name="Employees" EntityType="GolfCentraModel.Employee" />
+    <EntitySet Name="EmployeeTypes" EntityType="GolfCentraModel.EmployeeType" />
+    <EntitySet Name="Equipments" EntityType="GolfCentraModel.Equipment" />
+    <EntitySet Name="EquipmentTaxMappings" EntityType="GolfCentraModel.EquipmentTaxMapping" />
+    <EntitySet Name="ErrorLogs" EntityType="GolfCentraModel.ErrorLog" />
+    <EntitySet Name="ErrorTypes" EntityType="GolfCentraModel.ErrorType" />
+    <EntitySet Name="FeeCategories" EntityType="GolfCentraModel.FeeCategory" />
+    <EntitySet Name="GenderTypes" EntityType="GolfCentraModel.GenderType" />
+    <EntitySet Name="Golfers" EntityType="GolfCentraModel.Golfer" />
+    <EntitySet Name="GolferNotifications" EntityType="GolfCentraModel.GolferNotification" />
+    <EntitySet Name="HoleInformations" EntityType="GolfCentraModel.HoleInformation" />
+    <EntitySet Name="HoleNumbers" EntityType="GolfCentraModel.HoleNumber" />
+    <EntitySet Name="HoleTeeYardages" EntityType="GolfCentraModel.HoleTeeYardage" />
+    <EntitySet Name="HoleTypes" EntityType="GolfCentraModel.HoleType" />
+    <EntitySet Name="LogInHistories" EntityType="GolfCentraModel.LogInHistory" />
+    <EntitySet Name="LogInStatus" EntityType="GolfCentraModel.LogInStatu" />
+    <EntitySet Name="MaritalStatus" EntityType="GolfCentraModel.MaritalStatu" />
+    <EntitySet Name="MemberTypes" EntityType="GolfCentraModel.MemberType" />
+    <EntitySet Name="NationalHolidays" EntityType="GolfCentraModel.NationalHoliday" />
+    <EntitySet Name="Pages" EntityType="GolfCentraModel.Page" />
+    <EntitySet Name="PageRights" EntityType="GolfCentraModel.PageRight" />
+    <EntitySet Name="ParStorkes" EntityType="GolfCentraModel.ParStorke" />
+    <EntitySet Name="PaymentGatewayControls" EntityType="GolfCentraModel.PaymentGatewayControl" />
+    <EntitySet Name="PaymentStatus" EntityType="GolfCentraModel.PaymentStatu" />
+    <EntitySet Name="PlatformTypes" EntityType="GolfCentraModel.PlatformType" />
+    <EntitySet Name="PriceTaxMappings" EntityType="GolfCentraModel.PriceTaxMapping" />
+    <EntitySet Name="Pricings" EntityType="GolfCentraModel.Pricing" />
+    <EntitySet Name="Promotions" EntityType="GolfCentraModel.Promotion" />
+    <EntitySet Name="PromotionsEquipmentMappings" EntityType="GolfCentraModel.PromotionsEquipmentMapping" />
+    <EntitySet Name="PromotionsTaxMappings" EntityType="GolfCentraModel.PromotionsTaxMapping" />
+    <EntitySet Name="RuleAndRegulations" EntityType="GolfCentraModel.RuleAndRegulation" />
+    <EntitySet Name="Salutations" EntityType="GolfCentraModel.Salutation" />
+    <EntitySet Name="Scores" EntityType="GolfCentraModel.Score" />
+    <EntitySet Name="ScoreHole1" EntityType="GolfCentraModel.ScoreHole1" />
+    <EntitySet Name="ScoreHole10" EntityType="GolfCentraModel.ScoreHole10" />
+    <EntitySet Name="ScoreHole11" EntityType="GolfCentraModel.ScoreHole11" />
+    <EntitySet Name="ScoreHole12" EntityType="GolfCentraModel.ScoreHole12" />
+    <EntitySet Name="ScoreHole13" EntityType="GolfCentraModel.ScoreHole13" />
+    <EntitySet Name="ScoreHole14" EntityType="GolfCentraModel.ScoreHole14" />
+    <EntitySet Name="ScoreHole15" EntityType="GolfCentraModel.ScoreHole15" />
+    <EntitySet Name="ScoreHole16" EntityType="GolfCentraModel.ScoreHole16" />
+    <EntitySet Name="ScoreHole17" EntityType="GolfCentraModel.ScoreHole17" />
+    <EntitySet Name="ScoreHole18" EntityType="GolfCentraModel.ScoreHole18" />
+    <EntitySet Name="ScoreHole19" EntityType="GolfCentraModel.ScoreHole19" />
+    <EntitySet Name="ScoreHole2" EntityType="GolfCentraModel.ScoreHole2" />
+    <EntitySet Name="ScoreHole20" EntityType="GolfCentraModel.ScoreHole20" />
+    <EntitySet Name="ScoreHole21" EntityType="GolfCentraModel.ScoreHole21" />
+    <EntitySet Name="ScoreHole22" EntityType="GolfCentraModel.ScoreHole22" />
+    <EntitySet Name="ScoreHole23" EntityType="GolfCentraModel.ScoreHole23" />
+    <EntitySet Name="ScoreHole24" EntityType="GolfCentraModel.ScoreHole24" />
+    <EntitySet Name="ScoreHole25" EntityType="GolfCentraModel.ScoreHole25" />
+    <EntitySet Name="ScoreHole26" EntityType="GolfCentraModel.ScoreHole26" />
+    <EntitySet Name="ScoreHole27" EntityType="GolfCentraModel.ScoreHole27" />
+    <EntitySet Name="ScoreHole3" EntityType="GolfCentraModel.ScoreHole3" />
+    <EntitySet Name="ScoreHole4" EntityType="GolfCentraModel.ScoreHole4" />
+    <EntitySet Name="ScoreHole5" EntityType="GolfCentraModel.ScoreHole5" />
+    <EntitySet Name="ScoreHole6" EntityType="GolfCentraModel.ScoreHole6" />
+    <EntitySet Name="ScoreHole7" EntityType="GolfCentraModel.ScoreHole7" />
+    <EntitySet Name="ScoreHole8" EntityType="GolfCentraModel.ScoreHole8" />
+    <EntitySet Name="ScoreHole9" EntityType="GolfCentraModel.ScoreHole9" />
+    <EntitySet Name="Sessions" EntityType="GolfCentraModel.Session" />
+    <EntitySet Name="SessionActivities" EntityType="GolfCentraModel.SessionActivity" />
+    <EntitySet Name="SessionActivityPages" EntityType="GolfCentraModel.SessionActivityPage" />
+    <EntitySet Name="Slots" EntityType="GolfCentraModel.Slot" />
+    <EntitySet Name="SlotBlockReasons" EntityType="GolfCentraModel.SlotBlockReason" />
+    <EntitySet Name="SlotSessionWises" EntityType="GolfCentraModel.SlotSessionWise" />
+    <EntitySet Name="Taxes" EntityType="GolfCentraModel.Tax" />
+    <EntitySet Name="Tees" EntityType="GolfCentraModel.Tee" />
+    <EntitySet Name="TimeFormats" EntityType="GolfCentraModel.TimeFormat" />
+    <EntitySet Name="UserTypes" EntityType="GolfCentraModel.UserType" />
+    <AssociationSet Name="FK_ActionRight_Action" Association="GolfCentraModel.FK_ActionRight_Action">
+      <End Role="Action" EntitySet="Actions" />
+      <End Role="ActionRight" EntitySet="ActionRights" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActionRight_Employee" Association="GolfCentraModel.FK_ActionRight_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="ActionRight" EntitySet="ActionRights" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AppVersion_PlatformType" Association="GolfCentraModel.FK_AppVersion_PlatformType">
+      <End Role="PlatformType" EntitySet="PlatformTypes" />
+      <End Role="AppVersion" EntitySet="AppVersions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BlockSlot_BlockSlotRange" Association="GolfCentraModel.FK_BlockSlot_BlockSlotRange">
+      <End Role="BlockSlotRange" EntitySet="BlockSlotRanges" />
+      <End Role="BlockSlot" EntitySet="BlockSlots" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BlockSlot_SlotSessionWise" Association="GolfCentraModel.FK_BlockSlot_SlotSessionWise">
+      <End Role="SlotSessionWise" EntitySet="SlotSessionWises" />
+      <End Role="BlockSlot" EntitySet="BlockSlots" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BlockSlotRange_CoursePairing" Association="GolfCentraModel.FK_BlockSlotRange_CoursePairing">
+      <End Role="CoursePairing" EntitySet="CoursePairings" />
+      <End Role="BlockSlotRange" EntitySet="BlockSlotRanges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BlockSlotRange_SlotBlockReason" Association="GolfCentraModel.FK_BlockSlotRange_SlotBlockReason">
+      <End Role="SlotBlockReason" EntitySet="SlotBlockReasons" />
+      <End Role="BlockSlotRange" EntitySet="BlockSlotRanges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_BookingStatus" Association="GolfCentraModel.FK_Booking_BookingStatus">
+      <End Role="BookingStatu" EntitySet="BookingStatus" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_BookingType" Association="GolfCentraModel.FK_Booking_BookingType">
+      <End Role="BookingType" EntitySet="BookingTypes" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_Coupon" Association="GolfCentraModel.FK_Booking_Coupon">
+      <End Role="Coupon" EntitySet="Coupons" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_CoursePairing" Association="GolfCentraModel.FK_Booking_CoursePairing">
+      <End Role="CoursePairing" EntitySet="CoursePairings" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_Currency" Association="GolfCentraModel.FK_Booking_Currency">
+      <End Role="Currency" EntitySet="Currencies" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_Golfer" Association="GolfCentraModel.FK_Booking_Golfer">
+      <End Role="Golfer" EntitySet="Golfers" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_HoleType" Association="GolfCentraModel.FK_Booking_HoleType">
+      <End Role="HoleType" EntitySet="HoleTypes" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_PaymentStatus" Association="GolfCentraModel.FK_Booking_PaymentStatus">
+      <End Role="PaymentStatu" EntitySet="PaymentStatus" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_Promotions" Association="GolfCentraModel.FK_Booking_Promotions">
+      <End Role="Promotion" EntitySet="Promotions" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingCourseTaxMapping_Booking" Association="GolfCentraModel.FK_BookingCourseTaxMapping_Booking">
+      <End Role="Booking" EntitySet="Bookings" />
+      <End Role="BookingCourseTaxMapping" EntitySet="BookingCourseTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingEquipmentMapping_Booking" Association="GolfCentraModel.FK_BookingEquipmentMapping_Booking">
+      <End Role="Booking" EntitySet="Bookings" />
+      <End Role="BookingEquipmentMapping" EntitySet="BookingEquipmentMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingPlayerDetails_Booking" Association="GolfCentraModel.FK_BookingPlayerDetails_Booking">
+      <End Role="Booking" EntitySet="Bookings" />
+      <End Role="BookingPlayerDetail" EntitySet="BookingPlayerDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingPlayerMapping_Booking" Association="GolfCentraModel.FK_BookingPlayerMapping_Booking">
+      <End Role="Booking" EntitySet="Bookings" />
+      <End Role="BookingPlayerMapping" EntitySet="BookingPlayerMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Score_Booking" Association="GolfCentraModel.FK_Score_Booking">
+      <End Role="Booking" EntitySet="Bookings" />
+      <End Role="Score" EntitySet="Scores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingCourseTaxMapping_Tax" Association="GolfCentraModel.FK_BookingCourseTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Taxes" />
+      <End Role="BookingCourseTaxMapping" EntitySet="BookingCourseTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingEquipmentMapping_Equipment" Association="GolfCentraModel.FK_BookingEquipmentMapping_Equipment">
+      <End Role="Equipment" EntitySet="Equipments" />
+      <End Role="BookingEquipmentMapping" EntitySet="BookingEquipmentMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingPlayerMapping_MemberType" Association="GolfCentraModel.FK_BookingPlayerMapping_MemberType">
+      <End Role="MemberType" EntitySet="MemberTypes" />
+      <End Role="BookingPlayerMapping" EntitySet="BookingPlayerMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_BookingType" Association="GolfCentraModel.FK_Pricing_BookingType">
+      <End Role="BookingType" EntitySet="BookingTypes" />
+      <End Role="Pricing" EntitySet="Pricings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_BookingType" Association="GolfCentraModel.FK_Session_BookingType">
+      <End Role="BookingType" EntitySet="BookingTypes" />
+      <End Role="Session" EntitySet="Sessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SlotSessionWise_BookingType" Association="GolfCentraModel.FK_SlotSessionWise_BookingType">
+      <End Role="BookingType" EntitySet="BookingTypes" />
+      <End Role="SlotSessionWise" EntitySet="SlotSessionWises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketDetail_Currency" Association="GolfCentraModel.FK_BucketDetail_Currency">
+      <End Role="Currency" EntitySet="Currencies" />
+      <End Role="BucketDetail" EntitySet="BucketDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketDetail_DayType" Association="GolfCentraModel.FK_BucketDetail_DayType">
+      <End Role="DayType" EntitySet="DayTypes" />
+      <End Role="BucketDetail" EntitySet="BucketDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketDetail_MemberType" Association="GolfCentraModel.FK_BucketDetail_MemberType">
+      <End Role="MemberType" EntitySet="MemberTypes" />
+      <End Role="BucketDetail" EntitySet="BucketDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketTaxMapping_BucketDetail" Association="GolfCentraModel.FK_BucketTaxMapping_BucketDetail">
+      <End Role="BucketDetail" EntitySet="BucketDetails" />
+      <End Role="BucketTaxMapping" EntitySet="BucketTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketTaxMapping_Tax" Association="GolfCentraModel.FK_BucketTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Taxes" />
+      <End Role="BucketTaxMapping" EntitySet="BucketTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Coupon_CouponType" Association="GolfCentraModel.FK_Coupon_CouponType">
+      <End Role="CouponType" EntitySet="CouponTypes" />
+      <End Role="Coupon" EntitySet="Coupons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Coupon_Currency" Association="GolfCentraModel.FK_Coupon_Currency">
+      <End Role="Currency" EntitySet="Currencies" />
+      <End Role="Coupon" EntitySet="Coupons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Course_HoleType" Association="GolfCentraModel.FK_Course_HoleType">
+      <End Role="HoleType" EntitySet="HoleTypes" />
+      <End Role="Course" EntitySet="Courses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseTaxMapping_Course" Association="GolfCentraModel.FK_CourseTaxMapping_Course">
+      <End Role="Course" EntitySet="Courses" />
+      <End Role="CourseTaxMapping" EntitySet="CourseTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CoursePairing_CourseName" Association="GolfCentraModel.FK_CoursePairing_CourseName">
+      <End Role="CourseName" EntitySet="CourseNames" />
+      <End Role="CoursePairing" EntitySet="CoursePairings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CoursePairing_CoursePairing" Association="GolfCentraModel.FK_CoursePairing_CoursePairing">
+      <End Role="CourseName" EntitySet="CourseNames" />
+      <End Role="CoursePairing" EntitySet="CoursePairings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoleInformation_CourseName" Association="GolfCentraModel.FK_HoleInformation_CourseName">
+      <End Role="CourseName" EntitySet="CourseNames" />
+      <End Role="HoleInformation" EntitySet="HoleInformations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CoursePairing_HoleType" Association="GolfCentraModel.FK_CoursePairing_HoleType">
+      <End Role="HoleType" EntitySet="HoleTypes" />
+      <End Role="CoursePairing" EntitySet="CoursePairings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseTaxMapping_Tax" Association="GolfCentraModel.FK_CourseTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Taxes" />
+      <End Role="CourseTaxMapping" EntitySet="CourseTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_Currency" Association="GolfCentraModel.FK_Pricing_Currency">
+      <End Role="Currency" EntitySet="Currencies" />
+      <End Role="Pricing" EntitySet="Pricings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_DayType" Association="GolfCentraModel.FK_Pricing_DayType">
+      <End Role="DayType" EntitySet="DayTypes" />
+      <End Role="Pricing" EntitySet="Pricings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_EmployeeType" Association="GolfCentraModel.FK_Employee_EmployeeType">
+      <End Role="EmployeeType" EntitySet="EmployeeTypes" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_GenderType" Association="GolfCentraModel.FK_Employee_GenderType">
+      <End Role="GenderType" EntitySet="GenderTypes" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PageRight_Employee" Association="GolfCentraModel.FK_PageRight_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="PageRight" EntitySet="PageRights" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EquipmentTaxMapping_Equipment" Association="GolfCentraModel.FK_EquipmentTaxMapping_Equipment">
+      <End Role="Equipment" EntitySet="Equipments" />
+      <End Role="EquipmentTaxMapping" EntitySet="EquipmentTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PromotionsEquipmentMapping_Equipment" Association="GolfCentraModel.FK_PromotionsEquipmentMapping_Equipment">
+      <End Role="Equipment" EntitySet="Equipments" />
+      <End Role="PromotionsEquipmentMapping" EntitySet="PromotionsEquipmentMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EquipmentTaxMapping_Tax" Association="GolfCentraModel.FK_EquipmentTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Taxes" />
+      <End Role="EquipmentTaxMapping" EntitySet="EquipmentTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ErrorLog_ErrorType" Association="GolfCentraModel.FK_ErrorLog_ErrorType">
+      <End Role="ErrorType" EntitySet="ErrorTypes" />
+      <End Role="ErrorLog" EntitySet="ErrorLogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PriceTaxMapping_FeeCategory" Association="GolfCentraModel.FK_PriceTaxMapping_FeeCategory">
+      <End Role="FeeCategory" EntitySet="FeeCategories" />
+      <End Role="PriceTaxMapping" EntitySet="PriceTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Golfer_GenderType" Association="GolfCentraModel.FK_Golfer_GenderType">
+      <End Role="GenderType" EntitySet="GenderTypes" />
+      <End Role="Golfer" EntitySet="Golfers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Golfer_MaritalStatus" Association="GolfCentraModel.FK_Golfer_MaritalStatus">
+      <End Role="MaritalStatu" EntitySet="MaritalStatus" />
+      <End Role="Golfer" EntitySet="Golfers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Golfer_MemberType" Association="GolfCentraModel.FK_Golfer_MemberType">
+      <End Role="MemberType" EntitySet="MemberTypes" />
+      <End Role="Golfer" EntitySet="Golfers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Golfer_PlatformType" Association="GolfCentraModel.FK_Golfer_PlatformType">
+      <End Role="PlatformType" EntitySet="PlatformTypes" />
+      <End Role="Golfer" EntitySet="Golfers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Golfer_Salutation" Association="GolfCentraModel.FK_Golfer_Salutation">
+      <End Role="Salutation" EntitySet="Salutations" />
+      <End Role="Golfer" EntitySet="Golfers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Score_Golfer" Association="GolfCentraModel.FK_Score_Golfer">
+      <End Role="Golfer" EntitySet="Golfers" />
+      <End Role="Score" EntitySet="Scores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoleInformation_HoleNumber" Association="GolfCentraModel.FK_HoleInformation_HoleNumber">
+      <End Role="HoleNumber" EntitySet="HoleNumbers" />
+      <End Role="HoleInformation" EntitySet="HoleInformations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoleTeeYardage_HoleNumber" Association="GolfCentraModel.FK_HoleTeeYardage_HoleNumber">
+      <End Role="HoleNumber" EntitySet="HoleNumbers" />
+      <End Role="HoleTeeYardage" EntitySet="HoleTeeYardages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParStorke_HoleNumber" Association="GolfCentraModel.FK_ParStorke_HoleNumber">
+      <End Role="HoleNumber" EntitySet="HoleNumbers" />
+      <End Role="ParStorke" EntitySet="ParStorkes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoleTeeYardage_Tee" Association="GolfCentraModel.FK_HoleTeeYardage_Tee">
+      <End Role="Tee" EntitySet="Tees" />
+      <End Role="HoleTeeYardage" EntitySet="HoleTeeYardages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_HoleType" Association="GolfCentraModel.FK_Pricing_HoleType">
+      <End Role="HoleType" EntitySet="HoleTypes" />
+      <End Role="Pricing" EntitySet="Pricings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Promotions_HoleType" Association="GolfCentraModel.FK_Promotions_HoleType">
+      <End Role="HoleType" EntitySet="HoleTypes" />
+      <End Role="Promotion" EntitySet="Promotions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Score_HoleType" Association="GolfCentraModel.FK_Score_HoleType">
+      <End Role="HoleType" EntitySet="HoleTypes" />
+      <End Role="Score" EntitySet="Scores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogInHistory_LogInStatus" Association="GolfCentraModel.FK_LogInHistory_LogInStatus">
+      <End Role="LogInStatu" EntitySet="LogInStatus" />
+      <End Role="LogInHistory" EntitySet="LogInHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogInHistory_PlatformType" Association="GolfCentraModel.FK_LogInHistory_PlatformType">
+      <End Role="PlatformType" EntitySet="PlatformTypes" />
+      <End Role="LogInHistory" EntitySet="LogInHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogInHistory_UserType" Association="GolfCentraModel.FK_LogInHistory_UserType">
+      <End Role="UserType" EntitySet="UserTypes" />
+      <End Role="LogInHistory" EntitySet="LogInHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionActivity_LogInHistory" Association="GolfCentraModel.FK_SessionActivity_LogInHistory">
+      <End Role="LogInHistory" EntitySet="LogInHistories" />
+      <End Role="SessionActivity" EntitySet="SessionActivities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_MemberType" Association="GolfCentraModel.FK_Pricing_MemberType">
+      <End Role="MemberType" EntitySet="MemberTypes" />
+      <End Role="Pricing" EntitySet="Pricings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PageRight_Page" Association="GolfCentraModel.FK_PageRight_Page">
+      <End Role="Page" EntitySet="Pages" />
+      <End Role="PageRight" EntitySet="PageRights" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PriceTaxMapping_Pricing" Association="GolfCentraModel.FK_PriceTaxMapping_Pricing">
+      <End Role="Pricing" EntitySet="Pricings" />
+      <End Role="PriceTaxMapping" EntitySet="PriceTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PriceTaxMapping_Tax" Association="GolfCentraModel.FK_PriceTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Taxes" />
+      <End Role="PriceTaxMapping" EntitySet="PriceTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_Slot" Association="GolfCentraModel.FK_Pricing_Slot">
+      <End Role="Slot" EntitySet="Slots" />
+      <End Role="Pricing" EntitySet="Pricings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_TimeFormat" Association="GolfCentraModel.FK_Pricing_TimeFormat">
+      <End Role="TimeFormat" EntitySet="TimeFormats" />
+      <End Role="Pricing" EntitySet="Pricings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PromotionsEquipmentMapping_Promotions" Association="GolfCentraModel.FK_PromotionsEquipmentMapping_Promotions">
+      <End Role="Promotion" EntitySet="Promotions" />
+      <End Role="PromotionsEquipmentMapping" EntitySet="PromotionsEquipmentMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PromotionsTaxMapping_Promotions" Association="GolfCentraModel.FK_PromotionsTaxMapping_Promotions">
+      <End Role="Promotion" EntitySet="Promotions" />
+      <End Role="PromotionsTaxMapping" EntitySet="PromotionsTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PromotionsTaxMapping_Tax" Association="GolfCentraModel.FK_PromotionsTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Taxes" />
+      <End Role="PromotionsTaxMapping" EntitySet="PromotionsTaxMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole1_Score" Association="GolfCentraModel.FK_ScoreHole1_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole1" EntitySet="ScoreHole1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole10_Score" Association="GolfCentraModel.FK_ScoreHole10_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole10" EntitySet="ScoreHole10" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole11_Score" Association="GolfCentraModel.FK_ScoreHole11_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole11" EntitySet="ScoreHole11" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole12_Score" Association="GolfCentraModel.FK_ScoreHole12_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole12" EntitySet="ScoreHole12" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole13_Score" Association="GolfCentraModel.FK_ScoreHole13_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole13" EntitySet="ScoreHole13" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole14_Score" Association="GolfCentraModel.FK_ScoreHole14_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole14" EntitySet="ScoreHole14" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole15_Score" Association="GolfCentraModel.FK_ScoreHole15_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole15" EntitySet="ScoreHole15" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole16_Score" Association="GolfCentraModel.FK_ScoreHole16_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole16" EntitySet="ScoreHole16" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole17_Score" Association="GolfCentraModel.FK_ScoreHole17_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole17" EntitySet="ScoreHole17" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole18_Score" Association="GolfCentraModel.FK_ScoreHole18_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole18" EntitySet="ScoreHole18" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole19_Score" Association="GolfCentraModel.FK_ScoreHole19_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole19" EntitySet="ScoreHole19" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole2_Score" Association="GolfCentraModel.FK_ScoreHole2_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole2" EntitySet="ScoreHole2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole20_Score" Association="GolfCentraModel.FK_ScoreHole20_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole20" EntitySet="ScoreHole20" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole21_Score" Association="GolfCentraModel.FK_ScoreHole21_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole21" EntitySet="ScoreHole21" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole22_Score" Association="GolfCentraModel.FK_ScoreHole22_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole22" EntitySet="ScoreHole22" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole23_Score" Association="GolfCentraModel.FK_ScoreHole23_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole23" EntitySet="ScoreHole23" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole24_Score" Association="GolfCentraModel.FK_ScoreHole24_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole24" EntitySet="ScoreHole24" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole25_Score" Association="GolfCentraModel.FK_ScoreHole25_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole25" EntitySet="ScoreHole25" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole26_Score" Association="GolfCentraModel.FK_ScoreHole26_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole26" EntitySet="ScoreHole26" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole27_Score" Association="GolfCentraModel.FK_ScoreHole27_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole27" EntitySet="ScoreHole27" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole3_Score" Association="GolfCentraModel.FK_ScoreHole3_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole3" EntitySet="ScoreHole3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole4_Score" Association="GolfCentraModel.FK_ScoreHole4_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole4" EntitySet="ScoreHole4" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole5_Score" Association="GolfCentraModel.FK_ScoreHole5_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole5" EntitySet="ScoreHole5" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole6_Score" Association="GolfCentraModel.FK_ScoreHole6_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole6" EntitySet="ScoreHole6" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole7_Score" Association="GolfCentraModel.FK_ScoreHole7_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole7" EntitySet="ScoreHole7" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole8_Score" Association="GolfCentraModel.FK_ScoreHole8_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole8" EntitySet="ScoreHole8" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole9_Score" Association="GolfCentraModel.FK_ScoreHole9_Score">
+      <End Role="Score" EntitySet="Scores" />
+      <End Role="ScoreHole9" EntitySet="ScoreHole9" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SlotSessionWise_Session" Association="GolfCentraModel.FK_SlotSessionWise_Session">
+      <End Role="Session" EntitySet="Sessions" />
+      <End Role="SlotSessionWise" EntitySet="SlotSessionWises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionActivity_SessionActivityPage" Association="GolfCentraModel.FK_SessionActivity_SessionActivityPage">
+      <End Role="SessionActivityPage" EntitySet="SessionActivityPages" />
+      <End Role="SessionActivity" EntitySet="SessionActivities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SlotSessionWise_Slot" Association="GolfCentraModel.FK_SlotSessionWise_Slot">
+      <End Role="Slot" EntitySet="Slots" />
+      <End Role="SlotSessionWise" EntitySet="SlotSessionWises" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AboutU">
+    <Key>
+      <PropertyRef Name="AboutUsId" />
+    </Key>
+    <Property Name="AboutUsId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ImageURL" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="URL" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Action">
+    <Key>
+      <PropertyRef Name="ActionId" />
+    </Key>
+    <Property Name="ActionId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ActionRights" Relationship="GolfCentraModel.FK_ActionRight_Action" FromRole="Action" ToRole="ActionRight" />
+  </EntityType>
+  <EntityType Name="ActionRight">
+    <Key>
+      <PropertyRef Name="ActionRightId" />
+    </Key>
+    <Property Name="ActionRightId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ActionId" Type="Int64" Nullable="false" />
+    <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Action" Relationship="GolfCentraModel.FK_ActionRight_Action" FromRole="ActionRight" ToRole="Action" />
+    <NavigationProperty Name="Employee" Relationship="GolfCentraModel.FK_ActionRight_Employee" FromRole="ActionRight" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="APIClient">
+    <Key>
+      <PropertyRef Name="APIClientId" />
+    </Key>
+    <Property Name="APIClientId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClientName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="AppVersion">
+    <Key>
+      <PropertyRef Name="AppVersionId" />
+    </Key>
+    <Property Name="AppVersionId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Version" Type="Decimal" Nullable="false" Precision="18" Scale="1" />
+    <Property Name="Message" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ForceUpdate" Type="Boolean" Nullable="false" />
+    <Property Name="PlatformTypeId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PlatformType" Relationship="GolfCentraModel.FK_AppVersion_PlatformType" FromRole="AppVersion" ToRole="PlatformType" />
+  </EntityType>
+  <EntityType Name="BlockSlot">
+    <Key>
+      <PropertyRef Name="BlockSlotId" />
+    </Key>
+    <Property Name="BlockSlotId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BlockSlotRangeId" Type="Int64" Nullable="false" />
+    <Property Name="SlotSessionWiseId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BlockSlotRange" Relationship="GolfCentraModel.FK_BlockSlot_BlockSlotRange" FromRole="BlockSlot" ToRole="BlockSlotRange" />
+    <NavigationProperty Name="SlotSessionWise" Relationship="GolfCentraModel.FK_BlockSlot_SlotSessionWise" FromRole="BlockSlot" ToRole="SlotSessionWise" />
+  </EntityType>
+  <EntityType Name="BlockSlotRange">
+    <Key>
+      <PropertyRef Name="BlockSlotRangeId" />
+    </Key>
+    <Property Name="BlockSlotRangeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SlotBlockReasonId" Type="Int64" Nullable="false" />
+    <Property Name="CoursePairingId" Type="Int64" />
+    <Property Name="IsCustomerAvailable" Type="Boolean" Nullable="false" />
+    <Property Name="IsBookingavailable" Type="Boolean" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BlockSlots" Relationship="GolfCentraModel.FK_BlockSlot_BlockSlotRange" FromRole="BlockSlotRange" ToRole="BlockSlot" />
+    <NavigationProperty Name="CoursePairing" Relationship="GolfCentraModel.FK_BlockSlotRange_CoursePairing" FromRole="BlockSlotRange" ToRole="CoursePairing" />
+    <NavigationProperty Name="SlotBlockReason" Relationship="GolfCentraModel.FK_BlockSlotRange_SlotBlockReason" FromRole="BlockSlotRange" ToRole="SlotBlockReason" />
+  </EntityType>
+  <EntityType Name="Booking">
+    <Key>
+      <PropertyRef Name="BookingId" />
+    </Key>
+    <Property Name="BookingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GolferId" Type="Int64" Nullable="false" />
+    <Property Name="BookingDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HoleTypeId" Type="Int64" />
+    <Property Name="TeeOffDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TeeOffSlot" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="BookingStatusId" Type="Int64" Nullable="false" />
+    <Property Name="NoOfMember" Type="Int32" />
+    <Property Name="NoOfNonMember" Type="Int32" />
+    <Property Name="NoOfPlayer" Type="Int32" Nullable="false" />
+    <Property Name="CartFee" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CartCount" Type="Int32" />
+    <Property Name="CaddieFee" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CaddieCount" Type="Int32" />
+    <Property Name="GreenFee" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RangeFee" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="NoOfBalls" Type="Int32" />
+    <Property Name="BallFee" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Discount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FeeAndTaxes" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="OnSpot" Type="Boolean" />
+    <Property Name="BookingTypeId" Type="Int64" Nullable="false" />
+    <Property Name="CouponId" Type="Int64" />
+    <Property Name="PaymentGatewayBookingId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentMode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentStatusId" Type="Int64" />
+    <Property Name="CurrencyId" Type="Int64" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CoursePairingId" Type="Int64" />
+    <Property Name="ScoreId" Type="Int64" />
+    <Property Name="PromotionId" Type="Int64" />
+    <Property Name="PaidAmount" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="BookingStatu" Relationship="GolfCentraModel.FK_Booking_BookingStatus" FromRole="Booking" ToRole="BookingStatu" />
+    <NavigationProperty Name="BookingType" Relationship="GolfCentraModel.FK_Booking_BookingType" FromRole="Booking" ToRole="BookingType" />
+    <NavigationProperty Name="Coupon" Relationship="GolfCentraModel.FK_Booking_Coupon" FromRole="Booking" ToRole="Coupon" />
+    <NavigationProperty Name="CoursePairing" Relationship="GolfCentraModel.FK_Booking_CoursePairing" FromRole="Booking" ToRole="CoursePairing" />
+    <NavigationProperty Name="Currency" Relationship="GolfCentraModel.FK_Booking_Currency" FromRole="Booking" ToRole="Currency" />
+    <NavigationProperty Name="Golfer" Relationship="GolfCentraModel.FK_Booking_Golfer" FromRole="Booking" ToRole="Golfer" />
+    <NavigationProperty Name="HoleType" Relationship="GolfCentraModel.FK_Booking_HoleType" FromRole="Booking" ToRole="HoleType" />
+    <NavigationProperty Name="PaymentStatu" Relationship="GolfCentraModel.FK_Booking_PaymentStatus" FromRole="Booking" ToRole="PaymentStatu" />
+    <NavigationProperty Name="Promotion" Relationship="GolfCentraModel.FK_Booking_Promotions" FromRole="Booking" ToRole="Promotion" />
+    <NavigationProperty Name="BookingCourseTaxMappings" Relationship="GolfCentraModel.FK_BookingCourseTaxMapping_Booking" FromRole="Booking" ToRole="BookingCourseTaxMapping" />
+    <NavigationProperty Name="BookingEquipmentMappings" Relationship="GolfCentraModel.FK_BookingEquipmentMapping_Booking" FromRole="Booking" ToRole="BookingEquipmentMapping" />
+    <NavigationProperty Name="BookingPlayerDetails" Relationship="GolfCentraModel.FK_BookingPlayerDetails_Booking" FromRole="Booking" ToRole="BookingPlayerDetail" />
+    <NavigationProperty Name="BookingPlayerMappings" Relationship="GolfCentraModel.FK_BookingPlayerMapping_Booking" FromRole="Booking" ToRole="BookingPlayerMapping" />
+    <NavigationProperty Name="Scores" Relationship="GolfCentraModel.FK_Score_Booking" FromRole="Booking" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="BookingCourseTaxMapping">
+    <Key>
+      <PropertyRef Name="BookingCourseTaxMappingId" />
+    </Key>
+    <Property Name="BookingCourseTaxMappingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TaxId" Type="Int64" Nullable="false" />
+    <Property Name="TaxName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Percentage" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="BookingId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Booking" Relationship="GolfCentraModel.FK_BookingCourseTaxMapping_Booking" FromRole="BookingCourseTaxMapping" ToRole="Booking" />
+    <NavigationProperty Name="Tax" Relationship="GolfCentraModel.FK_BookingCourseTaxMapping_Tax" FromRole="BookingCourseTaxMapping" ToRole="Tax" />
+  </EntityType>
+  <EntityType Name="BookingEquipmentMapping">
+    <Key>
+      <PropertyRef Name="BookingEquipmentMappingId" />
+    </Key>
+    <Property Name="BookingEquipmentMappingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookingId" Type="Int64" Nullable="false" />
+    <Property Name="EquipmentId" Type="Int64" Nullable="false" />
+    <Property Name="EquipmentName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EquipmentPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="EquipmentCount" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Booking" Relationship="GolfCentraModel.FK_BookingEquipmentMapping_Booking" FromRole="BookingEquipmentMapping" ToRole="Booking" />
+    <NavigationProperty Name="Equipment" Relationship="GolfCentraModel.FK_BookingEquipmentMapping_Equipment" FromRole="BookingEquipmentMapping" ToRole="Equipment" />
+  </EntityType>
+  <EntityType Name="BookingPlayerDetail">
+    <Key>
+      <PropertyRef Name="BookingPlayerDetailsId" />
+    </Key>
+    <Property Name="BookingPlayerDetailsId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Player1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Player2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Player3" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Player4" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="BookingId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="Player2ScoreId" Type="Int64" />
+    <Property Name="Player3ScoreId" Type="Int64" />
+    <Property Name="Player4ScoreId" Type="Int64" />
+    <NavigationProperty Name="Booking" Relationship="GolfCentraModel.FK_BookingPlayerDetails_Booking" FromRole="BookingPlayerDetail" ToRole="Booking" />
+  </EntityType>
+  <EntityType Name="BookingPlayerMapping">
+    <Key>
+      <PropertyRef Name="BookingPlayerMappingId" />
+    </Key>
+    <Property Name="BookingPlayerMappingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookingId" Type="Int64" Nullable="false" />
+    <Property Name="MemberTypeId" Type="Int64" Nullable="false" />
+    <Property Name="MemberTypeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PlayerCount" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Booking" Relationship="GolfCentraModel.FK_BookingPlayerMapping_Booking" FromRole="BookingPlayerMapping" ToRole="Booking" />
+    <NavigationProperty Name="MemberType" Relationship="GolfCentraModel.FK_BookingPlayerMapping_MemberType" FromRole="BookingPlayerMapping" ToRole="MemberType" />
+  </EntityType>
+  <EntityType Name="BookingStatu">
+    <Key>
+      <PropertyRef Name="BookingStatusId" />
+    </Key>
+    <Property Name="BookingStatusId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Bookings" Relationship="GolfCentraModel.FK_Booking_BookingStatus" FromRole="BookingStatu" ToRole="Booking" />
+  </EntityType>
+  <EntityType Name="BookingType">
+    <Key>
+      <PropertyRef Name="BookingTypeId" />
+    </Key>
+    <Property Name="BookingTypeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ValueToShow" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Bookings" Relationship="GolfCentraModel.FK_Booking_BookingType" FromRole="BookingType" ToRole="Booking" />
+    <NavigationProperty Name="Pricings" Relationship="GolfCentraModel.FK_Pricing_BookingType" FromRole="BookingType" ToRole="Pricing" />
+    <NavigationProperty Name="Sessions" Relationship="GolfCentraModel.FK_Session_BookingType" FromRole="BookingType" ToRole="Session" />
+    <NavigationProperty Name="SlotSessionWises" Relationship="GolfCentraModel.FK_SlotSessionWise_BookingType" FromRole="BookingType" ToRole="SlotSessionWise" />
+  </EntityType>
+  <EntityType Name="BucketDetail">
+    <Key>
+      <PropertyRef Name="BucketDetailId" />
+    </Key>
+    <Property Name="BucketDetailId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Balls" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="CurrencyId" Type="Int64" />
+    <Property Name="DayTypeId" Type="Int64" />
+    <Property Name="MemberTypeId" Type="Int64" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Currency" Relationship="GolfCentraModel.FK_BucketDetail_Currency" FromRole="BucketDetail" ToRole="Currency" />
+    <NavigationProperty Name="DayType" Relationship="GolfCentraModel.FK_BucketDetail_DayType" FromRole="BucketDetail" ToRole="DayType" />
+    <NavigationProperty Name="MemberType" Relationship="GolfCentraModel.FK_BucketDetail_MemberType" FromRole="BucketDetail" ToRole="MemberType" />
+    <NavigationProperty Name="BucketTaxMappings" Relationship="GolfCentraModel.FK_BucketTaxMapping_BucketDetail" FromRole="BucketDetail" ToRole="BucketTaxMapping" />
+  </EntityType>
+  <EntityType Name="BucketTaxMapping">
+    <Key>
+      <PropertyRef Name="BucketTaxMappingId" />
+    </Key>
+    <Property Name="BucketTaxMappingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TaxId" Type="Int64" Nullable="false" />
+    <Property Name="BucketId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BucketDetail" Relationship="GolfCentraModel.FK_BucketTaxMapping_BucketDetail" FromRole="BucketTaxMapping" ToRole="BucketDetail" />
+    <NavigationProperty Name="Tax" Relationship="GolfCentraModel.FK_BucketTaxMapping_Tax" FromRole="BucketTaxMapping" ToRole="Tax" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryId" />
+    </Key>
+    <Property Name="CountryId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ISO" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="NumCode" Type="Int32" />
+    <Property Name="PhoneCode" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="Nicename" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Coupon">
+    <Key>
+      <PropertyRef Name="CouponId" />
+    </Key>
+    <Property Name="CouponId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Status" Type="Boolean" Nullable="false" />
+    <Property Name="CurrencyId" Type="Int64" />
+    <Property Name="CouponTypeId" Type="Int64" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Bookings" Relationship="GolfCentraModel.FK_Booking_Coupon" FromRole="Coupon" ToRole="Booking" />
+    <NavigationProperty Name="CouponType" Relationship="GolfCentraModel.FK_Coupon_CouponType" FromRole="Coupon" ToRole="CouponType" />
+    <NavigationProperty Name="Currency" Relationship="GolfCentraModel.FK_Coupon_Currency" FromRole="Coupon" ToRole="Currency" />
+  </EntityType>
+  <EntityType Name="CouponType">
+    <Key>
+      <PropertyRef Name="CouponTypeId" />
+    </Key>
+    <Property Name="CouponTypeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Coupons" Relationship="GolfCentraModel.FK_Coupon_CouponType" FromRole="CouponType" ToRole="Coupon" />
+  </EntityType>
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="CourseId" />
+    </Key>
+    <Property Name="CourseId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CourseName" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TechnicalSupportMailId" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Latitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Longitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ShortDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="LongDescription" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="ImgUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="HoleTypeId" Type="Int64" />
+    <Property Name="TermsConditionPageURL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PrivacyPolicyPageURL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="RuleAndRegulationURL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Address2Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address2" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="Address2Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="HoleType" Relationship="GolfCentraModel.FK_Course_HoleType" FromRole="Course" ToRole="HoleType" />
+    <NavigationProperty Name="CourseTaxMappings" Relationship="GolfCentraModel.FK_CourseTaxMapping_Course" FromRole="Course" ToRole="CourseTaxMapping" />
+  </EntityType>
+  <EntityType Name="CourseName">
+    <Key>
+      <PropertyRef Name="CourseNameId" />
+    </Key>
+    <Property Name="CourseNameId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CoursePairings" Relationship="GolfCentraModel.FK_CoursePairing_CourseName" FromRole="CourseName" ToRole="CoursePairing" />
+    <NavigationProperty Name="CoursePairings1" Relationship="GolfCentraModel.FK_CoursePairing_CoursePairing" FromRole="CourseName" ToRole="CoursePairing" />
+    <NavigationProperty Name="HoleInformations" Relationship="GolfCentraModel.FK_HoleInformation_CourseName" FromRole="CourseName" ToRole="HoleInformation" />
+  </EntityType>
+  <EntityType Name="CoursePairing">
+    <Key>
+      <PropertyRef Name="CoursePairingId" />
+    </Key>
+    <Property Name="CoursePairingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StartCourseNameId" Type="Int64" Nullable="false" />
+    <Property Name="EndCourseNameId" Type="Int64" />
+    <Property Name="HoleTypeId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BlockSlotRanges" Relationship="GolfCentraModel.FK_BlockSlotRange_CoursePairing" FromRole="CoursePairing" ToRole="BlockSlotRange" />
+    <NavigationProperty Name="Bookings" Relationship="GolfCentraModel.FK_Booking_CoursePairing" FromRole="CoursePairing" ToRole="Booking" />
+    <NavigationProperty Name="CourseName" Relationship="GolfCentraModel.FK_CoursePairing_CourseName" FromRole="CoursePairing" ToRole="CourseName" />
+    <NavigationProperty Name="CourseName1" Relationship="GolfCentraModel.FK_CoursePairing_CoursePairing" FromRole="CoursePairing" ToRole="CourseName" />
+    <NavigationProperty Name="HoleType" Relationship="GolfCentraModel.FK_CoursePairing_HoleType" FromRole="CoursePairing" ToRole="HoleType" />
+  </EntityType>
+  <EntityType Name="CourseTaxMapping">
+    <Key>
+      <PropertyRef Name="CourseTaxMappingId" />
+    </Key>
+    <Property Name="CourseTaxMappingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TaxId" Type="Int64" Nullable="false" />
+    <Property Name="CourseId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Course" Relationship="GolfCentraModel.FK_CourseTaxMapping_Course" FromRole="CourseTaxMapping" ToRole="Course" />
+    <NavigationProperty Name="Tax" Relationship="GolfCentraModel.FK_CourseTaxMapping_Tax" FromRole="CourseTaxMapping" ToRole="Tax" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="CurrencyId" />
+    </Key>
+    <Property Name="CurrencyId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Bookings" Relationship="GolfCentraModel.FK_Booking_Currency" FromRole="Currency" ToRole="Booking" />
+    <NavigationProperty Name="BucketDetails" Relationship="GolfCentraModel.FK_BucketDetail_Currency" FromRole="Currency" ToRole="BucketDetail" />
+    <NavigationProperty Name="Coupons" Relationship="GolfCentraModel.FK_Coupon_Currency" FromRole="Currency" ToRole="Coupon" />
+    <NavigationProperty Name="Pricings" Relationship="GolfCentraModel.FK_Pricing_Currency" FromRole="Currency" ToRole="Pricing" />
+  </EntityType>
+  <EntityType Name="DayType">
+    <Key>
+      <PropertyRef Name="DayTypeId" />
+    </Key>
+    <Property Name="DayTypeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ValueToShow" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BucketDetails" Relationship="GolfCentraModel.FK_BucketDetail_DayType" FromRole="DayType" ToRole="BucketDetail" />
+    <NavigationProperty Name="Pricings" Relationship="GolfCentraModel.FK_Pricing_DayType" FromRole="DayType" ToRole="Pricing" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+    </Key>
+    <Property Name="EmployeeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="EmailId" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="GenderTypeId" Type="Int64" />
+    <Property Name="EmployeeTypeId" Type="Int64" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsPrimaryPasswordChanged" Type="Boolean" />
+    <NavigationProperty Name="ActionRights" Relationship="GolfCentraModel.FK_ActionRight_Employee" FromRole="Employee" ToRole="ActionRight" />
+    <NavigationProperty Name="EmployeeType" Relationship="GolfCentraModel.FK_Employee_EmployeeType" FromRole="Employee" ToRole="EmployeeType" />
+    <NavigationProperty Name="GenderType" Relationship="GolfCentraModel.FK_Employee_GenderType" FromRole="Employee" ToRole="GenderType" />
+    <NavigationProperty Name="PageRights" Relationship="GolfCentraModel.FK_PageRight_Employee" FromRole="Employee" ToRole="PageRight" />
+  </EntityType>
+  <EntityType Name="EmployeeType">
+    <Key>
+      <PropertyRef Name="EmployeeTypeId" />
+    </Key>
+    <Property Name="EmployeeTypeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Employees" Relationship="GolfCentraModel.FK_Employee_EmployeeType" FromRole="EmployeeType" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Equipment">
+    <Key>
+      <PropertyRef Name="EquipmentId" />
+    </Key>
+    <Property Name="EquipmentId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="BookingEquipmentMappings" Relationship="GolfCentraModel.FK_BookingEquipmentMapping_Equipment" FromRole="Equipment" ToRole="BookingEquipmentMapping" />
+    <NavigationProperty Name="EquipmentTaxMappings" Relationship="GolfCentraModel.FK_EquipmentTaxMapping_Equipment" FromRole="Equipment" ToRole="EquipmentTaxMapping" />
+    <NavigationProperty Name="PromotionsEquipmentMappings" Relationship="GolfCentraModel.FK_PromotionsEquipmentMapping_Equipment" FromRole="Equipment" ToRole="PromotionsEquipmentMapping" />
+  </EntityType>
+  <EntityType Name="EquipmentTaxMapping">
+    <Key>
+      <PropertyRef Name="EquipmentTaxMappingId" />
+    </Key>
+    <Property Name="EquipmentTaxMappingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TaxId" Type="Int64" Nullable="false" />
+    <Property Name="EquipmentId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Equipment" Relationship="GolfCentraModel.FK_EquipmentTaxMapping_Equipment" FromRole="EquipmentTaxMapping" ToRole="Equipment" />
+    <NavigationProperty Name="Tax" Relationship="GolfCentraModel.FK_EquipmentTaxMapping_Tax" FromRole="EquipmentTaxMapping" ToRole="Tax" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorLogId" />
+    </Key>
+    <Property Name="ErrorLogId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ErrorTypeId" Type="Int64" Nullable="false" />
+    <Property Name="ClassName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FunctionName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LineNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StackInformation" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IssueTime" Type="DateTime" Precision="3" />
+    <Property Name="Message" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int64" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ErrorType" Relationship="GolfCentraModel.FK_ErrorLog_ErrorType" FromRole="ErrorLog" ToRole="ErrorType" />
+  </EntityType>
+  <EntityType Name="ErrorType">
+    <Key>
+      <PropertyRef Name="ErrorTypeId" />
+    </Key>
+    <Property Name="ErrorTypeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ErrorLogs" Relationship="GolfCentraModel.FK_ErrorLog_ErrorType" FromRole="ErrorType" ToRole="ErrorLog" />
+  </EntityType>
+  <EntityType Name="FeeCategory">
+    <Key>
+      <PropertyRef Name="FeeCategoryId" />
+    </Key>
+    <Property Name="FeeCategoryId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PriceTaxMappings" Relationship="GolfCentraModel.FK_PriceTaxMapping_FeeCategory" FromRole="FeeCategory" ToRole="PriceTaxMapping" />
+  </EntityType>
+  <EntityType Name="GenderType">
+    <Key>
+      <PropertyRef Name="GenderTypeId" />
+    </Key>
+    <Property Name="GenderTypeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Employees" Relationship="GolfCentraModel.FK_Employee_GenderType" FromRole="GenderType" ToRole="Employee" />
+    <NavigationProperty Name="Golfers" Relationship="GolfCentraModel.FK_Golfer_GenderType" FromRole="GenderType" ToRole="Golfer" />
+  </EntityType>
+  <EntityType Name="Golfer">
+    <Key>
+      <PropertyRef Name="GolferId" />
+    </Key>
+    <Property Name="GolferId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ClubMemberId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ImgURL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PlatformTypeId" Type="Int64" Nullable="false" />
+    <Property Name="VerficationCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Age" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GenderTypeId" Type="Int64" />
+    <Property Name="MemberTypeId" Type="Int64" />
+    <Property Name="MemberSince" Type="DateTime" Precision="3" />
+    <Property Name="Occpoution" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SpouseName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaritalStatusId" Type="Int64" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="SpecialComments" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Name="LoginAttempt" Type="Int32" />
+    <Property Name="IsBlocked" Type="Boolean" />
+    <Property Name="DOB" Type="DateTime" Precision="0" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SalutationId" Type="Int64" />
+    <Property Name="IsPrimaryPasswordChanged" Type="Boolean" />
+    <NavigationProperty Name="Bookings" Relationship="GolfCentraModel.FK_Booking_Golfer" FromRole="Golfer" ToRole="Booking" />
+    <NavigationProperty Name="GenderType" Relationship="GolfCentraModel.FK_Golfer_GenderType" FromRole="Golfer" ToRole="GenderType" />
+    <NavigationProperty Name="MaritalStatu" Relationship="GolfCentraModel.FK_Golfer_MaritalStatus" FromRole="Golfer" ToRole="MaritalStatu" />
+    <NavigationProperty Name="MemberType" Relationship="GolfCentraModel.FK_Golfer_MemberType" FromRole="Golfer" ToRole="MemberType" />
+    <NavigationProperty Name="PlatformType" Relationship="GolfCentraModel.FK_Golfer_PlatformType" FromRole="Golfer" ToRole="PlatformType" />
+    <NavigationProperty Name="Salutation" Relationship="GolfCentraModel.FK_Golfer_Salutation" FromRole="Golfer" ToRole="Salutation" />
+    <NavigationProperty Name="Scores" Relationship="GolfCentraModel.FK_Score_Golfer" FromRole="Golfer" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="GolferNotification">
+    <Key>
+      <PropertyRef Name="GolferNotificationId" />
+    </Key>
+    <Property Name="GolferNotificationId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Message" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GolferId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="HoleInformation">
+    <Key>
+      <PropertyRef Name="HoleInformationId" />
+    </Key>
+    <Property Name="HoleInformationId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoleNumberId" Type="Int64" Nullable="false" />
+    <Property Name="Latitude" Type="Decimal" Nullable="false" Precision="18" Scale="15" />
+    <Property Name="Longitude" Type="Decimal" Nullable="false" Precision="18" Scale="15" />
+    <Property Name="ImgUrl" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CourseNameId" Type="Int64" />
+    <NavigationProperty Name="CourseName" Relationship="GolfCentraModel.FK_HoleInformation_CourseName" FromRole="HoleInformation" ToRole="CourseName" />
+    <NavigationProperty Name="HoleNumber" Relationship="GolfCentraModel.FK_HoleInformation_HoleNumber" FromRole="HoleInformation" ToRole="HoleNumber" />
+  </EntityType>
+  <EntityType Name="HoleNumber">
+    <Key>
+      <PropertyRef Name="HoleNumberId" />
+    </Key>
+    <Property Name="HoleNumberId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="HoleInformations" Relationship="GolfCentraModel.FK_HoleInformation_HoleNumber" FromRole="HoleNumber" ToRole="HoleInformation" />
+    <NavigationProperty Name="HoleTeeYardages" Relationship="GolfCentraModel.FK_HoleTeeYardage_HoleNumber" FromRole="HoleNumber" ToRole="HoleTeeYardage" />
+    <NavigationProperty Name="ParStorkes" Relationship="GolfCentraModel.FK_ParStorke_HoleNumber" FromRole="HoleNumber" ToRole="ParStorke" />
+  </EntityType>
+  <EntityType Name="HoleTeeYardage">
+    <Key>
+      <PropertyRef Name="HoleTeeYardageId" />
+    </Key>
+    <Property Name="HoleTeeYardageId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoleNumberId" Type="Int64" Nullable="false" />
+    <Property Name="TeeId" Type="Int64" Nullable="false" />
+    <Property Name="Yardage" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Latitude" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Longitude" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdateOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="HoleNumber" Relationship="GolfCentraModel.FK_HoleTeeYardage_HoleNumber" FromRole="HoleTeeYardage" ToRole="HoleNumber" />
+    <NavigationProperty Name="Tee" Relationship="GolfCentraModel.FK_HoleTeeYardage_Tee" FromRole="HoleTeeYardage" ToRole="Tee" />
+  </EntityType>
+  <EntityType Name="HoleType">
+    <Key>
+      <PropertyRef Name="HoleTypeId" />
+    </Key>
+    <Property Name="HoleTypeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Bookings" Relationship="GolfCentraModel.FK_Booking_HoleType" FromRole="HoleType" ToRole="Booking" />
+    <NavigationProperty Name="Courses" Relationship="GolfCentraModel.FK_Course_HoleType" FromRole="HoleType" ToRole="Course" />
+    <NavigationProperty Name="CoursePairings" Relationship="GolfCentraModel.FK_CoursePairing_HoleType" FromRole="HoleType" ToRole="CoursePairing" />
+    <NavigationProperty Name="Pricings" Relationship="GolfCentraModel.FK_Pricing_HoleType" FromRole="HoleType" ToRole="Pricing" />
+    <NavigationProperty Name="Promotions" Relationship="GolfCentraModel.FK_Promotions_HoleType" FromRole="HoleType" ToRole="Promotion" />
+    <NavigationProperty Name="Scores" Relationship="GolfCentraModel.FK_Score_HoleType" FromRole="HoleType" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="LogInHistory">
+    <Key>
+      <PropertyRef Name="LoginHistoryId" />
+    </Key>
+    <Property Name="LoginHistoryId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int64" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoginStatusId" Type="Int64" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CountryCode" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="ISP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Latitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Longitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RegionName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TimeZone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ZipCode" Type="Int32" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IPAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MACAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OperatingSystem" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserAgent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BrowserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BrowserVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="As" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoggedOutAt" Type="DateTime" Precision="3" />
+    <Property Name="UserTypeId" Type="Int64" />
+    <Property Name="PlatformTypeId" Type="Int64" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="DeviceTokenId" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LogInStatu" Relationship="GolfCentraModel.FK_LogInHistory_LogInStatus" FromRole="LogInHistory" ToRole="LogInStatu" />
+    <NavigationProperty Name="PlatformType" Relationship="GolfCentraModel.FK_LogInHistory_PlatformType" FromRole="LogInHistory" ToRole="PlatformType" />
+    <NavigationProperty Name="UserType" Relationship="GolfCentraModel.FK_LogInHistory_UserType" FromRole="LogInHistory" ToRole="UserType" />
+    <NavigationProperty Name="SessionActivities" Relationship="GolfCentraModel.FK_SessionActivity_LogInHistory" FromRole="LogInHistory" ToRole="SessionActivity" />
+  </EntityType>
+  <EntityType Name="LogInStatu">
+    <Key>
+      <PropertyRef Name="LogInStatusId" />
+    </Key>
+    <Property Name="LogInStatusId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="LogInHistories" Relationship="GolfCentraModel.FK_LogInHistory_LogInStatus" FromRole="LogInStatu" ToRole="LogInHistory" />
+  </EntityType>
+  <EntityType Name="MaritalStatu">
+    <Key>
+      <PropertyRef Name="MaritalStatusId" />
+    </Key>
+    <Property Name="MaritalStatusId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Golfers" Relationship="GolfCentraModel.FK_Golfer_MaritalStatus" FromRole="MaritalStatu" ToRole="Golfer" />
+  </EntityType>
+  <EntityType Name="MemberType">
+    <Key>
+      <PropertyRef Name="MemberTypeId" />
+    </Key>
+    <Property Name="MemberTypeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ValueToShow" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BookingPlayerMappings" Relationship="GolfCentraModel.FK_BookingPlayerMapping_MemberType" FromRole="MemberType" ToRole="BookingPlayerMapping" />
+    <NavigationProperty Name="BucketDetails" Relationship="GolfCentraModel.FK_BucketDetail_MemberType" FromRole="MemberType" ToRole="BucketDetail" />
+    <NavigationProperty Name="Golfers" Relationship="GolfCentraModel.FK_Golfer_MemberType" FromRole="MemberType" ToRole="Golfer" />
+    <NavigationProperty Name="Pricings" Relationship="GolfCentraModel.FK_Pricing_MemberType" FromRole="MemberType" ToRole="Pricing" />
+  </EntityType>
+  <EntityType Name="NationalHoliday">
+    <Key>
+      <PropertyRef Name="NationalHolidayId" />
+    </Key>
+    <Property Name="NationalHolidayId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day" Type="Int32" />
+    <Property Name="Month" Type="Int32" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Page">
+    <Key>
+      <PropertyRef Name="PageId" />
+    </Key>
+    <Property Name="PageId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PageName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ControllerName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ActionName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Icon" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ParentId" Type="Int32" Nullable="false" />
+    <Property Name="Ordering" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PageRights" Relationship="GolfCentraModel.FK_PageRight_Page" FromRole="Page" ToRole="PageRight" />
+  </EntityType>
+  <EntityType Name="PageRight">
+    <Key>
+      <PropertyRef Name="PageRightId" />
+    </Key>
+    <Property Name="PageRightId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PageId" Type="Int64" Nullable="false" />
+    <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Employee" Relationship="GolfCentraModel.FK_PageRight_Employee" FromRole="PageRight" ToRole="Employee" />
+    <NavigationProperty Name="Page" Relationship="GolfCentraModel.FK_PageRight_Page" FromRole="PageRight" ToRole="Page" />
+  </EntityType>
+  <EntityType Name="ParStorke">
+    <Key>
+      <PropertyRef Name="ParStorkeId" />
+    </Key>
+    <Property Name="ParStorkeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoleNumberId" Type="Int64" Nullable="false" />
+    <Property Name="Par" Type="Int32" Nullable="false" />
+    <Property Name="Storke" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="HoleNumber" Relationship="GolfCentraModel.FK_ParStorke_HoleNumber" FromRole="ParStorke" ToRole="HoleNumber" />
+  </EntityType>
+  <EntityType Name="PaymentGatewayControl">
+    <Key>
+      <PropertyRef Name="PaymentGatewayControlId" />
+    </Key>
+    <Property Name="PaymentGatewayControlId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PaymentGatewayEnable" Type="Boolean" Nullable="false" />
+    <Property Name="GreenFee" Type="Boolean" Nullable="false" />
+    <Property Name="CartFee" Type="Boolean" Nullable="false" />
+    <Property Name="CaddieFee" Type="Boolean" Nullable="false" />
+    <Property Name="EquipmentOffIds" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="AllMembers" Type="Boolean" Nullable="false" />
+    <Property Name="SelectedGolferIds" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PaymentStatu">
+    <Key>
+      <PropertyRef Name="PaymentStatusId" />
+    </Key>
+    <Property Name="PaymentStatusId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CretaedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Bookings" Relationship="GolfCentraModel.FK_Booking_PaymentStatus" FromRole="PaymentStatu" ToRole="Booking" />
+  </EntityType>
+  <EntityType Name="PlatformType">
+    <Key>
+      <PropertyRef Name="PlatformTypeId" />
+    </Key>
+    <Property Name="PlatformTypeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="AppVersions" Relationship="GolfCentraModel.FK_AppVersion_PlatformType" FromRole="PlatformType" ToRole="AppVersion" />
+    <NavigationProperty Name="Golfers" Relationship="GolfCentraModel.FK_Golfer_PlatformType" FromRole="PlatformType" ToRole="Golfer" />
+    <NavigationProperty Name="LogInHistories" Relationship="GolfCentraModel.FK_LogInHistory_PlatformType" FromRole="PlatformType" ToRole="LogInHistory" />
+  </EntityType>
+  <EntityType Name="PriceTaxMapping">
+    <Key>
+      <PropertyRef Name="PriceTaxMappingId" />
+    </Key>
+    <Property Name="PriceTaxMappingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TaxId" Type="Int64" Nullable="false" />
+    <Property Name="PricingId" Type="Int64" Nullable="false" />
+    <Property Name="FeeCategoryId" Type="Int64" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="FeeCategory" Relationship="GolfCentraModel.FK_PriceTaxMapping_FeeCategory" FromRole="PriceTaxMapping" ToRole="FeeCategory" />
+    <NavigationProperty Name="Pricing" Relationship="GolfCentraModel.FK_PriceTaxMapping_Pricing" FromRole="PriceTaxMapping" ToRole="Pricing" />
+    <NavigationProperty Name="Tax" Relationship="GolfCentraModel.FK_PriceTaxMapping_Tax" FromRole="PriceTaxMapping" ToRole="Tax" />
+  </EntityType>
+  <EntityType Name="Pricing">
+    <Key>
+      <PropertyRef Name="PricingId" />
+    </Key>
+    <Property Name="PricingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberTypeId" Type="Int64" Nullable="false" />
+    <Property Name="BookingTypeId" Type="Int64" Nullable="false" />
+    <Property Name="DayTypeId" Type="Int64" />
+    <Property Name="HoleTypeId" Type="Int64" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="GreenFee" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TaxAndFee" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="AddOnCart" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="AddOnCaddie" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ConvenienceFee" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RangeFee" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="BucketFeePerPlayer" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="NumberOfAllowedSessions" Type="Int32" />
+    <Property Name="SlotId" Type="Int64" />
+    <Property Name="CurrencyId" Type="Int64" />
+    <Property Name="IsSpecialPrice" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="TimeFormatId" Type="Int64" />
+    <NavigationProperty Name="BookingType" Relationship="GolfCentraModel.FK_Pricing_BookingType" FromRole="Pricing" ToRole="BookingType" />
+    <NavigationProperty Name="Currency" Relationship="GolfCentraModel.FK_Pricing_Currency" FromRole="Pricing" ToRole="Currency" />
+    <NavigationProperty Name="DayType" Relationship="GolfCentraModel.FK_Pricing_DayType" FromRole="Pricing" ToRole="DayType" />
+    <NavigationProperty Name="HoleType" Relationship="GolfCentraModel.FK_Pricing_HoleType" FromRole="Pricing" ToRole="HoleType" />
+    <NavigationProperty Name="MemberType" Relationship="GolfCentraModel.FK_Pricing_MemberType" FromRole="Pricing" ToRole="MemberType" />
+    <NavigationProperty Name="PriceTaxMappings" Relationship="GolfCentraModel.FK_PriceTaxMapping_Pricing" FromRole="Pricing" ToRole="PriceTaxMapping" />
+    <NavigationProperty Name="Slot" Relationship="GolfCentraModel.FK_Pricing_Slot" FromRole="Pricing" ToRole="Slot" />
+    <NavigationProperty Name="TimeFormat" Relationship="GolfCentraModel.FK_Pricing_TimeFormat" FromRole="Pricing" ToRole="TimeFormat" />
+  </EntityType>
+  <EntityType Name="Promotion">
+    <Key>
+      <PropertyRef Name="PromotionsId" />
+    </Key>
+    <Property Name="PromotionsId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="StartTime" Type="Time" Precision="7" />
+    <Property Name="EndTime" Type="Time" Precision="7" />
+    <Property Name="HoleTypeId" Type="Int64" Nullable="false" />
+    <Property Name="GreenFee" Type="Boolean" />
+    <Property Name="CaddieFee" Type="Boolean" />
+    <Property Name="CartFee" Type="Boolean" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Extra" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Bookings" Relationship="GolfCentraModel.FK_Booking_Promotions" FromRole="Promotion" ToRole="Booking" />
+    <NavigationProperty Name="HoleType" Relationship="GolfCentraModel.FK_Promotions_HoleType" FromRole="Promotion" ToRole="HoleType" />
+    <NavigationProperty Name="PromotionsEquipmentMappings" Relationship="GolfCentraModel.FK_PromotionsEquipmentMapping_Promotions" FromRole="Promotion" ToRole="PromotionsEquipmentMapping" />
+    <NavigationProperty Name="PromotionsTaxMappings" Relationship="GolfCentraModel.FK_PromotionsTaxMapping_Promotions" FromRole="Promotion" ToRole="PromotionsTaxMapping" />
+  </EntityType>
+  <EntityType Name="PromotionsEquipmentMapping">
+    <Key>
+      <PropertyRef Name="PromotionsEquipmentId" />
+    </Key>
+    <Property Name="PromotionsEquipmentId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EquipmentId" Type="Int64" Nullable="false" />
+    <Property Name="PromotionsId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Equipment" Relationship="GolfCentraModel.FK_PromotionsEquipmentMapping_Equipment" FromRole="PromotionsEquipmentMapping" ToRole="Equipment" />
+    <NavigationProperty Name="Promotion" Relationship="GolfCentraModel.FK_PromotionsEquipmentMapping_Promotions" FromRole="PromotionsEquipmentMapping" ToRole="Promotion" />
+  </EntityType>
+  <EntityType Name="PromotionsTaxMapping">
+    <Key>
+      <PropertyRef Name="PromotionsTaxTable" />
+    </Key>
+    <Property Name="PromotionsTaxTable" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PromotionsId" Type="Int64" Nullable="false" />
+    <Property Name="TaxId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Promotion" Relationship="GolfCentraModel.FK_PromotionsTaxMapping_Promotions" FromRole="PromotionsTaxMapping" ToRole="Promotion" />
+    <NavigationProperty Name="Tax" Relationship="GolfCentraModel.FK_PromotionsTaxMapping_Tax" FromRole="PromotionsTaxMapping" ToRole="Tax" />
+  </EntityType>
+  <EntityType Name="RuleAndRegulation">
+    <Key>
+      <PropertyRef Name="RuleAndRegulationId" />
+    </Key>
+    <Property Name="RuleAndRegulationId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Text" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="OrderNo" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Salutation">
+    <Key>
+      <PropertyRef Name="SalutationId" />
+    </Key>
+    <Property Name="SalutationId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastUpdated" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Golfers" Relationship="GolfCentraModel.FK_Golfer_Salutation" FromRole="Salutation" ToRole="Golfer" />
+  </EntityType>
+  <EntityType Name="Score">
+    <Key>
+      <PropertyRef Name="ScoreId" />
+    </Key>
+    <Property Name="ScoreId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GolferId" Type="Int64" Nullable="false" />
+    <Property Name="ScoreSubmittedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HoleTypeId" Type="Int64" Nullable="false" />
+    <Property Name="ScoreSubmittedTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="BookingId" Type="Int64" />
+    <NavigationProperty Name="Booking" Relationship="GolfCentraModel.FK_Score_Booking" FromRole="Score" ToRole="Booking" />
+    <NavigationProperty Name="Golfer" Relationship="GolfCentraModel.FK_Score_Golfer" FromRole="Score" ToRole="Golfer" />
+    <NavigationProperty Name="HoleType" Relationship="GolfCentraModel.FK_Score_HoleType" FromRole="Score" ToRole="HoleType" />
+    <NavigationProperty Name="ScoreHole1" Relationship="GolfCentraModel.FK_ScoreHole1_Score" FromRole="Score" ToRole="ScoreHole1" />
+    <NavigationProperty Name="ScoreHole10" Relationship="GolfCentraModel.FK_ScoreHole10_Score" FromRole="Score" ToRole="ScoreHole10" />
+    <NavigationProperty Name="ScoreHole11" Relationship="GolfCentraModel.FK_ScoreHole11_Score" FromRole="Score" ToRole="ScoreHole11" />
+    <NavigationProperty Name="ScoreHole12" Relationship="GolfCentraModel.FK_ScoreHole12_Score" FromRole="Score" ToRole="ScoreHole12" />
+    <NavigationProperty Name="ScoreHole13" Relationship="GolfCentraModel.FK_ScoreHole13_Score" FromRole="Score" ToRole="ScoreHole13" />
+    <NavigationProperty Name="ScoreHole14" Relationship="GolfCentraModel.FK_ScoreHole14_Score" FromRole="Score" ToRole="ScoreHole14" />
+    <NavigationProperty Name="ScoreHole15" Relationship="GolfCentraModel.FK_ScoreHole15_Score" FromRole="Score" ToRole="ScoreHole15" />
+    <NavigationProperty Name="ScoreHole16" Relationship="GolfCentraModel.FK_ScoreHole16_Score" FromRole="Score" ToRole="ScoreHole16" />
+    <NavigationProperty Name="ScoreHole17" Relationship="GolfCentraModel.FK_ScoreHole17_Score" FromRole="Score" ToRole="ScoreHole17" />
+    <NavigationProperty Name="ScoreHole18" Relationship="GolfCentraModel.FK_ScoreHole18_Score" FromRole="Score" ToRole="ScoreHole18" />
+    <NavigationProperty Name="ScoreHole19" Relationship="GolfCentraModel.FK_ScoreHole19_Score" FromRole="Score" ToRole="ScoreHole19" />
+    <NavigationProperty Name="ScoreHole2" Relationship="GolfCentraModel.FK_ScoreHole2_Score" FromRole="Score" ToRole="ScoreHole2" />
+    <NavigationProperty Name="ScoreHole20" Relationship="GolfCentraModel.FK_ScoreHole20_Score" FromRole="Score" ToRole="ScoreHole20" />
+    <NavigationProperty Name="ScoreHole21" Relationship="GolfCentraModel.FK_ScoreHole21_Score" FromRole="Score" ToRole="ScoreHole21" />
+    <NavigationProperty Name="ScoreHole22" Relationship="GolfCentraModel.FK_ScoreHole22_Score" FromRole="Score" ToRole="ScoreHole22" />
+    <NavigationProperty Name="ScoreHole23" Relationship="GolfCentraModel.FK_ScoreHole23_Score" FromRole="Score" ToRole="ScoreHole23" />
+    <NavigationProperty Name="ScoreHole24" Relationship="GolfCentraModel.FK_ScoreHole24_Score" FromRole="Score" ToRole="ScoreHole24" />
+    <NavigationProperty Name="ScoreHole25" Relationship="GolfCentraModel.FK_ScoreHole25_Score" FromRole="Score" ToRole="ScoreHole25" />
+    <NavigationProperty Name="ScoreHole26" Relationship="GolfCentraModel.FK_ScoreHole26_Score" FromRole="Score" ToRole="ScoreHole26" />
+    <NavigationProperty Name="ScoreHole27" Relationship="GolfCentraModel.FK_ScoreHole27_Score" FromRole="Score" ToRole="ScoreHole27" />
+    <NavigationProperty Name="ScoreHole3" Relationship="GolfCentraModel.FK_ScoreHole3_Score" FromRole="Score" ToRole="ScoreHole3" />
+    <NavigationProperty Name="ScoreHole4" Relationship="GolfCentraModel.FK_ScoreHole4_Score" FromRole="Score" ToRole="ScoreHole4" />
+    <NavigationProperty Name="ScoreHole5" Relationship="GolfCentraModel.FK_ScoreHole5_Score" FromRole="Score" ToRole="ScoreHole5" />
+    <NavigationProperty Name="ScoreHole6" Relationship="GolfCentraModel.FK_ScoreHole6_Score" FromRole="Score" ToRole="ScoreHole6" />
+    <NavigationProperty Name="ScoreHole7" Relationship="GolfCentraModel.FK_ScoreHole7_Score" FromRole="Score" ToRole="ScoreHole7" />
+    <NavigationProperty Name="ScoreHole8" Relationship="GolfCentraModel.FK_ScoreHole8_Score" FromRole="Score" ToRole="ScoreHole8" />
+    <NavigationProperty Name="ScoreHole9" Relationship="GolfCentraModel.FK_ScoreHole9_Score" FromRole="Score" ToRole="ScoreHole9" />
+  </EntityType>
+  <EntityType Name="ScoreHole1">
+    <Key>
+      <PropertyRef Name="ScoreHole1Id" />
+    </Key>
+    <Property Name="ScoreHole1Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole1_Score" FromRole="ScoreHole1" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole10">
+    <Key>
+      <PropertyRef Name="ScoreHole10Id" />
+    </Key>
+    <Property Name="ScoreHole10Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole10_Score" FromRole="ScoreHole10" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole11">
+    <Key>
+      <PropertyRef Name="ScoreHole11Id" />
+    </Key>
+    <Property Name="ScoreHole11Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole11_Score" FromRole="ScoreHole11" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole12">
+    <Key>
+      <PropertyRef Name="ScoreHole12Id" />
+    </Key>
+    <Property Name="ScoreHole12Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole12_Score" FromRole="ScoreHole12" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole13">
+    <Key>
+      <PropertyRef Name="ScoreHole13Id" />
+    </Key>
+    <Property Name="ScoreHole13Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole13_Score" FromRole="ScoreHole13" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole14">
+    <Key>
+      <PropertyRef Name="ScoreHole14Id" />
+    </Key>
+    <Property Name="ScoreHole14Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole14_Score" FromRole="ScoreHole14" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole15">
+    <Key>
+      <PropertyRef Name="ScoreHole15Id" />
+    </Key>
+    <Property Name="ScoreHole15Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole15_Score" FromRole="ScoreHole15" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole16">
+    <Key>
+      <PropertyRef Name="ScoreHole16Id" />
+    </Key>
+    <Property Name="ScoreHole16Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole16_Score" FromRole="ScoreHole16" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole17">
+    <Key>
+      <PropertyRef Name="ScoreHole17Id" />
+    </Key>
+    <Property Name="ScoreHole17Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole17_Score" FromRole="ScoreHole17" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole18">
+    <Key>
+      <PropertyRef Name="ScoreHole18Id" />
+    </Key>
+    <Property Name="ScoreHole18Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole18_Score" FromRole="ScoreHole18" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole19">
+    <Key>
+      <PropertyRef Name="ScoreHole19Id" />
+    </Key>
+    <Property Name="ScoreHole19Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole19_Score" FromRole="ScoreHole19" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole2">
+    <Key>
+      <PropertyRef Name="ScoreHole2Id" />
+    </Key>
+    <Property Name="ScoreHole2Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole2_Score" FromRole="ScoreHole2" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole20">
+    <Key>
+      <PropertyRef Name="ScoreHole20Id" />
+    </Key>
+    <Property Name="ScoreHole20Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole20_Score" FromRole="ScoreHole20" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole21">
+    <Key>
+      <PropertyRef Name="ScoreHole21Id" />
+    </Key>
+    <Property Name="ScoreHole21Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole21_Score" FromRole="ScoreHole21" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole22">
+    <Key>
+      <PropertyRef Name="ScoreHole22Id" />
+    </Key>
+    <Property Name="ScoreHole22Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole22_Score" FromRole="ScoreHole22" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole23">
+    <Key>
+      <PropertyRef Name="ScoreHole23Id" />
+    </Key>
+    <Property Name="ScoreHole23Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole23_Score" FromRole="ScoreHole23" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole24">
+    <Key>
+      <PropertyRef Name="ScoreHole24Id" />
+    </Key>
+    <Property Name="ScoreHole24Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole24_Score" FromRole="ScoreHole24" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole25">
+    <Key>
+      <PropertyRef Name="ScoreHole25Id" />
+    </Key>
+    <Property Name="ScoreHole25Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole25_Score" FromRole="ScoreHole25" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole26">
+    <Key>
+      <PropertyRef Name="ScoreHole26Id" />
+    </Key>
+    <Property Name="ScoreHole26Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole26_Score" FromRole="ScoreHole26" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole27">
+    <Key>
+      <PropertyRef Name="ScoreHole27Id" />
+    </Key>
+    <Property Name="ScoreHole27Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole27_Score" FromRole="ScoreHole27" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole3">
+    <Key>
+      <PropertyRef Name="ScoreHole3Id" />
+    </Key>
+    <Property Name="ScoreHole3Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole3_Score" FromRole="ScoreHole3" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole4">
+    <Key>
+      <PropertyRef Name="ScoreHole4Id" />
+    </Key>
+    <Property Name="ScoreHole4Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole4_Score" FromRole="ScoreHole4" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole5">
+    <Key>
+      <PropertyRef Name="ScoreHole5Id" />
+    </Key>
+    <Property Name="ScoreHole5Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole5_Score" FromRole="ScoreHole5" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole6">
+    <Key>
+      <PropertyRef Name="ScoreHole6Id" />
+    </Key>
+    <Property Name="ScoreHole6Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole6_Score" FromRole="ScoreHole6" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole7">
+    <Key>
+      <PropertyRef Name="ScoreHole7Id" />
+    </Key>
+    <Property Name="ScoreHole7Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole7_Score" FromRole="ScoreHole7" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole8">
+    <Key>
+      <PropertyRef Name="ScoreHole8Id" />
+    </Key>
+    <Property Name="ScoreHole8Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole8_Score" FromRole="ScoreHole8" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="ScoreHole9">
+    <Key>
+      <PropertyRef Name="ScoreHole9Id" />
+    </Key>
+    <Property Name="ScoreHole9Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScoreId" Type="Int64" Nullable="false" />
+    <Property Name="Storkes" Type="Int32" />
+    <Property Name="Putts" Type="Int32" />
+    <Property Name="Drive" Type="Int32" />
+    <Property Name="Clubs" Type="Int32" />
+    <Property Name="Chips" Type="Int32" />
+    <Property Name="Sand" Type="Int32" />
+    <Property Name="Saves" Type="Int32" />
+    <Property Name="Penalty" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="HoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Par" Type="Int64" />
+    <NavigationProperty Name="Score" Relationship="GolfCentraModel.FK_ScoreHole9_Score" FromRole="ScoreHole9" ToRole="Score" />
+  </EntityType>
+  <EntityType Name="Session">
+    <Key>
+      <PropertyRef Name="SessionId" />
+    </Key>
+    <Property Name="SessionId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="StartTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="EndTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="BookingTypeId" Type="Int64" />
+    <NavigationProperty Name="BookingType" Relationship="GolfCentraModel.FK_Session_BookingType" FromRole="Session" ToRole="BookingType" />
+    <NavigationProperty Name="SlotSessionWises" Relationship="GolfCentraModel.FK_SlotSessionWise_Session" FromRole="Session" ToRole="SlotSessionWise" />
+  </EntityType>
+  <EntityType Name="SessionActivity">
+    <Key>
+      <PropertyRef Name="SessionActivityId" />
+    </Key>
+    <Property Name="SessionActivityId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LoginHistoryId" Type="Int64" />
+    <Property Name="SessionActivityPageId" Type="Int64" Nullable="false" />
+    <Property Name="ArriveAt" Type="DateTime" Precision="3" />
+    <Property Name="PerformedOn" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="LogInHistory" Relationship="GolfCentraModel.FK_SessionActivity_LogInHistory" FromRole="SessionActivity" ToRole="LogInHistory" />
+    <NavigationProperty Name="SessionActivityPage" Relationship="GolfCentraModel.FK_SessionActivity_SessionActivityPage" FromRole="SessionActivity" ToRole="SessionActivityPage" />
+  </EntityType>
+  <EntityType Name="SessionActivityPage">
+    <Key>
+      <PropertyRef Name="SessionActivityPageId" />
+    </Key>
+    <Property Name="SessionActivityPageId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Controller" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Action" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="SessionActivities" Relationship="GolfCentraModel.FK_SessionActivity_SessionActivityPage" FromRole="SessionActivityPage" ToRole="SessionActivity" />
+  </EntityType>
+  <EntityType Name="Slot">
+    <Key>
+      <PropertyRef Name="SlotId" />
+    </Key>
+    <Property Name="SlotId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Time" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Pricings" Relationship="GolfCentraModel.FK_Pricing_Slot" FromRole="Slot" ToRole="Pricing" />
+    <NavigationProperty Name="SlotSessionWises" Relationship="GolfCentraModel.FK_SlotSessionWise_Slot" FromRole="Slot" ToRole="SlotSessionWise" />
+  </EntityType>
+  <EntityType Name="SlotBlockReason">
+    <Key>
+      <PropertyRef Name="SlotBlockReasonId" />
+    </Key>
+    <Property Name="SlotBlockReasonId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BlockSlotRanges" Relationship="GolfCentraModel.FK_BlockSlotRange_SlotBlockReason" FromRole="SlotBlockReason" ToRole="BlockSlotRange" />
+  </EntityType>
+  <EntityType Name="SlotSessionWise">
+    <Key>
+      <PropertyRef Name="SlotSessionWiseId" />
+    </Key>
+    <Property Name="SlotSessionWiseId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SessionId" Type="Int64" Nullable="false" />
+    <Property Name="SlotId" Type="Int64" Nullable="false" />
+    <Property Name="BookingTypeId" Type="Int64" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BlockSlots" Relationship="GolfCentraModel.FK_BlockSlot_SlotSessionWise" FromRole="SlotSessionWise" ToRole="BlockSlot" />
+    <NavigationProperty Name="BookingType" Relationship="GolfCentraModel.FK_SlotSessionWise_BookingType" FromRole="SlotSessionWise" ToRole="BookingType" />
+    <NavigationProperty Name="Session" Relationship="GolfCentraModel.FK_SlotSessionWise_Session" FromRole="SlotSessionWise" ToRole="Session" />
+    <NavigationProperty Name="Slot" Relationship="GolfCentraModel.FK_SlotSessionWise_Slot" FromRole="SlotSessionWise" ToRole="Slot" />
+  </EntityType>
+  <EntityType Name="Tax">
+    <Key>
+      <PropertyRef Name="TaxId" />
+    </Key>
+    <Property Name="TaxId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Percentage" Type="Decimal" Nullable="false" Precision="18" Scale="1" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BookingCourseTaxMappings" Relationship="GolfCentraModel.FK_BookingCourseTaxMapping_Tax" FromRole="Tax" ToRole="BookingCourseTaxMapping" />
+    <NavigationProperty Name="BucketTaxMappings" Relationship="GolfCentraModel.FK_BucketTaxMapping_Tax" FromRole="Tax" ToRole="BucketTaxMapping" />
+    <NavigationProperty Name="CourseTaxMappings" Relationship="GolfCentraModel.FK_CourseTaxMapping_Tax" FromRole="Tax" ToRole="CourseTaxMapping" />
+    <NavigationProperty Name="EquipmentTaxMappings" Relationship="GolfCentraModel.FK_EquipmentTaxMapping_Tax" FromRole="Tax" ToRole="EquipmentTaxMapping" />
+    <NavigationProperty Name="PriceTaxMappings" Relationship="GolfCentraModel.FK_PriceTaxMapping_Tax" FromRole="Tax" ToRole="PriceTaxMapping" />
+    <NavigationProperty Name="PromotionsTaxMappings" Relationship="GolfCentraModel.FK_PromotionsTaxMapping_Tax" FromRole="Tax" ToRole="PromotionsTaxMapping" />
+  </EntityType>
+  <EntityType Name="Tee">
+    <Key>
+      <PropertyRef Name="TeeId" />
+    </Key>
+    <Property Name="TeeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="HoleTeeYardages" Relationship="GolfCentraModel.FK_HoleTeeYardage_Tee" FromRole="Tee" ToRole="HoleTeeYardage" />
+  </EntityType>
+  <EntityType Name="TimeFormat">
+    <Key>
+      <PropertyRef Name="TimeFormatId" />
+    </Key>
+    <Property Name="TimeFormatId" Type="Int64" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Pricings" Relationship="GolfCentraModel.FK_Pricing_TimeFormat" FromRole="TimeFormat" ToRole="Pricing" />
+  </EntityType>
+  <EntityType Name="UserType">
+    <Key>
+      <PropertyRef Name="UserTypeId" />
+    </Key>
+    <Property Name="UserTypeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="LogInHistories" Relationship="GolfCentraModel.FK_LogInHistory_UserType" FromRole="UserType" ToRole="LogInHistory" />
+  </EntityType>
+  <Association Name="FK_ActionRight_Action">
+    <End Type="GolfCentraModel.Action" Role="Action" Multiplicity="1" />
+    <End Type="GolfCentraModel.ActionRight" Role="ActionRight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Action">
+        <PropertyRef Name="ActionId" />
+      </Principal>
+      <Dependent Role="ActionRight">
+        <PropertyRef Name="ActionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActionRight_Employee">
+    <End Type="GolfCentraModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="GolfCentraModel.ActionRight" Role="ActionRight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="ActionRight">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AppVersion_PlatformType">
+    <End Type="GolfCentraModel.PlatformType" Role="PlatformType" Multiplicity="1" />
+    <End Type="GolfCentraModel.AppVersion" Role="AppVersion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlatformType">
+        <PropertyRef Name="PlatformTypeId" />
+      </Principal>
+      <Dependent Role="AppVersion">
+        <PropertyRef Name="PlatformTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BlockSlot_BlockSlotRange">
+    <End Type="GolfCentraModel.BlockSlotRange" Role="BlockSlotRange" Multiplicity="1" />
+    <End Type="GolfCentraModel.BlockSlot" Role="BlockSlot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BlockSlotRange">
+        <PropertyRef Name="BlockSlotRangeId" />
+      </Principal>
+      <Dependent Role="BlockSlot">
+        <PropertyRef Name="BlockSlotRangeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BlockSlot_SlotSessionWise">
+    <End Type="GolfCentraModel.SlotSessionWise" Role="SlotSessionWise" Multiplicity="1" />
+    <End Type="GolfCentraModel.BlockSlot" Role="BlockSlot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SlotSessionWise">
+        <PropertyRef Name="SlotSessionWiseId" />
+      </Principal>
+      <Dependent Role="BlockSlot">
+        <PropertyRef Name="SlotSessionWiseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BlockSlotRange_CoursePairing">
+    <End Type="GolfCentraModel.CoursePairing" Role="CoursePairing" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.BlockSlotRange" Role="BlockSlotRange" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CoursePairing">
+        <PropertyRef Name="CoursePairingId" />
+      </Principal>
+      <Dependent Role="BlockSlotRange">
+        <PropertyRef Name="CoursePairingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BlockSlotRange_SlotBlockReason">
+    <End Type="GolfCentraModel.SlotBlockReason" Role="SlotBlockReason" Multiplicity="1" />
+    <End Type="GolfCentraModel.BlockSlotRange" Role="BlockSlotRange" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SlotBlockReason">
+        <PropertyRef Name="SlotBlockReasonId" />
+      </Principal>
+      <Dependent Role="BlockSlotRange">
+        <PropertyRef Name="SlotBlockReasonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_BookingStatus">
+    <End Type="GolfCentraModel.BookingStatu" Role="BookingStatu" Multiplicity="1" />
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingStatu">
+        <PropertyRef Name="BookingStatusId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="BookingStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_BookingType">
+    <End Type="GolfCentraModel.BookingType" Role="BookingType" Multiplicity="1" />
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingType">
+        <PropertyRef Name="BookingTypeId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="BookingTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_Coupon">
+    <End Type="GolfCentraModel.Coupon" Role="Coupon" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coupon">
+        <PropertyRef Name="CouponId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="CouponId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_CoursePairing">
+    <End Type="GolfCentraModel.CoursePairing" Role="CoursePairing" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CoursePairing">
+        <PropertyRef Name="CoursePairingId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="CoursePairingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_Currency">
+    <End Type="GolfCentraModel.Currency" Role="Currency" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="CurrencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_Golfer">
+    <End Type="GolfCentraModel.Golfer" Role="Golfer" Multiplicity="1" />
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Golfer">
+        <PropertyRef Name="GolferId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="GolferId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_HoleType">
+    <End Type="GolfCentraModel.HoleType" Role="HoleType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_PaymentStatus">
+    <End Type="GolfCentraModel.PaymentStatu" Role="PaymentStatu" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentStatu">
+        <PropertyRef Name="PaymentStatusId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="PaymentStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_Promotions">
+    <End Type="GolfCentraModel.Promotion" Role="Promotion" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Promotion">
+        <PropertyRef Name="PromotionsId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="PromotionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingCourseTaxMapping_Booking">
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="1" />
+    <End Type="GolfCentraModel.BookingCourseTaxMapping" Role="BookingCourseTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Booking">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="BookingCourseTaxMapping">
+        <PropertyRef Name="BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingEquipmentMapping_Booking">
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="1" />
+    <End Type="GolfCentraModel.BookingEquipmentMapping" Role="BookingEquipmentMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Booking">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="BookingEquipmentMapping">
+        <PropertyRef Name="BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingPlayerDetails_Booking">
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="1" />
+    <End Type="GolfCentraModel.BookingPlayerDetail" Role="BookingPlayerDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Booking">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="BookingPlayerDetail">
+        <PropertyRef Name="BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingPlayerMapping_Booking">
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="1" />
+    <End Type="GolfCentraModel.BookingPlayerMapping" Role="BookingPlayerMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Booking">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="BookingPlayerMapping">
+        <PropertyRef Name="BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Score_Booking">
+    <End Type="GolfCentraModel.Booking" Role="Booking" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Booking">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="Score">
+        <PropertyRef Name="BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingCourseTaxMapping_Tax">
+    <End Type="GolfCentraModel.Tax" Role="Tax" Multiplicity="1" />
+    <End Type="GolfCentraModel.BookingCourseTaxMapping" Role="BookingCourseTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="BookingCourseTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingEquipmentMapping_Equipment">
+    <End Type="GolfCentraModel.Equipment" Role="Equipment" Multiplicity="1" />
+    <End Type="GolfCentraModel.BookingEquipmentMapping" Role="BookingEquipmentMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="EquipmentId" />
+      </Principal>
+      <Dependent Role="BookingEquipmentMapping">
+        <PropertyRef Name="EquipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingPlayerMapping_MemberType">
+    <End Type="GolfCentraModel.MemberType" Role="MemberType" Multiplicity="1" />
+    <End Type="GolfCentraModel.BookingPlayerMapping" Role="BookingPlayerMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberType">
+        <PropertyRef Name="MemberTypeId" />
+      </Principal>
+      <Dependent Role="BookingPlayerMapping">
+        <PropertyRef Name="MemberTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_BookingType">
+    <End Type="GolfCentraModel.BookingType" Role="BookingType" Multiplicity="1" />
+    <End Type="GolfCentraModel.Pricing" Role="Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingType">
+        <PropertyRef Name="BookingTypeId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="BookingTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_BookingType">
+    <End Type="GolfCentraModel.BookingType" Role="BookingType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Session" Role="Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingType">
+        <PropertyRef Name="BookingTypeId" />
+      </Principal>
+      <Dependent Role="Session">
+        <PropertyRef Name="BookingTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SlotSessionWise_BookingType">
+    <End Type="GolfCentraModel.BookingType" Role="BookingType" Multiplicity="1" />
+    <End Type="GolfCentraModel.SlotSessionWise" Role="SlotSessionWise" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingType">
+        <PropertyRef Name="BookingTypeId" />
+      </Principal>
+      <Dependent Role="SlotSessionWise">
+        <PropertyRef Name="BookingTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketDetail_Currency">
+    <End Type="GolfCentraModel.Currency" Role="Currency" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.BucketDetail" Role="BucketDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyId" />
+      </Principal>
+      <Dependent Role="BucketDetail">
+        <PropertyRef Name="CurrencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketDetail_DayType">
+    <End Type="GolfCentraModel.DayType" Role="DayType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.BucketDetail" Role="BucketDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DayType">
+        <PropertyRef Name="DayTypeId" />
+      </Principal>
+      <Dependent Role="BucketDetail">
+        <PropertyRef Name="DayTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketDetail_MemberType">
+    <End Type="GolfCentraModel.MemberType" Role="MemberType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.BucketDetail" Role="BucketDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberType">
+        <PropertyRef Name="MemberTypeId" />
+      </Principal>
+      <Dependent Role="BucketDetail">
+        <PropertyRef Name="MemberTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketTaxMapping_BucketDetail">
+    <End Type="GolfCentraModel.BucketDetail" Role="BucketDetail" Multiplicity="1" />
+    <End Type="GolfCentraModel.BucketTaxMapping" Role="BucketTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BucketDetail">
+        <PropertyRef Name="BucketDetailId" />
+      </Principal>
+      <Dependent Role="BucketTaxMapping">
+        <PropertyRef Name="BucketId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketTaxMapping_Tax">
+    <End Type="GolfCentraModel.Tax" Role="Tax" Multiplicity="1" />
+    <End Type="GolfCentraModel.BucketTaxMapping" Role="BucketTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="BucketTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Coupon_CouponType">
+    <End Type="GolfCentraModel.CouponType" Role="CouponType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Coupon" Role="Coupon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CouponType">
+        <PropertyRef Name="CouponTypeId" />
+      </Principal>
+      <Dependent Role="Coupon">
+        <PropertyRef Name="CouponTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Coupon_Currency">
+    <End Type="GolfCentraModel.Currency" Role="Currency" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Coupon" Role="Coupon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyId" />
+      </Principal>
+      <Dependent Role="Coupon">
+        <PropertyRef Name="CurrencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Course_HoleType">
+    <End Type="GolfCentraModel.HoleType" Role="HoleType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Course" Role="Course" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseTaxMapping_Course">
+    <End Type="GolfCentraModel.Course" Role="Course" Multiplicity="1" />
+    <End Type="GolfCentraModel.CourseTaxMapping" Role="CourseTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="CourseId" />
+      </Principal>
+      <Dependent Role="CourseTaxMapping">
+        <PropertyRef Name="CourseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CoursePairing_CourseName">
+    <End Type="GolfCentraModel.CourseName" Role="CourseName" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.CoursePairing" Role="CoursePairing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CourseName">
+        <PropertyRef Name="CourseNameId" />
+      </Principal>
+      <Dependent Role="CoursePairing">
+        <PropertyRef Name="EndCourseNameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CoursePairing_CoursePairing">
+    <End Type="GolfCentraModel.CourseName" Role="CourseName" Multiplicity="1" />
+    <End Type="GolfCentraModel.CoursePairing" Role="CoursePairing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CourseName">
+        <PropertyRef Name="CourseNameId" />
+      </Principal>
+      <Dependent Role="CoursePairing">
+        <PropertyRef Name="StartCourseNameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoleInformation_CourseName">
+    <End Type="GolfCentraModel.CourseName" Role="CourseName" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.HoleInformation" Role="HoleInformation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CourseName">
+        <PropertyRef Name="CourseNameId" />
+      </Principal>
+      <Dependent Role="HoleInformation">
+        <PropertyRef Name="CourseNameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CoursePairing_HoleType">
+    <End Type="GolfCentraModel.HoleType" Role="HoleType" Multiplicity="1" />
+    <End Type="GolfCentraModel.CoursePairing" Role="CoursePairing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="CoursePairing">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseTaxMapping_Tax">
+    <End Type="GolfCentraModel.Tax" Role="Tax" Multiplicity="1" />
+    <End Type="GolfCentraModel.CourseTaxMapping" Role="CourseTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="CourseTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_Currency">
+    <End Type="GolfCentraModel.Currency" Role="Currency" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Pricing" Role="Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="CurrencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_DayType">
+    <End Type="GolfCentraModel.DayType" Role="DayType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Pricing" Role="Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DayType">
+        <PropertyRef Name="DayTypeId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="DayTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_EmployeeType">
+    <End Type="GolfCentraModel.EmployeeType" Role="EmployeeType" Multiplicity="1" />
+    <End Type="GolfCentraModel.Employee" Role="Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeType">
+        <PropertyRef Name="EmployeeTypeId" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="EmployeeTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_GenderType">
+    <End Type="GolfCentraModel.GenderType" Role="GenderType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Employee" Role="Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderType">
+        <PropertyRef Name="GenderTypeId" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="GenderTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PageRight_Employee">
+    <End Type="GolfCentraModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="GolfCentraModel.PageRight" Role="PageRight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="PageRight">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EquipmentTaxMapping_Equipment">
+    <End Type="GolfCentraModel.Equipment" Role="Equipment" Multiplicity="1" />
+    <End Type="GolfCentraModel.EquipmentTaxMapping" Role="EquipmentTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="EquipmentId" />
+      </Principal>
+      <Dependent Role="EquipmentTaxMapping">
+        <PropertyRef Name="EquipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PromotionsEquipmentMapping_Equipment">
+    <End Type="GolfCentraModel.Equipment" Role="Equipment" Multiplicity="1" />
+    <End Type="GolfCentraModel.PromotionsEquipmentMapping" Role="PromotionsEquipmentMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="EquipmentId" />
+      </Principal>
+      <Dependent Role="PromotionsEquipmentMapping">
+        <PropertyRef Name="EquipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EquipmentTaxMapping_Tax">
+    <End Type="GolfCentraModel.Tax" Role="Tax" Multiplicity="1" />
+    <End Type="GolfCentraModel.EquipmentTaxMapping" Role="EquipmentTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="EquipmentTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ErrorLog_ErrorType">
+    <End Type="GolfCentraModel.ErrorType" Role="ErrorType" Multiplicity="1" />
+    <End Type="GolfCentraModel.ErrorLog" Role="ErrorLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ErrorType">
+        <PropertyRef Name="ErrorTypeId" />
+      </Principal>
+      <Dependent Role="ErrorLog">
+        <PropertyRef Name="ErrorTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PriceTaxMapping_FeeCategory">
+    <End Type="GolfCentraModel.FeeCategory" Role="FeeCategory" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.PriceTaxMapping" Role="PriceTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FeeCategory">
+        <PropertyRef Name="FeeCategoryId" />
+      </Principal>
+      <Dependent Role="PriceTaxMapping">
+        <PropertyRef Name="FeeCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Golfer_GenderType">
+    <End Type="GolfCentraModel.GenderType" Role="GenderType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Golfer" Role="Golfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderType">
+        <PropertyRef Name="GenderTypeId" />
+      </Principal>
+      <Dependent Role="Golfer">
+        <PropertyRef Name="GenderTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Golfer_MaritalStatus">
+    <End Type="GolfCentraModel.MaritalStatu" Role="MaritalStatu" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Golfer" Role="Golfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MaritalStatu">
+        <PropertyRef Name="MaritalStatusId" />
+      </Principal>
+      <Dependent Role="Golfer">
+        <PropertyRef Name="MaritalStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Golfer_MemberType">
+    <End Type="GolfCentraModel.MemberType" Role="MemberType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Golfer" Role="Golfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberType">
+        <PropertyRef Name="MemberTypeId" />
+      </Principal>
+      <Dependent Role="Golfer">
+        <PropertyRef Name="MemberTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Golfer_PlatformType">
+    <End Type="GolfCentraModel.PlatformType" Role="PlatformType" Multiplicity="1" />
+    <End Type="GolfCentraModel.Golfer" Role="Golfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlatformType">
+        <PropertyRef Name="PlatformTypeId" />
+      </Principal>
+      <Dependent Role="Golfer">
+        <PropertyRef Name="PlatformTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Golfer_Salutation">
+    <End Type="GolfCentraModel.Salutation" Role="Salutation" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Golfer" Role="Golfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salutation">
+        <PropertyRef Name="SalutationId" />
+      </Principal>
+      <Dependent Role="Golfer">
+        <PropertyRef Name="SalutationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Score_Golfer">
+    <End Type="GolfCentraModel.Golfer" Role="Golfer" Multiplicity="1" />
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Golfer">
+        <PropertyRef Name="GolferId" />
+      </Principal>
+      <Dependent Role="Score">
+        <PropertyRef Name="GolferId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoleInformation_HoleNumber">
+    <End Type="GolfCentraModel.HoleNumber" Role="HoleNumber" Multiplicity="1" />
+    <End Type="GolfCentraModel.HoleInformation" Role="HoleInformation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleNumber">
+        <PropertyRef Name="HoleNumberId" />
+      </Principal>
+      <Dependent Role="HoleInformation">
+        <PropertyRef Name="HoleNumberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoleTeeYardage_HoleNumber">
+    <End Type="GolfCentraModel.HoleNumber" Role="HoleNumber" Multiplicity="1" />
+    <End Type="GolfCentraModel.HoleTeeYardage" Role="HoleTeeYardage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleNumber">
+        <PropertyRef Name="HoleNumberId" />
+      </Principal>
+      <Dependent Role="HoleTeeYardage">
+        <PropertyRef Name="HoleNumberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParStorke_HoleNumber">
+    <End Type="GolfCentraModel.HoleNumber" Role="HoleNumber" Multiplicity="1" />
+    <End Type="GolfCentraModel.ParStorke" Role="ParStorke" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleNumber">
+        <PropertyRef Name="HoleNumberId" />
+      </Principal>
+      <Dependent Role="ParStorke">
+        <PropertyRef Name="HoleNumberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoleTeeYardage_Tee">
+    <End Type="GolfCentraModel.Tee" Role="Tee" Multiplicity="1" />
+    <End Type="GolfCentraModel.HoleTeeYardage" Role="HoleTeeYardage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tee">
+        <PropertyRef Name="TeeId" />
+      </Principal>
+      <Dependent Role="HoleTeeYardage">
+        <PropertyRef Name="TeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_HoleType">
+    <End Type="GolfCentraModel.HoleType" Role="HoleType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Pricing" Role="Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Promotions_HoleType">
+    <End Type="GolfCentraModel.HoleType" Role="HoleType" Multiplicity="1" />
+    <End Type="GolfCentraModel.Promotion" Role="Promotion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="Promotion">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Score_HoleType">
+    <End Type="GolfCentraModel.HoleType" Role="HoleType" Multiplicity="1" />
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="Score">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogInHistory_LogInStatus">
+    <End Type="GolfCentraModel.LogInStatu" Role="LogInStatu" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.LogInHistory" Role="LogInHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LogInStatu">
+        <PropertyRef Name="LogInStatusId" />
+      </Principal>
+      <Dependent Role="LogInHistory">
+        <PropertyRef Name="LoginStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogInHistory_PlatformType">
+    <End Type="GolfCentraModel.PlatformType" Role="PlatformType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.LogInHistory" Role="LogInHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlatformType">
+        <PropertyRef Name="PlatformTypeId" />
+      </Principal>
+      <Dependent Role="LogInHistory">
+        <PropertyRef Name="PlatformTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogInHistory_UserType">
+    <End Type="GolfCentraModel.UserType" Role="UserType" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.LogInHistory" Role="LogInHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserType">
+        <PropertyRef Name="UserTypeId" />
+      </Principal>
+      <Dependent Role="LogInHistory">
+        <PropertyRef Name="UserTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionActivity_LogInHistory">
+    <End Type="GolfCentraModel.LogInHistory" Role="LogInHistory" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.SessionActivity" Role="SessionActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LogInHistory">
+        <PropertyRef Name="LoginHistoryId" />
+      </Principal>
+      <Dependent Role="SessionActivity">
+        <PropertyRef Name="LoginHistoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_MemberType">
+    <End Type="GolfCentraModel.MemberType" Role="MemberType" Multiplicity="1" />
+    <End Type="GolfCentraModel.Pricing" Role="Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberType">
+        <PropertyRef Name="MemberTypeId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="MemberTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PageRight_Page">
+    <End Type="GolfCentraModel.Page" Role="Page" Multiplicity="1" />
+    <End Type="GolfCentraModel.PageRight" Role="PageRight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Page">
+        <PropertyRef Name="PageId" />
+      </Principal>
+      <Dependent Role="PageRight">
+        <PropertyRef Name="PageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PriceTaxMapping_Pricing">
+    <End Type="GolfCentraModel.Pricing" Role="Pricing" Multiplicity="1" />
+    <End Type="GolfCentraModel.PriceTaxMapping" Role="PriceTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pricing">
+        <PropertyRef Name="PricingId" />
+      </Principal>
+      <Dependent Role="PriceTaxMapping">
+        <PropertyRef Name="PricingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PriceTaxMapping_Tax">
+    <End Type="GolfCentraModel.Tax" Role="Tax" Multiplicity="1" />
+    <End Type="GolfCentraModel.PriceTaxMapping" Role="PriceTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="PriceTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_Slot">
+    <End Type="GolfCentraModel.Slot" Role="Slot" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Pricing" Role="Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Slot">
+        <PropertyRef Name="SlotId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="SlotId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_TimeFormat">
+    <End Type="GolfCentraModel.TimeFormat" Role="TimeFormat" Multiplicity="0..1" />
+    <End Type="GolfCentraModel.Pricing" Role="Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TimeFormat">
+        <PropertyRef Name="TimeFormatId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="TimeFormatId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PromotionsEquipmentMapping_Promotions">
+    <End Type="GolfCentraModel.Promotion" Role="Promotion" Multiplicity="1" />
+    <End Type="GolfCentraModel.PromotionsEquipmentMapping" Role="PromotionsEquipmentMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Promotion">
+        <PropertyRef Name="PromotionsId" />
+      </Principal>
+      <Dependent Role="PromotionsEquipmentMapping">
+        <PropertyRef Name="PromotionsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PromotionsTaxMapping_Promotions">
+    <End Type="GolfCentraModel.Promotion" Role="Promotion" Multiplicity="1" />
+    <End Type="GolfCentraModel.PromotionsTaxMapping" Role="PromotionsTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Promotion">
+        <PropertyRef Name="PromotionsId" />
+      </Principal>
+      <Dependent Role="PromotionsTaxMapping">
+        <PropertyRef Name="PromotionsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PromotionsTaxMapping_Tax">
+    <End Type="GolfCentraModel.Tax" Role="Tax" Multiplicity="1" />
+    <End Type="GolfCentraModel.PromotionsTaxMapping" Role="PromotionsTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="PromotionsTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole1_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole1" Role="ScoreHole1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole1">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole10_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole10" Role="ScoreHole10" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole10">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole11_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole11" Role="ScoreHole11" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole11">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole12_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole12" Role="ScoreHole12" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole12">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole13_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole13" Role="ScoreHole13" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole13">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole14_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole14" Role="ScoreHole14" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole14">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole15_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole15" Role="ScoreHole15" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole15">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole16_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole16" Role="ScoreHole16" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole16">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole17_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole17" Role="ScoreHole17" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole17">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole18_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole18" Role="ScoreHole18" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole18">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole19_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole19" Role="ScoreHole19" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole19">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole2_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole2" Role="ScoreHole2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole2">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole20_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole20" Role="ScoreHole20" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole20">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole21_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole21" Role="ScoreHole21" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole21">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole22_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole22" Role="ScoreHole22" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole22">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole23_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole23" Role="ScoreHole23" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole23">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole24_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole24" Role="ScoreHole24" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole24">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole25_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole25" Role="ScoreHole25" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole25">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole26_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole26" Role="ScoreHole26" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole26">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole27_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole27" Role="ScoreHole27" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole27">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole3_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole3" Role="ScoreHole3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole3">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole4_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole4" Role="ScoreHole4" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole4">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole5_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole5" Role="ScoreHole5" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole5">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole6_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole6" Role="ScoreHole6" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole6">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole7_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole7" Role="ScoreHole7" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole7">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole8_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole8" Role="ScoreHole8" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole8">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole9_Score">
+    <End Type="GolfCentraModel.Score" Role="Score" Multiplicity="1" />
+    <End Type="GolfCentraModel.ScoreHole9" Role="ScoreHole9" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole9">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SlotSessionWise_Session">
+    <End Type="GolfCentraModel.Session" Role="Session" Multiplicity="1" />
+    <End Type="GolfCentraModel.SlotSessionWise" Role="SlotSessionWise" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Session">
+        <PropertyRef Name="SessionId" />
+      </Principal>
+      <Dependent Role="SlotSessionWise">
+        <PropertyRef Name="SessionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionActivity_SessionActivityPage">
+    <End Type="GolfCentraModel.SessionActivityPage" Role="SessionActivityPage" Multiplicity="1" />
+    <End Type="GolfCentraModel.SessionActivity" Role="SessionActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SessionActivityPage">
+        <PropertyRef Name="SessionActivityPageId" />
+      </Principal>
+      <Dependent Role="SessionActivity">
+        <PropertyRef Name="SessionActivityPageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SlotSessionWise_Slot">
+    <End Type="GolfCentraModel.Slot" Role="Slot" Multiplicity="1" />
+    <End Type="GolfCentraModel.SlotSessionWise" Role="SlotSessionWise" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Slot">
+        <PropertyRef Name="SlotId" />
+      </Principal>
+      <Dependent Role="SlotSessionWise">
+        <PropertyRef Name="SlotId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

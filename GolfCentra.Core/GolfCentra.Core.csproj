@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEA75E11-412A-46B3-BA9A-F89496A3EF08}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GolfCentra.Core</RootNamespace>
+    <AssemblyName>GolfCentra.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net, Version=0.1.4141.31969, Culture=neutral, PublicKeyToken=f3bc8f8c31beeb49, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net.0.1.0\lib\net35\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBase\AboutU.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Action.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ActionRight.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\APIClient.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\AppVersion.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\BlockSlot.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\BlockSlotRange.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Booking.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\BookingCourseTaxMapping.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\BookingEquipmentMapping.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\BookingPlayerDetail.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\BookingPlayerMapping.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\BookingStatu.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\BookingType.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\BucketDetail.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\BucketTaxMapping.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Country.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Coupon.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\CouponType.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Course.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\CourseName.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\CoursePairing.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\CourseTaxMapping.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Currency.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DayType.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Employee.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\EmployeeType.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Equipment.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\EquipmentTaxMapping.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ErrorLog.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ErrorType.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\FeeCategory.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\GenderType.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\GolfCentraModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GolfCentraModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\GolfCentraModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\GolfCentraModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GolfCentraModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Golfer.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\GolferNotification.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\GolferPasswordChange.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\HoleInformation.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\HoleNumber.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\HoleTeeYardage.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\HoleType.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\LogInHistory.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\LogInStatu.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\MaritalStatu.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\MemberType.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\NationalHoliday.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Page.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\PageRight.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ParStorke.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\PaymentGatewayControl.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\PaymentStatu.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\PlatformType.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\PriceTaxMapping.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Pricing.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Promotion.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\PromotionsEquipmentMapping.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\PromotionsTaxMapping.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\RuleAndRegulation.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Salutation.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Score.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole1.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole10.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole11.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole12.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole13.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole14.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole15.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole16.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole17.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole18.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole19.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole2.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole20.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole21.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole22.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole23.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole24.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole25.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole26.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole27.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole3.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole4.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole5.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole6.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole7.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole8.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ScoreHole9.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Session.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\SessionActivity.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\SessionActivityPage.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Slot.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\SlotBlockReason.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\SlotSessionWise.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\sysdiagram.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Tax.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Tee.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\TimeFormat.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UserType.cs">
+      <DependentUpon>GolfCentraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GenericRepository\GenericRepository.cs" />
+    <Compile Include="Helper\Constants.cs" />
+    <Compile Include="Helper\DateHelper.cs" />
+    <Compile Include="Helper\EmailNotification.cs" />
+    <Compile Include="Helper\Enum.cs" />
+    <Compile Include="Helper\PasswordConvertor.cs" />
+    <Compile Include="Helper\PasswordHelper.cs" />
+    <Compile Include="Helper\RamdomNumber.cs" />
+    <Compile Include="Helper\Vaildation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseModel\IdentityError.cs" />
+    <Compile Include="ResponseModel\IdentityResult.cs" />
+    <Compile Include="ResponseModel\ResponseViewModel.cs" />
+    <Compile Include="UnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EntityDeploy Include="DataBase\GolfCentraModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GolfCentraModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataBase\GolfCentraModel.edmx.diagram">
+      <DependentUpon>GolfCentraModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataBase\GolfCentraModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GolfCentraModel.Context.cs</LastGenOutput>
+      <DependentUpon>GolfCentraModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="DataBase\GolfCentraModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GolfCentraModel.edmx</DependentUpon>
+      <LastGenOutput>GolfCentraModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

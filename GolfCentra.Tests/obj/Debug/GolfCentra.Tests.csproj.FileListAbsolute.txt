@@ -1,0 +1,279 @@
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csprojAssemblyReference.cache
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csproj.CoreCompileInputs.cache
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\ApplicationInsights.config
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.dll.config
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.pdb
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Newtonsoft.Json.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Net.Http.Formatting.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Helpers.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.WebHost.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Mvc.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Razor.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Optimization.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.pdb
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.dll.config
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Net.Http.Formatting.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Newtonsoft.Json.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Helpers.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.WebHost.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Mvc.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Razor.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Optimization.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csproj.CopyComplete
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.pdb
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Owin.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Owin.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Owin.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Business.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\EntityFramework.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Business.pdb
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.pdb
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.dll.config
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\EntityFramework.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.ViewModel.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.ViewModel.pdb
+H:\Golf Centra\GolfCentra\GolfCentra.Tests\bin\Debug\paytm.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\ApplicationInsights.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.dll.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Newtonsoft.Json.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Net.Http.Formatting.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Helpers.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.WebHost.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Mvc.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Razor.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Owin.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Optimization.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Owin.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Business.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.ViewModel.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\EntityFramework.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\paytm.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.dll.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Net.Http.Formatting.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Newtonsoft.Json.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Helpers.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.WebHost.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Mvc.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Razor.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Owin.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Optimization.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Business.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.ViewModel.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\bin\Debug\EntityFramework.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csprojAssemblyReference.cache
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csproj.CoreCompileInputs.cache
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csproj.CopyComplete
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\ApplicationInsights.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.dll.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Newtonsoft.Json.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Net.Http.Formatting.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Helpers.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.WebHost.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Mvc.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Razor.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Owin.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Optimization.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Owin.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Business.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.ViewModel.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\EntityFramework.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\paytm.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.dll.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Net.Http.Formatting.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Newtonsoft.Json.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Helpers.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.WebHost.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Mvc.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Razor.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Owin.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Optimization.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Business.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.ViewModel.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\bin\Debug\EntityFramework.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csprojAssemblyReference.cache
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csproj.CoreCompileInputs.cache
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csproj.CopyComplete
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\ApplicationInsights.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.dll.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Newtonsoft.Json.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Net.Http.Formatting.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Helpers.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.WebHost.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Mvc.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Razor.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Owin.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Optimization.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Owin.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Business.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.ViewModel.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\EntityFramework.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\paytm.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.dll.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Net.Http.Formatting.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Newtonsoft.Json.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Helpers.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.WebHost.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Mvc.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Razor.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Owin.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Optimization.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Business.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.ViewModel.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\bin\Debug\EntityFramework.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csprojAssemblyReference.cache
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csproj.CoreCompileInputs.cache
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csproj.CopyComplete
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csproj.CoreCompileInputs.cache
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\ApplicationInsights.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.dll.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Tests.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Newtonsoft.Json.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Net.Http.Formatting.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Helpers.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.WebHost.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Mvc.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Razor.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Owin.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Optimization.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Owin.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Business.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.ViewModel.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\EntityFramework.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\paytm.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.dll.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Net.Http.Formatting.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Newtonsoft.Json.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Helpers.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Http.WebHost.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Mvc.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Razor.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Microsoft.Owin.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\System.Web.Optimization.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.Business.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\GolfCentra.ViewModel.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\EntityFramework.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csprojAssemblyReference.cache
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.csproj.CopyComplete
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\obj\Debug\GolfCentra.Tests.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\Excel.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\ICSharpCode.SharpZipLib.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\BCrypt.Net.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Tests\bin\Debug\BCrypt.Net.xml

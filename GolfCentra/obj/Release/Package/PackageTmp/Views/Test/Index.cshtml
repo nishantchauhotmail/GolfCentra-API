@@ -1,0 +1,60 @@
+﻿@model GolfCentra.Controllers.RootObject
+
+
+<h2>Index</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Registration Number</th>
+            <th>PanNumber</th>
+            <th>PanVerifyStatus</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (var i in Model.ngodetails)
+        {
+            <tr>
+                <td>@i.id</td>
+                <td>@i.name</td>
+                <td>@i.registrationnumber</td>
+                <td>@i.panNumber</td>
+                <td>@i.panVerifyStatus</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Registration Number</th>
+            <th>PanNumber</th>
+            <th>PanVerifyStatus</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (var i in Model.ngodetails)
+        {
+            <tr>
+                <td>@i.id</td>
+                <td>@i.name</td>
+                <td>@i.registrationnumber</td>
+                <td>@i.panNumber</td>
+                <td>@i.panVerifyStatus</td>
+            </tr>
+        }
+    </tbody>
+</table>

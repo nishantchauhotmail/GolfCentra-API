@@ -1,0 +1,62 @@
+H:\Golf Centra\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.dll.config
+H:\Golf Centra\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.pdb
+H:\Golf Centra\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.SqlServer.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.SqlServer.xml
+H:\Golf Centra\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csprojAssemblyReference.cache
+H:\Golf Centra\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csproj.CoreCompileInputs.cache
+H:\Golf Centra\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csproj.CopyComplete
+H:\Golf Centra\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.dll
+H:\Golf Centra\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.SqlServer.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.SqlServer.xml
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csprojAssemblyReference.cache
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csproj.CoreCompileInputs.cache
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csproj.CopyComplete
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.dll
+H:\Main Project\Lotus Lake\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.SqlServer.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.SqlServer.xml
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csprojAssemblyReference.cache
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csproj.CoreCompileInputs.cache
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csproj.CopyComplete
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.dll
+H:\Main Project\Emeralda\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.SqlServer.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.SqlServer.xml
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csprojAssemblyReference.cache
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csproj.CoreCompileInputs.cache
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csproj.CopyComplete
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.dll
+H:\Main Project\FeatureV1.0\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.dll.config
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\bin\Debug\GolfCentra.Core.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.SqlServer.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\bin\Debug\EntityFramework.SqlServer.xml
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csprojAssemblyReference.cache
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csproj.CoreCompileInputs.cache
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.csproj.CopyComplete
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\obj\Debug\GolfCentra.Core.pdb
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\bin\Debug\BCrypt.Net.dll
+H:\Main Project\ClassicGolfClub(ITC)\GolfCentra\GolfCentra.Core\bin\Debug\BCrypt.Net.xml

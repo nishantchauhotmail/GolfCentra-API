@@ -1,0 +1,3272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GolfCentraModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AboutUs">
+    <Key>
+      <PropertyRef Name="AboutUsId" />
+    </Key>
+    <Property Name="AboutUsId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ImageURL" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="URL" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Action">
+    <Key>
+      <PropertyRef Name="ActionId" />
+    </Key>
+    <Property Name="ActionId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Text" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ActionRight">
+    <Key>
+      <PropertyRef Name="ActionRightId" />
+    </Key>
+    <Property Name="ActionRightId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ActionId" Type="bigint" Nullable="false" />
+    <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="APIClient">
+    <Key>
+      <PropertyRef Name="APIClientId" />
+    </Key>
+    <Property Name="APIClientId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClientName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AppVersion">
+    <Key>
+      <PropertyRef Name="AppVersionId" />
+    </Key>
+    <Property Name="AppVersionId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Version" Type="decimal" Precision="18" Scale="1" Nullable="false" />
+    <Property Name="Message" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ForceUpdate" Type="bit" Nullable="false" />
+    <Property Name="PlatformTypeId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BlockSlot">
+    <Key>
+      <PropertyRef Name="BlockSlotId" />
+    </Key>
+    <Property Name="BlockSlotId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BlockSlotRangeId" Type="bigint" Nullable="false" />
+    <Property Name="SlotSessionWiseId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BlockSlotRange">
+    <Key>
+      <PropertyRef Name="BlockSlotRangeId" />
+    </Key>
+    <Property Name="BlockSlotRangeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="SlotBlockReasonId" Type="bigint" Nullable="false" />
+    <Property Name="CoursePairingId" Type="bigint" />
+    <Property Name="IsCustomerAvailable" Type="bit" Nullable="false" />
+    <Property Name="IsBookingavailable" Type="bit" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Booking">
+    <Key>
+      <PropertyRef Name="BookingId" />
+    </Key>
+    <Property Name="BookingId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GolferId" Type="bigint" Nullable="false" />
+    <Property Name="BookingDate" Type="datetime" Nullable="false" />
+    <Property Name="HoleTypeId" Type="bigint" />
+    <Property Name="TeeOffDate" Type="datetime" Nullable="false" />
+    <Property Name="TeeOffSlot" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="BookingStatusId" Type="bigint" Nullable="false" />
+    <Property Name="NoOfMember" Type="int" />
+    <Property Name="NoOfNonMember" Type="int" />
+    <Property Name="NoOfPlayer" Type="int" Nullable="false" />
+    <Property Name="CartFee" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CartCount" Type="int" />
+    <Property Name="CaddieFee" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CaddieCount" Type="int" />
+    <Property Name="GreenFee" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="RangeFee" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NoOfBalls" Type="int" />
+    <Property Name="BallFee" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Discount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FeeAndTaxes" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OnSpot" Type="bit" />
+    <Property Name="BookingTypeId" Type="bigint" Nullable="false" />
+    <Property Name="CouponId" Type="bigint" />
+    <Property Name="PaymentGatewayBookingId" Type="nvarchar" MaxLength="50" />
+    <Property Name="PaymentMode" Type="nvarchar" MaxLength="50" />
+    <Property Name="PaymentStatusId" Type="bigint" />
+    <Property Name="CurrencyId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="CoursePairingId" Type="bigint" />
+    <Property Name="ScoreId" Type="bigint" />
+    <Property Name="PromotionId" Type="bigint" />
+    <Property Name="PaidAmount" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="BookingCourseTaxMapping">
+    <Key>
+      <PropertyRef Name="BookingCourseTaxMappingId" />
+    </Key>
+    <Property Name="BookingCourseTaxMappingId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaxId" Type="bigint" Nullable="false" />
+    <Property Name="TaxName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Percentage" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="BookingId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BookingEquipmentMapping">
+    <Key>
+      <PropertyRef Name="BookingEquipmentMappingId" />
+    </Key>
+    <Property Name="BookingEquipmentMappingId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookingId" Type="bigint" Nullable="false" />
+    <Property Name="EquipmentId" Type="bigint" Nullable="false" />
+    <Property Name="EquipmentName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EquipmentPrice" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="EquipmentCount" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BookingPlayerDetails">
+    <Key>
+      <PropertyRef Name="BookingPlayerDetailsId" />
+    </Key>
+    <Property Name="BookingPlayerDetailsId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Player1" Type="nvarchar" MaxLength="500" />
+    <Property Name="Player2" Type="nvarchar" MaxLength="500" />
+    <Property Name="Player3" Type="nvarchar" MaxLength="500" />
+    <Property Name="Player4" Type="nvarchar" MaxLength="500" />
+    <Property Name="BookingId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Player2ScoreId" Type="bigint" />
+    <Property Name="Player3ScoreId" Type="bigint" />
+    <Property Name="Player4ScoreId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="BookingPlayerMapping">
+    <Key>
+      <PropertyRef Name="BookingPlayerMappingId" />
+    </Key>
+    <Property Name="BookingPlayerMappingId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookingId" Type="bigint" Nullable="false" />
+    <Property Name="MemberTypeId" Type="bigint" Nullable="false" />
+    <Property Name="MemberTypeName" Type="nvarchar" MaxLength="100" />
+    <Property Name="PlayerCount" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BookingStatus">
+    <Key>
+      <PropertyRef Name="BookingStatusId" />
+    </Key>
+    <Property Name="BookingStatusId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BookingType">
+    <Key>
+      <PropertyRef Name="BookingTypeId" />
+    </Key>
+    <Property Name="BookingTypeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ValueToShow" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BucketDetail">
+    <Key>
+      <PropertyRef Name="BucketDetailId" />
+    </Key>
+    <Property Name="BucketDetailId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Balls" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="CurrencyId" Type="bigint" />
+    <Property Name="DayTypeId" Type="bigint" />
+    <Property Name="MemberTypeId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BucketTaxMapping">
+    <Key>
+      <PropertyRef Name="BucketTaxMappingId" />
+    </Key>
+    <Property Name="BucketTaxMappingId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaxId" Type="bigint" Nullable="false" />
+    <Property Name="BucketId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryId" />
+    </Key>
+    <Property Name="CountryId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="5" />
+    <Property Name="ISO" Type="varchar" MaxLength="5" />
+    <Property Name="NumCode" Type="int" />
+    <Property Name="PhoneCode" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Nicename" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Coupon">
+    <Key>
+      <PropertyRef Name="CouponId" />
+    </Key>
+    <Property Name="CouponId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="CurrencyId" Type="bigint" />
+    <Property Name="CouponTypeId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CouponType">
+    <Key>
+      <PropertyRef Name="CouponTypeId" />
+    </Key>
+    <Property Name="CouponTypeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="CourseId" />
+    </Key>
+    <Property Name="CourseId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="TechnicalSupportMailId" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="80" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="ShortDescription" Type="nvarchar" MaxLength="500" />
+    <Property Name="LongDescription" Type="nvarchar" MaxLength="4000" />
+    <Property Name="ImgUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="HoleTypeId" Type="bigint" />
+    <Property Name="TermsConditionPageURL" Type="nvarchar" MaxLength="500" />
+    <Property Name="PrivacyPolicyPageURL" Type="nvarchar" MaxLength="500" />
+    <Property Name="RuleAndRegulationURL" Type="nvarchar" MaxLength="500" />
+    <Property Name="Address2Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Address2Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CourseName">
+    <Key>
+      <PropertyRef Name="CourseNameId" />
+    </Key>
+    <Property Name="CourseNameId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CoursePairing">
+    <Key>
+      <PropertyRef Name="CoursePairingId" />
+    </Key>
+    <Property Name="CoursePairingId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StartCourseNameId" Type="bigint" Nullable="false" />
+    <Property Name="EndCourseNameId" Type="bigint" />
+    <Property Name="HoleTypeId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CourseTaxMapping">
+    <Key>
+      <PropertyRef Name="CourseTaxMappingId" />
+    </Key>
+    <Property Name="CourseTaxMappingId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaxId" Type="bigint" Nullable="false" />
+    <Property Name="CourseId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="CurrencyId" />
+    </Key>
+    <Property Name="CurrencyId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DayType">
+    <Key>
+      <PropertyRef Name="DayTypeId" />
+    </Key>
+    <Property Name="DayTypeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ValueToShow" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+    </Key>
+    <Property Name="EmployeeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="EmailId" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="20" />
+    <Property Name="GenderTypeId" Type="bigint" />
+    <Property Name="EmployeeTypeId" Type="bigint" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="IsPrimaryPasswordChanged" Type="bit" />
+  </EntityType>
+  <EntityType Name="EmployeeType">
+    <Key>
+      <PropertyRef Name="EmployeeTypeId" />
+    </Key>
+    <Property Name="EmployeeTypeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Equipment">
+    <Key>
+      <PropertyRef Name="EquipmentId" />
+    </Key>
+    <Property Name="EquipmentId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="EquipmentTaxMapping">
+    <Key>
+      <PropertyRef Name="EquipmentTaxMappingId" />
+    </Key>
+    <Property Name="EquipmentTaxMappingId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaxId" Type="bigint" Nullable="false" />
+    <Property Name="EquipmentId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorLogId" />
+    </Key>
+    <Property Name="ErrorLogId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ErrorTypeId" Type="bigint" Nullable="false" />
+    <Property Name="ClassName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FunctionName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LineNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StackInformation" Type="text" Nullable="false" />
+    <Property Name="IssueTime" Type="datetime" />
+    <Property Name="Message" Type="nvarchar" MaxLength="4000" />
+    <Property Name="UserId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ErrorType">
+    <Key>
+      <PropertyRef Name="ErrorTypeId" />
+    </Key>
+    <Property Name="ErrorTypeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Text" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FeeCategory">
+    <Key>
+      <PropertyRef Name="FeeCategoryId" />
+    </Key>
+    <Property Name="FeeCategoryId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="GenderType">
+    <Key>
+      <PropertyRef Name="GenderTypeId" />
+    </Key>
+    <Property Name="GenderTypeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Golfer">
+    <Key>
+      <PropertyRef Name="GolferId" />
+    </Key>
+    <Property Name="GolferId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="PhoneCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="ClubMemberId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ImgURL" Type="nvarchar" MaxLength="100" />
+    <Property Name="PlatformTypeId" Type="bigint" Nullable="false" />
+    <Property Name="VerficationCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="Age" Type="nvarchar" MaxLength="50" />
+    <Property Name="GenderTypeId" Type="bigint" />
+    <Property Name="MemberTypeId" Type="bigint" />
+    <Property Name="MemberSince" Type="datetime" />
+    <Property Name="Occpoution" Type="nvarchar" MaxLength="50" />
+    <Property Name="SpouseName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaritalStatusId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="SpecialComments" Type="nvarchar" MaxLength="3000" />
+    <Property Name="LoginAttempt" Type="int" />
+    <Property Name="IsBlocked" Type="bit" />
+    <Property Name="DOB" Type="date" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="SalutationId" Type="bigint" />
+    <Property Name="IsPrimaryPasswordChanged" Type="bit" />
+  </EntityType>
+  <EntityType Name="GolferNotification">
+    <Key>
+      <PropertyRef Name="GolferNotificationId" />
+    </Key>
+    <Property Name="GolferNotificationId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GolferId" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="HoleInformation">
+    <Key>
+      <PropertyRef Name="HoleInformationId" />
+    </Key>
+    <Property Name="HoleInformationId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoleNumberId" Type="bigint" Nullable="false" />
+    <Property Name="Latitude" Type="decimal" Precision="18" Scale="15" Nullable="false" />
+    <Property Name="Longitude" Type="decimal" Precision="18" Scale="15" Nullable="false" />
+    <Property Name="ImgUrl" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CourseNameId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="HoleNumber">
+    <Key>
+      <PropertyRef Name="HoleNumberId" />
+    </Key>
+    <Property Name="HoleNumberId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="HoleTeeYardage">
+    <Key>
+      <PropertyRef Name="HoleTeeYardageId" />
+    </Key>
+    <Property Name="HoleTeeYardageId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoleNumberId" Type="bigint" Nullable="false" />
+    <Property Name="TeeId" Type="bigint" Nullable="false" />
+    <Property Name="Yardage" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Latitude" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Longitude" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdateOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="HoleType">
+    <Key>
+      <PropertyRef Name="HoleTypeId" />
+    </Key>
+    <Property Name="HoleTypeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="LogInHistory">
+    <Key>
+      <PropertyRef Name="LoginHistoryId" />
+    </Key>
+    <Property Name="LoginHistoryId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="bigint" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoginStatusId" Type="bigint" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountryCode" Type="nvarchar" MaxLength="5" />
+    <Property Name="ISP" Type="nvarchar" MaxLength="50" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="ORG" Type="nvarchar" MaxLength="50" />
+    <Property Name="Region" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="TimeZone" Type="nvarchar" MaxLength="50" />
+    <Property Name="ZipCode" Type="int" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="IPAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="MACAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="OperatingSystem" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserAgent" Type="nvarchar" MaxLength="50" />
+    <Property Name="BrowserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="BrowserVersion" Type="nvarchar" MaxLength="50" />
+    <Property Name="As" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoggedOutAt" Type="datetime" />
+    <Property Name="UserTypeId" Type="bigint" />
+    <Property Name="PlatformTypeId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="DeviceTokenId" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="LogInStatus">
+    <Key>
+      <PropertyRef Name="LogInStatusId" />
+    </Key>
+    <Property Name="LogInStatusId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MaritalStatus">
+    <Key>
+      <PropertyRef Name="MaritalStatusId" />
+    </Key>
+    <Property Name="MaritalStatusId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MemberType">
+    <Key>
+      <PropertyRef Name="MemberTypeId" />
+    </Key>
+    <Property Name="MemberTypeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ValueToShow" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="NationalHoliday">
+    <Key>
+      <PropertyRef Name="NationalHolidayId" />
+    </Key>
+    <Property Name="NationalHolidayId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Day" Type="int" />
+    <Property Name="Month" Type="int" />
+    <Property Name="Year" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="LastUpdated" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Page">
+    <Key>
+      <PropertyRef Name="PageId" />
+    </Key>
+    <Property Name="PageId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PageName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ControllerName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ActionName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Icon" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ParentId" Type="int" Nullable="false" />
+    <Property Name="Ordering" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PageRight">
+    <Key>
+      <PropertyRef Name="PageRightId" />
+    </Key>
+    <Property Name="PageRightId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PageId" Type="bigint" Nullable="false" />
+    <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ParStorke">
+    <Key>
+      <PropertyRef Name="ParStorkeId" />
+    </Key>
+    <Property Name="ParStorkeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoleNumberId" Type="bigint" Nullable="false" />
+    <Property Name="Par" Type="int" Nullable="false" />
+    <Property Name="Storke" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PaymentGatewayControl">
+    <Key>
+      <PropertyRef Name="PaymentGatewayControlId" />
+    </Key>
+    <Property Name="PaymentGatewayControlId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PaymentGatewayEnable" Type="bit" Nullable="false" />
+    <Property Name="GreenFee" Type="bit" Nullable="false" />
+    <Property Name="CartFee" Type="bit" Nullable="false" />
+    <Property Name="CaddieFee" Type="bit" Nullable="false" />
+    <Property Name="EquipmentOffIds" Type="nvarchar" MaxLength="500" />
+    <Property Name="AllMembers" Type="bit" Nullable="false" />
+    <Property Name="SelectedGolferIds" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PaymentStatus">
+    <Key>
+      <PropertyRef Name="PaymentStatusId" />
+    </Key>
+    <Property Name="PaymentStatusId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CretaedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PlatformType">
+    <Key>
+      <PropertyRef Name="PlatformTypeId" />
+    </Key>
+    <Property Name="PlatformTypeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PriceTaxMapping">
+    <Key>
+      <PropertyRef Name="PriceTaxMappingId" />
+    </Key>
+    <Property Name="PriceTaxMappingId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaxId" Type="bigint" Nullable="false" />
+    <Property Name="PricingId" Type="bigint" Nullable="false" />
+    <Property Name="FeeCategoryId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Pricing">
+    <Key>
+      <PropertyRef Name="PricingId" />
+    </Key>
+    <Property Name="PricingId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MemberTypeId" Type="bigint" Nullable="false" />
+    <Property Name="BookingTypeId" Type="bigint" Nullable="false" />
+    <Property Name="DayTypeId" Type="bigint" />
+    <Property Name="HoleTypeId" Type="bigint" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="GreenFee" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TaxAndFee" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AddOnCart" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AddOnCaddie" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ConvenienceFee" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="RangeFee" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="BucketFeePerPlayer" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NumberOfAllowedSessions" Type="int" />
+    <Property Name="SlotId" Type="bigint" />
+    <Property Name="CurrencyId" Type="bigint" />
+    <Property Name="IsSpecialPrice" Type="bit" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="TimeFormatId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Promotions">
+    <Key>
+      <PropertyRef Name="PromotionsId" />
+    </Key>
+    <Property Name="PromotionsId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="StartTime" Type="time" Precision="7" />
+    <Property Name="EndTime" Type="time" Precision="7" />
+    <Property Name="HoleTypeId" Type="bigint" Nullable="false" />
+    <Property Name="GreenFee" Type="bit" />
+    <Property Name="CaddieFee" Type="bit" />
+    <Property Name="CartFee" Type="bit" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Extra" Type="nvarchar" MaxLength="4000" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PromotionsEquipmentMapping">
+    <Key>
+      <PropertyRef Name="PromotionsEquipmentId" />
+    </Key>
+    <Property Name="PromotionsEquipmentId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EquipmentId" Type="bigint" Nullable="false" />
+    <Property Name="PromotionsId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PromotionsTaxMapping">
+    <Key>
+      <PropertyRef Name="PromotionsTaxTable" />
+    </Key>
+    <Property Name="PromotionsTaxTable" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PromotionsId" Type="bigint" Nullable="false" />
+    <Property Name="TaxId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="RuleAndRegulation">
+    <Key>
+      <PropertyRef Name="RuleAndRegulationId" />
+    </Key>
+    <Property Name="RuleAndRegulationId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Text" Type="nvarchar" MaxLength="4000" />
+    <Property Name="OrderNo" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Salutation">
+    <Key>
+      <PropertyRef Name="SalutationId" />
+    </Key>
+    <Property Name="SalutationId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Text" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="LastUpdated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Score">
+    <Key>
+      <PropertyRef Name="ScoreId" />
+    </Key>
+    <Property Name="ScoreId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GolferId" Type="bigint" Nullable="false" />
+    <Property Name="ScoreSubmittedDate" Type="datetime" Nullable="false" />
+    <Property Name="HoleTypeId" Type="bigint" Nullable="false" />
+    <Property Name="ScoreSubmittedTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="BookingId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole1">
+    <Key>
+      <PropertyRef Name="ScoreHole1Id" />
+    </Key>
+    <Property Name="ScoreHole1Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole10">
+    <Key>
+      <PropertyRef Name="ScoreHole10Id" />
+    </Key>
+    <Property Name="ScoreHole10Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole11">
+    <Key>
+      <PropertyRef Name="ScoreHole11Id" />
+    </Key>
+    <Property Name="ScoreHole11Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole12">
+    <Key>
+      <PropertyRef Name="ScoreHole12Id" />
+    </Key>
+    <Property Name="ScoreHole12Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole13">
+    <Key>
+      <PropertyRef Name="ScoreHole13Id" />
+    </Key>
+    <Property Name="ScoreHole13Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole14">
+    <Key>
+      <PropertyRef Name="ScoreHole14Id" />
+    </Key>
+    <Property Name="ScoreHole14Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole15">
+    <Key>
+      <PropertyRef Name="ScoreHole15Id" />
+    </Key>
+    <Property Name="ScoreHole15Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole16">
+    <Key>
+      <PropertyRef Name="ScoreHole16Id" />
+    </Key>
+    <Property Name="ScoreHole16Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole17">
+    <Key>
+      <PropertyRef Name="ScoreHole17Id" />
+    </Key>
+    <Property Name="ScoreHole17Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole18">
+    <Key>
+      <PropertyRef Name="ScoreHole18Id" />
+    </Key>
+    <Property Name="ScoreHole18Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole19">
+    <Key>
+      <PropertyRef Name="ScoreHole19Id" />
+    </Key>
+    <Property Name="ScoreHole19Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole2">
+    <Key>
+      <PropertyRef Name="ScoreHole2Id" />
+    </Key>
+    <Property Name="ScoreHole2Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole20">
+    <Key>
+      <PropertyRef Name="ScoreHole20Id" />
+    </Key>
+    <Property Name="ScoreHole20Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole21">
+    <Key>
+      <PropertyRef Name="ScoreHole21Id" />
+    </Key>
+    <Property Name="ScoreHole21Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole22">
+    <Key>
+      <PropertyRef Name="ScoreHole22Id" />
+    </Key>
+    <Property Name="ScoreHole22Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole23">
+    <Key>
+      <PropertyRef Name="ScoreHole23Id" />
+    </Key>
+    <Property Name="ScoreHole23Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole24">
+    <Key>
+      <PropertyRef Name="ScoreHole24Id" />
+    </Key>
+    <Property Name="ScoreHole24Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole25">
+    <Key>
+      <PropertyRef Name="ScoreHole25Id" />
+    </Key>
+    <Property Name="ScoreHole25Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole26">
+    <Key>
+      <PropertyRef Name="ScoreHole26Id" />
+    </Key>
+    <Property Name="ScoreHole26Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole27">
+    <Key>
+      <PropertyRef Name="ScoreHole27Id" />
+    </Key>
+    <Property Name="ScoreHole27Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole3">
+    <Key>
+      <PropertyRef Name="ScoreHole3Id" />
+    </Key>
+    <Property Name="ScoreHole3Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole4">
+    <Key>
+      <PropertyRef Name="ScoreHole4Id" />
+    </Key>
+    <Property Name="ScoreHole4Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole5">
+    <Key>
+      <PropertyRef Name="ScoreHole5Id" />
+    </Key>
+    <Property Name="ScoreHole5Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole6">
+    <Key>
+      <PropertyRef Name="ScoreHole6Id" />
+    </Key>
+    <Property Name="ScoreHole6Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole7">
+    <Key>
+      <PropertyRef Name="ScoreHole7Id" />
+    </Key>
+    <Property Name="ScoreHole7Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole8">
+    <Key>
+      <PropertyRef Name="ScoreHole8Id" />
+    </Key>
+    <Property Name="ScoreHole8Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ScoreHole9">
+    <Key>
+      <PropertyRef Name="ScoreHole9Id" />
+    </Key>
+    <Property Name="ScoreHole9Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScoreId" Type="bigint" Nullable="false" />
+    <Property Name="Storkes" Type="int" />
+    <Property Name="Putts" Type="int" />
+    <Property Name="Drive" Type="int" />
+    <Property Name="Clubs" Type="int" />
+    <Property Name="Chips" Type="int" />
+    <Property Name="Sand" Type="int" />
+    <Property Name="Saves" Type="int" />
+    <Property Name="Penalty" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Par" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Session">
+    <Key>
+      <PropertyRef Name="SessionId" />
+    </Key>
+    <Property Name="SessionId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="StartTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="EndTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="BookingTypeId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="SessionActivity">
+    <Key>
+      <PropertyRef Name="SessionActivityId" />
+    </Key>
+    <Property Name="SessionActivityId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LoginHistoryId" Type="bigint" />
+    <Property Name="SessionActivityPageId" Type="bigint" Nullable="false" />
+    <Property Name="ArriveAt" Type="datetime" />
+    <Property Name="PerformedOn" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SessionActivityPage">
+    <Key>
+      <PropertyRef Name="SessionActivityPageId" />
+    </Key>
+    <Property Name="SessionActivityPageId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Controller" Type="nvarchar" MaxLength="200" />
+    <Property Name="Action" Type="nvarchar" MaxLength="200" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Slot">
+    <Key>
+      <PropertyRef Name="SlotId" />
+    </Key>
+    <Property Name="SlotId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Time" Type="time" Precision="7" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SlotBlockReason">
+    <Key>
+      <PropertyRef Name="SlotBlockReasonId" />
+    </Key>
+    <Property Name="SlotBlockReasonId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SlotSessionWise">
+    <Key>
+      <PropertyRef Name="SlotSessionWiseId" />
+    </Key>
+    <Property Name="SlotSessionWiseId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SessionId" Type="bigint" Nullable="false" />
+    <Property Name="SlotId" Type="bigint" Nullable="false" />
+    <Property Name="BookingTypeId" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tax">
+    <Key>
+      <PropertyRef Name="TaxId" />
+    </Key>
+    <Property Name="TaxId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Percentage" Type="decimal" Precision="18" Scale="1" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tee">
+    <Key>
+      <PropertyRef Name="TeeId" />
+    </Key>
+    <Property Name="TeeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TimeFormat">
+    <Key>
+      <PropertyRef Name="TimeFormatId" />
+    </Key>
+    <Property Name="TimeFormatId" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UserType">
+    <Key>
+      <PropertyRef Name="UserTypeId" />
+    </Key>
+    <Property Name="UserTypeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_ActionRight_Action">
+    <End Role="Action" Type="Self.Action" Multiplicity="1" />
+    <End Role="ActionRight" Type="Self.ActionRight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Action">
+        <PropertyRef Name="ActionId" />
+      </Principal>
+      <Dependent Role="ActionRight">
+        <PropertyRef Name="ActionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActionRight_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="ActionRight" Type="Self.ActionRight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="ActionRight">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AppVersion_PlatformType">
+    <End Role="PlatformType" Type="Self.PlatformType" Multiplicity="1" />
+    <End Role="AppVersion" Type="Self.AppVersion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlatformType">
+        <PropertyRef Name="PlatformTypeId" />
+      </Principal>
+      <Dependent Role="AppVersion">
+        <PropertyRef Name="PlatformTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BlockSlot_BlockSlotRange">
+    <End Role="BlockSlotRange" Type="Self.BlockSlotRange" Multiplicity="1" />
+    <End Role="BlockSlot" Type="Self.BlockSlot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BlockSlotRange">
+        <PropertyRef Name="BlockSlotRangeId" />
+      </Principal>
+      <Dependent Role="BlockSlot">
+        <PropertyRef Name="BlockSlotRangeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BlockSlot_SlotSessionWise">
+    <End Role="SlotSessionWise" Type="Self.SlotSessionWise" Multiplicity="1" />
+    <End Role="BlockSlot" Type="Self.BlockSlot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SlotSessionWise">
+        <PropertyRef Name="SlotSessionWiseId" />
+      </Principal>
+      <Dependent Role="BlockSlot">
+        <PropertyRef Name="SlotSessionWiseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BlockSlotRange_CoursePairing">
+    <End Role="CoursePairing" Type="Self.CoursePairing" Multiplicity="0..1" />
+    <End Role="BlockSlotRange" Type="Self.BlockSlotRange" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CoursePairing">
+        <PropertyRef Name="CoursePairingId" />
+      </Principal>
+      <Dependent Role="BlockSlotRange">
+        <PropertyRef Name="CoursePairingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BlockSlotRange_SlotBlockReason">
+    <End Role="SlotBlockReason" Type="Self.SlotBlockReason" Multiplicity="1" />
+    <End Role="BlockSlotRange" Type="Self.BlockSlotRange" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SlotBlockReason">
+        <PropertyRef Name="SlotBlockReasonId" />
+      </Principal>
+      <Dependent Role="BlockSlotRange">
+        <PropertyRef Name="SlotBlockReasonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_BookingStatus">
+    <End Role="BookingStatus" Type="Self.BookingStatus" Multiplicity="1" />
+    <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingStatus">
+        <PropertyRef Name="BookingStatusId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="BookingStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_BookingType">
+    <End Role="BookingType" Type="Self.BookingType" Multiplicity="1" />
+    <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingType">
+        <PropertyRef Name="BookingTypeId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="BookingTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_Coupon">
+    <End Role="Coupon" Type="Self.Coupon" Multiplicity="0..1" />
+    <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coupon">
+        <PropertyRef Name="CouponId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="CouponId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_CoursePairing">
+    <End Role="CoursePairing" Type="Self.CoursePairing" Multiplicity="0..1" />
+    <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CoursePairing">
+        <PropertyRef Name="CoursePairingId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="CoursePairingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_Currency">
+    <End Role="Currency" Type="Self.Currency" Multiplicity="0..1" />
+    <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="CurrencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_Golfer">
+    <End Role="Golfer" Type="Self.Golfer" Multiplicity="1" />
+    <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Golfer">
+        <PropertyRef Name="GolferId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="GolferId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_HoleType">
+    <End Role="HoleType" Type="Self.HoleType" Multiplicity="0..1" />
+    <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_PaymentStatus">
+    <End Role="PaymentStatus" Type="Self.PaymentStatus" Multiplicity="0..1" />
+    <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentStatus">
+        <PropertyRef Name="PaymentStatusId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="PaymentStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_Promotions">
+    <End Role="Promotions" Type="Self.Promotions" Multiplicity="0..1" />
+    <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Promotions">
+        <PropertyRef Name="PromotionsId" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="PromotionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingCourseTaxMapping_Booking">
+    <End Role="Booking" Type="Self.Booking" Multiplicity="1" />
+    <End Role="BookingCourseTaxMapping" Type="Self.BookingCourseTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Booking">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="BookingCourseTaxMapping">
+        <PropertyRef Name="BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingCourseTaxMapping_Tax">
+    <End Role="Tax" Type="Self.Tax" Multiplicity="1" />
+    <End Role="BookingCourseTaxMapping" Type="Self.BookingCourseTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="BookingCourseTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingEquipmentMapping_Booking">
+    <End Role="Booking" Type="Self.Booking" Multiplicity="1" />
+    <End Role="BookingEquipmentMapping" Type="Self.BookingEquipmentMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Booking">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="BookingEquipmentMapping">
+        <PropertyRef Name="BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingEquipmentMapping_Equipment">
+    <End Role="Equipment" Type="Self.Equipment" Multiplicity="1" />
+    <End Role="BookingEquipmentMapping" Type="Self.BookingEquipmentMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="EquipmentId" />
+      </Principal>
+      <Dependent Role="BookingEquipmentMapping">
+        <PropertyRef Name="EquipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingPlayerDetails_Booking">
+    <End Role="Booking" Type="Self.Booking" Multiplicity="1" />
+    <End Role="BookingPlayerDetails" Type="Self.BookingPlayerDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Booking">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="BookingPlayerDetails">
+        <PropertyRef Name="BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingPlayerMapping_Booking">
+    <End Role="Booking" Type="Self.Booking" Multiplicity="1" />
+    <End Role="BookingPlayerMapping" Type="Self.BookingPlayerMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Booking">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="BookingPlayerMapping">
+        <PropertyRef Name="BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookingPlayerMapping_MemberType">
+    <End Role="MemberType" Type="Self.MemberType" Multiplicity="1" />
+    <End Role="BookingPlayerMapping" Type="Self.BookingPlayerMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberType">
+        <PropertyRef Name="MemberTypeId" />
+      </Principal>
+      <Dependent Role="BookingPlayerMapping">
+        <PropertyRef Name="MemberTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketDetail_Currency">
+    <End Role="Currency" Type="Self.Currency" Multiplicity="0..1" />
+    <End Role="BucketDetail" Type="Self.BucketDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyId" />
+      </Principal>
+      <Dependent Role="BucketDetail">
+        <PropertyRef Name="CurrencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketDetail_DayType">
+    <End Role="DayType" Type="Self.DayType" Multiplicity="0..1" />
+    <End Role="BucketDetail" Type="Self.BucketDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DayType">
+        <PropertyRef Name="DayTypeId" />
+      </Principal>
+      <Dependent Role="BucketDetail">
+        <PropertyRef Name="DayTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketDetail_MemberType">
+    <End Role="MemberType" Type="Self.MemberType" Multiplicity="0..1" />
+    <End Role="BucketDetail" Type="Self.BucketDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberType">
+        <PropertyRef Name="MemberTypeId" />
+      </Principal>
+      <Dependent Role="BucketDetail">
+        <PropertyRef Name="MemberTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketTaxMapping_BucketDetail">
+    <End Role="BucketDetail" Type="Self.BucketDetail" Multiplicity="1" />
+    <End Role="BucketTaxMapping" Type="Self.BucketTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BucketDetail">
+        <PropertyRef Name="BucketDetailId" />
+      </Principal>
+      <Dependent Role="BucketTaxMapping">
+        <PropertyRef Name="BucketId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketTaxMapping_Tax">
+    <End Role="Tax" Type="Self.Tax" Multiplicity="1" />
+    <End Role="BucketTaxMapping" Type="Self.BucketTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="BucketTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Coupon_CouponType">
+    <End Role="CouponType" Type="Self.CouponType" Multiplicity="0..1" />
+    <End Role="Coupon" Type="Self.Coupon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CouponType">
+        <PropertyRef Name="CouponTypeId" />
+      </Principal>
+      <Dependent Role="Coupon">
+        <PropertyRef Name="CouponTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Coupon_Currency">
+    <End Role="Currency" Type="Self.Currency" Multiplicity="0..1" />
+    <End Role="Coupon" Type="Self.Coupon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyId" />
+      </Principal>
+      <Dependent Role="Coupon">
+        <PropertyRef Name="CurrencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Course_HoleType">
+    <End Role="HoleType" Type="Self.HoleType" Multiplicity="0..1" />
+    <End Role="Course" Type="Self.Course" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CoursePairing_CourseName">
+    <End Role="CourseName" Type="Self.CourseName" Multiplicity="0..1" />
+    <End Role="CoursePairing" Type="Self.CoursePairing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CourseName">
+        <PropertyRef Name="CourseNameId" />
+      </Principal>
+      <Dependent Role="CoursePairing">
+        <PropertyRef Name="EndCourseNameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CoursePairing_CoursePairing">
+    <End Role="CourseName" Type="Self.CourseName" Multiplicity="1" />
+    <End Role="CoursePairing" Type="Self.CoursePairing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CourseName">
+        <PropertyRef Name="CourseNameId" />
+      </Principal>
+      <Dependent Role="CoursePairing">
+        <PropertyRef Name="StartCourseNameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CoursePairing_HoleType">
+    <End Role="HoleType" Type="Self.HoleType" Multiplicity="1" />
+    <End Role="CoursePairing" Type="Self.CoursePairing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="CoursePairing">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseTaxMapping_Course">
+    <End Role="Course" Type="Self.Course" Multiplicity="1" />
+    <End Role="CourseTaxMapping" Type="Self.CourseTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="CourseId" />
+      </Principal>
+      <Dependent Role="CourseTaxMapping">
+        <PropertyRef Name="CourseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseTaxMapping_Tax">
+    <End Role="Tax" Type="Self.Tax" Multiplicity="1" />
+    <End Role="CourseTaxMapping" Type="Self.CourseTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="CourseTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_EmployeeType">
+    <End Role="EmployeeType" Type="Self.EmployeeType" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeType">
+        <PropertyRef Name="EmployeeTypeId" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="EmployeeTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_GenderType">
+    <End Role="GenderType" Type="Self.GenderType" Multiplicity="0..1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderType">
+        <PropertyRef Name="GenderTypeId" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="GenderTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EquipmentTaxMapping_Equipment">
+    <End Role="Equipment" Type="Self.Equipment" Multiplicity="1" />
+    <End Role="EquipmentTaxMapping" Type="Self.EquipmentTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="EquipmentId" />
+      </Principal>
+      <Dependent Role="EquipmentTaxMapping">
+        <PropertyRef Name="EquipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EquipmentTaxMapping_Tax">
+    <End Role="Tax" Type="Self.Tax" Multiplicity="1" />
+    <End Role="EquipmentTaxMapping" Type="Self.EquipmentTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="EquipmentTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ErrorLog_ErrorType">
+    <End Role="ErrorType" Type="Self.ErrorType" Multiplicity="1" />
+    <End Role="ErrorLog" Type="Self.ErrorLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ErrorType">
+        <PropertyRef Name="ErrorTypeId" />
+      </Principal>
+      <Dependent Role="ErrorLog">
+        <PropertyRef Name="ErrorTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Golfer_GenderType">
+    <End Role="GenderType" Type="Self.GenderType" Multiplicity="0..1" />
+    <End Role="Golfer" Type="Self.Golfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderType">
+        <PropertyRef Name="GenderTypeId" />
+      </Principal>
+      <Dependent Role="Golfer">
+        <PropertyRef Name="GenderTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Golfer_MaritalStatus">
+    <End Role="MaritalStatus" Type="Self.MaritalStatus" Multiplicity="0..1" />
+    <End Role="Golfer" Type="Self.Golfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MaritalStatus">
+        <PropertyRef Name="MaritalStatusId" />
+      </Principal>
+      <Dependent Role="Golfer">
+        <PropertyRef Name="MaritalStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Golfer_MemberType">
+    <End Role="MemberType" Type="Self.MemberType" Multiplicity="0..1" />
+    <End Role="Golfer" Type="Self.Golfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberType">
+        <PropertyRef Name="MemberTypeId" />
+      </Principal>
+      <Dependent Role="Golfer">
+        <PropertyRef Name="MemberTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Golfer_PlatformType">
+    <End Role="PlatformType" Type="Self.PlatformType" Multiplicity="1" />
+    <End Role="Golfer" Type="Self.Golfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlatformType">
+        <PropertyRef Name="PlatformTypeId" />
+      </Principal>
+      <Dependent Role="Golfer">
+        <PropertyRef Name="PlatformTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Golfer_Salutation">
+    <End Role="Salutation" Type="Self.Salutation" Multiplicity="0..1" />
+    <End Role="Golfer" Type="Self.Golfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salutation">
+        <PropertyRef Name="SalutationId" />
+      </Principal>
+      <Dependent Role="Golfer">
+        <PropertyRef Name="SalutationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoleInformation_CourseName">
+    <End Role="CourseName" Type="Self.CourseName" Multiplicity="0..1" />
+    <End Role="HoleInformation" Type="Self.HoleInformation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CourseName">
+        <PropertyRef Name="CourseNameId" />
+      </Principal>
+      <Dependent Role="HoleInformation">
+        <PropertyRef Name="CourseNameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoleInformation_HoleNumber">
+    <End Role="HoleNumber" Type="Self.HoleNumber" Multiplicity="1" />
+    <End Role="HoleInformation" Type="Self.HoleInformation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleNumber">
+        <PropertyRef Name="HoleNumberId" />
+      </Principal>
+      <Dependent Role="HoleInformation">
+        <PropertyRef Name="HoleNumberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoleTeeYardage_HoleNumber">
+    <End Role="HoleNumber" Type="Self.HoleNumber" Multiplicity="1" />
+    <End Role="HoleTeeYardage" Type="Self.HoleTeeYardage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleNumber">
+        <PropertyRef Name="HoleNumberId" />
+      </Principal>
+      <Dependent Role="HoleTeeYardage">
+        <PropertyRef Name="HoleNumberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoleTeeYardage_Tee">
+    <End Role="Tee" Type="Self.Tee" Multiplicity="1" />
+    <End Role="HoleTeeYardage" Type="Self.HoleTeeYardage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tee">
+        <PropertyRef Name="TeeId" />
+      </Principal>
+      <Dependent Role="HoleTeeYardage">
+        <PropertyRef Name="TeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogInHistory_LogInStatus">
+    <End Role="LogInStatus" Type="Self.LogInStatus" Multiplicity="0..1" />
+    <End Role="LogInHistory" Type="Self.LogInHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LogInStatus">
+        <PropertyRef Name="LogInStatusId" />
+      </Principal>
+      <Dependent Role="LogInHistory">
+        <PropertyRef Name="LoginStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogInHistory_PlatformType">
+    <End Role="PlatformType" Type="Self.PlatformType" Multiplicity="0..1" />
+    <End Role="LogInHistory" Type="Self.LogInHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlatformType">
+        <PropertyRef Name="PlatformTypeId" />
+      </Principal>
+      <Dependent Role="LogInHistory">
+        <PropertyRef Name="PlatformTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogInHistory_UserType">
+    <End Role="UserType" Type="Self.UserType" Multiplicity="0..1" />
+    <End Role="LogInHistory" Type="Self.LogInHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserType">
+        <PropertyRef Name="UserTypeId" />
+      </Principal>
+      <Dependent Role="LogInHistory">
+        <PropertyRef Name="UserTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PageRight_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="PageRight" Type="Self.PageRight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="PageRight">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PageRight_Page">
+    <End Role="Page" Type="Self.Page" Multiplicity="1" />
+    <End Role="PageRight" Type="Self.PageRight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Page">
+        <PropertyRef Name="PageId" />
+      </Principal>
+      <Dependent Role="PageRight">
+        <PropertyRef Name="PageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParStorke_HoleNumber">
+    <End Role="HoleNumber" Type="Self.HoleNumber" Multiplicity="1" />
+    <End Role="ParStorke" Type="Self.ParStorke" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleNumber">
+        <PropertyRef Name="HoleNumberId" />
+      </Principal>
+      <Dependent Role="ParStorke">
+        <PropertyRef Name="HoleNumberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PriceTaxMapping_FeeCategory">
+    <End Role="FeeCategory" Type="Self.FeeCategory" Multiplicity="0..1" />
+    <End Role="PriceTaxMapping" Type="Self.PriceTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FeeCategory">
+        <PropertyRef Name="FeeCategoryId" />
+      </Principal>
+      <Dependent Role="PriceTaxMapping">
+        <PropertyRef Name="FeeCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PriceTaxMapping_Pricing">
+    <End Role="Pricing" Type="Self.Pricing" Multiplicity="1" />
+    <End Role="PriceTaxMapping" Type="Self.PriceTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pricing">
+        <PropertyRef Name="PricingId" />
+      </Principal>
+      <Dependent Role="PriceTaxMapping">
+        <PropertyRef Name="PricingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PriceTaxMapping_Tax">
+    <End Role="Tax" Type="Self.Tax" Multiplicity="1" />
+    <End Role="PriceTaxMapping" Type="Self.PriceTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="PriceTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_BookingType">
+    <End Role="BookingType" Type="Self.BookingType" Multiplicity="1" />
+    <End Role="Pricing" Type="Self.Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingType">
+        <PropertyRef Name="BookingTypeId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="BookingTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_Currency">
+    <End Role="Currency" Type="Self.Currency" Multiplicity="0..1" />
+    <End Role="Pricing" Type="Self.Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="CurrencyId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="CurrencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_DayType">
+    <End Role="DayType" Type="Self.DayType" Multiplicity="0..1" />
+    <End Role="Pricing" Type="Self.Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DayType">
+        <PropertyRef Name="DayTypeId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="DayTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_HoleType">
+    <End Role="HoleType" Type="Self.HoleType" Multiplicity="0..1" />
+    <End Role="Pricing" Type="Self.Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_MemberType">
+    <End Role="MemberType" Type="Self.MemberType" Multiplicity="1" />
+    <End Role="Pricing" Type="Self.Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberType">
+        <PropertyRef Name="MemberTypeId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="MemberTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_Slot">
+    <End Role="Slot" Type="Self.Slot" Multiplicity="0..1" />
+    <End Role="Pricing" Type="Self.Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Slot">
+        <PropertyRef Name="SlotId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="SlotId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_TimeFormat">
+    <End Role="TimeFormat" Type="Self.TimeFormat" Multiplicity="0..1" />
+    <End Role="Pricing" Type="Self.Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TimeFormat">
+        <PropertyRef Name="TimeFormatId" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="TimeFormatId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Promotions_HoleType">
+    <End Role="HoleType" Type="Self.HoleType" Multiplicity="1" />
+    <End Role="Promotions" Type="Self.Promotions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="Promotions">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PromotionsEquipmentMapping_Equipment">
+    <End Role="Equipment" Type="Self.Equipment" Multiplicity="1" />
+    <End Role="PromotionsEquipmentMapping" Type="Self.PromotionsEquipmentMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="EquipmentId" />
+      </Principal>
+      <Dependent Role="PromotionsEquipmentMapping">
+        <PropertyRef Name="EquipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PromotionsEquipmentMapping_Promotions">
+    <End Role="Promotions" Type="Self.Promotions" Multiplicity="1" />
+    <End Role="PromotionsEquipmentMapping" Type="Self.PromotionsEquipmentMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Promotions">
+        <PropertyRef Name="PromotionsId" />
+      </Principal>
+      <Dependent Role="PromotionsEquipmentMapping">
+        <PropertyRef Name="PromotionsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PromotionsTaxMapping_Promotions">
+    <End Role="Promotions" Type="Self.Promotions" Multiplicity="1" />
+    <End Role="PromotionsTaxMapping" Type="Self.PromotionsTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Promotions">
+        <PropertyRef Name="PromotionsId" />
+      </Principal>
+      <Dependent Role="PromotionsTaxMapping">
+        <PropertyRef Name="PromotionsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PromotionsTaxMapping_Tax">
+    <End Role="Tax" Type="Self.Tax" Multiplicity="1" />
+    <End Role="PromotionsTaxMapping" Type="Self.PromotionsTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tax">
+        <PropertyRef Name="TaxId" />
+      </Principal>
+      <Dependent Role="PromotionsTaxMapping">
+        <PropertyRef Name="TaxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Score_Booking">
+    <End Role="Booking" Type="Self.Booking" Multiplicity="0..1" />
+    <End Role="Score" Type="Self.Score" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Booking">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="Score">
+        <PropertyRef Name="BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Score_Golfer">
+    <End Role="Golfer" Type="Self.Golfer" Multiplicity="1" />
+    <End Role="Score" Type="Self.Score" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Golfer">
+        <PropertyRef Name="GolferId" />
+      </Principal>
+      <Dependent Role="Score">
+        <PropertyRef Name="GolferId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Score_HoleType">
+    <End Role="HoleType" Type="Self.HoleType" Multiplicity="1" />
+    <End Role="Score" Type="Self.Score" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoleType">
+        <PropertyRef Name="HoleTypeId" />
+      </Principal>
+      <Dependent Role="Score">
+        <PropertyRef Name="HoleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole1_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole1" Type="Self.ScoreHole1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole1">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole10_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole10" Type="Self.ScoreHole10" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole10">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole11_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole11" Type="Self.ScoreHole11" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole11">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole12_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole12" Type="Self.ScoreHole12" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole12">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole13_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole13" Type="Self.ScoreHole13" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole13">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole14_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole14" Type="Self.ScoreHole14" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole14">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole15_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole15" Type="Self.ScoreHole15" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole15">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole16_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole16" Type="Self.ScoreHole16" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole16">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole17_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole17" Type="Self.ScoreHole17" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole17">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole18_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole18" Type="Self.ScoreHole18" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole18">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole19_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole19" Type="Self.ScoreHole19" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole19">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole2_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole2" Type="Self.ScoreHole2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole2">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole20_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole20" Type="Self.ScoreHole20" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole20">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole21_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole21" Type="Self.ScoreHole21" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole21">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole22_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole22" Type="Self.ScoreHole22" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole22">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole23_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole23" Type="Self.ScoreHole23" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole23">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole24_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole24" Type="Self.ScoreHole24" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole24">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole25_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole25" Type="Self.ScoreHole25" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole25">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole26_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole26" Type="Self.ScoreHole26" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole26">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole27_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole27" Type="Self.ScoreHole27" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole27">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole3_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole3" Type="Self.ScoreHole3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole3">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole4_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole4" Type="Self.ScoreHole4" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole4">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole5_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole5" Type="Self.ScoreHole5" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole5">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole6_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole6" Type="Self.ScoreHole6" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole6">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole7_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole7" Type="Self.ScoreHole7" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole7">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole8_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole8" Type="Self.ScoreHole8" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole8">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScoreHole9_Score">
+    <End Role="Score" Type="Self.Score" Multiplicity="1" />
+    <End Role="ScoreHole9" Type="Self.ScoreHole9" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Score">
+        <PropertyRef Name="ScoreId" />
+      </Principal>
+      <Dependent Role="ScoreHole9">
+        <PropertyRef Name="ScoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_BookingType">
+    <End Role="BookingType" Type="Self.BookingType" Multiplicity="0..1" />
+    <End Role="Session" Type="Self.Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingType">
+        <PropertyRef Name="BookingTypeId" />
+      </Principal>
+      <Dependent Role="Session">
+        <PropertyRef Name="BookingTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionActivity_LogInHistory">
+    <End Role="LogInHistory" Type="Self.LogInHistory" Multiplicity="0..1" />
+    <End Role="SessionActivity" Type="Self.SessionActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LogInHistory">
+        <PropertyRef Name="LoginHistoryId" />
+      </Principal>
+      <Dependent Role="SessionActivity">
+        <PropertyRef Name="LoginHistoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionActivity_SessionActivityPage">
+    <End Role="SessionActivityPage" Type="Self.SessionActivityPage" Multiplicity="1" />
+    <End Role="SessionActivity" Type="Self.SessionActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SessionActivityPage">
+        <PropertyRef Name="SessionActivityPageId" />
+      </Principal>
+      <Dependent Role="SessionActivity">
+        <PropertyRef Name="SessionActivityPageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SlotSessionWise_BookingType">
+    <End Role="BookingType" Type="Self.BookingType" Multiplicity="1" />
+    <End Role="SlotSessionWise" Type="Self.SlotSessionWise" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingType">
+        <PropertyRef Name="BookingTypeId" />
+      </Principal>
+      <Dependent Role="SlotSessionWise">
+        <PropertyRef Name="BookingTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SlotSessionWise_Session">
+    <End Role="Session" Type="Self.Session" Multiplicity="1" />
+    <End Role="SlotSessionWise" Type="Self.SlotSessionWise" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Session">
+        <PropertyRef Name="SessionId" />
+      </Principal>
+      <Dependent Role="SlotSessionWise">
+        <PropertyRef Name="SessionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SlotSessionWise_Slot">
+    <End Role="Slot" Type="Self.Slot" Multiplicity="1" />
+    <End Role="SlotSessionWise" Type="Self.SlotSessionWise" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Slot">
+        <PropertyRef Name="SlotId" />
+      </Principal>
+      <Dependent Role="SlotSessionWise">
+        <PropertyRef Name="SlotId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GolfCentraModelStoreContainer">
+    <EntitySet Name="AboutUs" EntityType="Self.AboutUs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Action" EntityType="Self.Action" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ActionRight" EntityType="Self.ActionRight" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="APIClient" EntityType="Self.APIClient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AppVersion" EntityType="Self.AppVersion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BlockSlot" EntityType="Self.BlockSlot" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BlockSlotRange" EntityType="Self.BlockSlotRange" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Booking" EntityType="Self.Booking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookingCourseTaxMapping" EntityType="Self.BookingCourseTaxMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookingEquipmentMapping" EntityType="Self.BookingEquipmentMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookingPlayerDetails" EntityType="Self.BookingPlayerDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookingPlayerMapping" EntityType="Self.BookingPlayerMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookingStatus" EntityType="Self.BookingStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookingType" EntityType="Self.BookingType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BucketDetail" EntityType="Self.BucketDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BucketTaxMapping" EntityType="Self.BucketTaxMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Coupon" EntityType="Self.Coupon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CouponType" EntityType="Self.CouponType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Course" EntityType="Self.Course" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CourseName" EntityType="Self.CourseName" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CoursePairing" EntityType="Self.CoursePairing" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CourseTaxMapping" EntityType="Self.CourseTaxMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Currency" EntityType="Self.Currency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DayType" EntityType="Self.DayType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmployeeType" EntityType="Self.EmployeeType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Equipment" EntityType="Self.Equipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EquipmentTaxMapping" EntityType="Self.EquipmentTaxMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ErrorLog" EntityType="Self.ErrorLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ErrorType" EntityType="Self.ErrorType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FeeCategory" EntityType="Self.FeeCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GenderType" EntityType="Self.GenderType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Golfer" EntityType="Self.Golfer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GolferNotification" EntityType="Self.GolferNotification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoleInformation" EntityType="Self.HoleInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoleNumber" EntityType="Self.HoleNumber" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoleTeeYardage" EntityType="Self.HoleTeeYardage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoleType" EntityType="Self.HoleType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LogInHistory" EntityType="Self.LogInHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LogInStatus" EntityType="Self.LogInStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MaritalStatus" EntityType="Self.MaritalStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MemberType" EntityType="Self.MemberType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NationalHoliday" EntityType="Self.NationalHoliday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Page" EntityType="Self.Page" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PageRight" EntityType="Self.PageRight" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParStorke" EntityType="Self.ParStorke" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaymentGatewayControl" EntityType="Self.PaymentGatewayControl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaymentStatus" EntityType="Self.PaymentStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlatformType" EntityType="Self.PlatformType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PriceTaxMapping" EntityType="Self.PriceTaxMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pricing" EntityType="Self.Pricing" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Promotions" EntityType="Self.Promotions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PromotionsEquipmentMapping" EntityType="Self.PromotionsEquipmentMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PromotionsTaxMapping" EntityType="Self.PromotionsTaxMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RuleAndRegulation" EntityType="Self.RuleAndRegulation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Salutation" EntityType="Self.Salutation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Score" EntityType="Self.Score" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole1" EntityType="Self.ScoreHole1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole10" EntityType="Self.ScoreHole10" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole11" EntityType="Self.ScoreHole11" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole12" EntityType="Self.ScoreHole12" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole13" EntityType="Self.ScoreHole13" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole14" EntityType="Self.ScoreHole14" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole15" EntityType="Self.ScoreHole15" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole16" EntityType="Self.ScoreHole16" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole17" EntityType="Self.ScoreHole17" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole18" EntityType="Self.ScoreHole18" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole19" EntityType="Self.ScoreHole19" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole2" EntityType="Self.ScoreHole2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole20" EntityType="Self.ScoreHole20" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole21" EntityType="Self.ScoreHole21" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole22" EntityType="Self.ScoreHole22" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole23" EntityType="Self.ScoreHole23" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole24" EntityType="Self.ScoreHole24" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole25" EntityType="Self.ScoreHole25" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole26" EntityType="Self.ScoreHole26" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole27" EntityType="Self.ScoreHole27" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole3" EntityType="Self.ScoreHole3" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole4" EntityType="Self.ScoreHole4" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole5" EntityType="Self.ScoreHole5" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole6" EntityType="Self.ScoreHole6" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole7" EntityType="Self.ScoreHole7" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole8" EntityType="Self.ScoreHole8" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScoreHole9" EntityType="Self.ScoreHole9" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Session" EntityType="Self.Session" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SessionActivity" EntityType="Self.SessionActivity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SessionActivityPage" EntityType="Self.SessionActivityPage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Slot" EntityType="Self.Slot" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SlotBlockReason" EntityType="Self.SlotBlockReason" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SlotSessionWise" EntityType="Self.SlotSessionWise" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tax" EntityType="Self.Tax" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tee" EntityType="Self.Tee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TimeFormat" EntityType="Self.TimeFormat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserType" EntityType="Self.UserType" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ActionRight_Action" Association="Self.FK_ActionRight_Action">
+      <End Role="Action" EntitySet="Action" />
+      <End Role="ActionRight" EntitySet="ActionRight" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActionRight_Employee" Association="Self.FK_ActionRight_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="ActionRight" EntitySet="ActionRight" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AppVersion_PlatformType" Association="Self.FK_AppVersion_PlatformType">
+      <End Role="PlatformType" EntitySet="PlatformType" />
+      <End Role="AppVersion" EntitySet="AppVersion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BlockSlot_BlockSlotRange" Association="Self.FK_BlockSlot_BlockSlotRange">
+      <End Role="BlockSlotRange" EntitySet="BlockSlotRange" />
+      <End Role="BlockSlot" EntitySet="BlockSlot" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BlockSlot_SlotSessionWise" Association="Self.FK_BlockSlot_SlotSessionWise">
+      <End Role="SlotSessionWise" EntitySet="SlotSessionWise" />
+      <End Role="BlockSlot" EntitySet="BlockSlot" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BlockSlotRange_CoursePairing" Association="Self.FK_BlockSlotRange_CoursePairing">
+      <End Role="CoursePairing" EntitySet="CoursePairing" />
+      <End Role="BlockSlotRange" EntitySet="BlockSlotRange" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BlockSlotRange_SlotBlockReason" Association="Self.FK_BlockSlotRange_SlotBlockReason">
+      <End Role="SlotBlockReason" EntitySet="SlotBlockReason" />
+      <End Role="BlockSlotRange" EntitySet="BlockSlotRange" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_BookingStatus" Association="Self.FK_Booking_BookingStatus">
+      <End Role="BookingStatus" EntitySet="BookingStatus" />
+      <End Role="Booking" EntitySet="Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_BookingType" Association="Self.FK_Booking_BookingType">
+      <End Role="BookingType" EntitySet="BookingType" />
+      <End Role="Booking" EntitySet="Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_Coupon" Association="Self.FK_Booking_Coupon">
+      <End Role="Coupon" EntitySet="Coupon" />
+      <End Role="Booking" EntitySet="Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_CoursePairing" Association="Self.FK_Booking_CoursePairing">
+      <End Role="CoursePairing" EntitySet="CoursePairing" />
+      <End Role="Booking" EntitySet="Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_Currency" Association="Self.FK_Booking_Currency">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Booking" EntitySet="Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_Golfer" Association="Self.FK_Booking_Golfer">
+      <End Role="Golfer" EntitySet="Golfer" />
+      <End Role="Booking" EntitySet="Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_HoleType" Association="Self.FK_Booking_HoleType">
+      <End Role="HoleType" EntitySet="HoleType" />
+      <End Role="Booking" EntitySet="Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_PaymentStatus" Association="Self.FK_Booking_PaymentStatus">
+      <End Role="PaymentStatus" EntitySet="PaymentStatus" />
+      <End Role="Booking" EntitySet="Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_Promotions" Association="Self.FK_Booking_Promotions">
+      <End Role="Promotions" EntitySet="Promotions" />
+      <End Role="Booking" EntitySet="Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingCourseTaxMapping_Booking" Association="Self.FK_BookingCourseTaxMapping_Booking">
+      <End Role="Booking" EntitySet="Booking" />
+      <End Role="BookingCourseTaxMapping" EntitySet="BookingCourseTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingCourseTaxMapping_Tax" Association="Self.FK_BookingCourseTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Tax" />
+      <End Role="BookingCourseTaxMapping" EntitySet="BookingCourseTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingEquipmentMapping_Booking" Association="Self.FK_BookingEquipmentMapping_Booking">
+      <End Role="Booking" EntitySet="Booking" />
+      <End Role="BookingEquipmentMapping" EntitySet="BookingEquipmentMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingEquipmentMapping_Equipment" Association="Self.FK_BookingEquipmentMapping_Equipment">
+      <End Role="Equipment" EntitySet="Equipment" />
+      <End Role="BookingEquipmentMapping" EntitySet="BookingEquipmentMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingPlayerDetails_Booking" Association="Self.FK_BookingPlayerDetails_Booking">
+      <End Role="Booking" EntitySet="Booking" />
+      <End Role="BookingPlayerDetails" EntitySet="BookingPlayerDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingPlayerMapping_Booking" Association="Self.FK_BookingPlayerMapping_Booking">
+      <End Role="Booking" EntitySet="Booking" />
+      <End Role="BookingPlayerMapping" EntitySet="BookingPlayerMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookingPlayerMapping_MemberType" Association="Self.FK_BookingPlayerMapping_MemberType">
+      <End Role="MemberType" EntitySet="MemberType" />
+      <End Role="BookingPlayerMapping" EntitySet="BookingPlayerMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketDetail_Currency" Association="Self.FK_BucketDetail_Currency">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="BucketDetail" EntitySet="BucketDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketDetail_DayType" Association="Self.FK_BucketDetail_DayType">
+      <End Role="DayType" EntitySet="DayType" />
+      <End Role="BucketDetail" EntitySet="BucketDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketDetail_MemberType" Association="Self.FK_BucketDetail_MemberType">
+      <End Role="MemberType" EntitySet="MemberType" />
+      <End Role="BucketDetail" EntitySet="BucketDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketTaxMapping_BucketDetail" Association="Self.FK_BucketTaxMapping_BucketDetail">
+      <End Role="BucketDetail" EntitySet="BucketDetail" />
+      <End Role="BucketTaxMapping" EntitySet="BucketTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketTaxMapping_Tax" Association="Self.FK_BucketTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Tax" />
+      <End Role="BucketTaxMapping" EntitySet="BucketTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Coupon_CouponType" Association="Self.FK_Coupon_CouponType">
+      <End Role="CouponType" EntitySet="CouponType" />
+      <End Role="Coupon" EntitySet="Coupon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Coupon_Currency" Association="Self.FK_Coupon_Currency">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Coupon" EntitySet="Coupon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Course_HoleType" Association="Self.FK_Course_HoleType">
+      <End Role="HoleType" EntitySet="HoleType" />
+      <End Role="Course" EntitySet="Course" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CoursePairing_CourseName" Association="Self.FK_CoursePairing_CourseName">
+      <End Role="CourseName" EntitySet="CourseName" />
+      <End Role="CoursePairing" EntitySet="CoursePairing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CoursePairing_CoursePairing" Association="Self.FK_CoursePairing_CoursePairing">
+      <End Role="CourseName" EntitySet="CourseName" />
+      <End Role="CoursePairing" EntitySet="CoursePairing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CoursePairing_HoleType" Association="Self.FK_CoursePairing_HoleType">
+      <End Role="HoleType" EntitySet="HoleType" />
+      <End Role="CoursePairing" EntitySet="CoursePairing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseTaxMapping_Course" Association="Self.FK_CourseTaxMapping_Course">
+      <End Role="Course" EntitySet="Course" />
+      <End Role="CourseTaxMapping" EntitySet="CourseTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseTaxMapping_Tax" Association="Self.FK_CourseTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Tax" />
+      <End Role="CourseTaxMapping" EntitySet="CourseTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_EmployeeType" Association="Self.FK_Employee_EmployeeType">
+      <End Role="EmployeeType" EntitySet="EmployeeType" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_GenderType" Association="Self.FK_Employee_GenderType">
+      <End Role="GenderType" EntitySet="GenderType" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EquipmentTaxMapping_Equipment" Association="Self.FK_EquipmentTaxMapping_Equipment">
+      <End Role="Equipment" EntitySet="Equipment" />
+      <End Role="EquipmentTaxMapping" EntitySet="EquipmentTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EquipmentTaxMapping_Tax" Association="Self.FK_EquipmentTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Tax" />
+      <End Role="EquipmentTaxMapping" EntitySet="EquipmentTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ErrorLog_ErrorType" Association="Self.FK_ErrorLog_ErrorType">
+      <End Role="ErrorType" EntitySet="ErrorType" />
+      <End Role="ErrorLog" EntitySet="ErrorLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Golfer_GenderType" Association="Self.FK_Golfer_GenderType">
+      <End Role="GenderType" EntitySet="GenderType" />
+      <End Role="Golfer" EntitySet="Golfer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Golfer_MaritalStatus" Association="Self.FK_Golfer_MaritalStatus">
+      <End Role="MaritalStatus" EntitySet="MaritalStatus" />
+      <End Role="Golfer" EntitySet="Golfer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Golfer_MemberType" Association="Self.FK_Golfer_MemberType">
+      <End Role="MemberType" EntitySet="MemberType" />
+      <End Role="Golfer" EntitySet="Golfer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Golfer_PlatformType" Association="Self.FK_Golfer_PlatformType">
+      <End Role="PlatformType" EntitySet="PlatformType" />
+      <End Role="Golfer" EntitySet="Golfer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Golfer_Salutation" Association="Self.FK_Golfer_Salutation">
+      <End Role="Salutation" EntitySet="Salutation" />
+      <End Role="Golfer" EntitySet="Golfer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoleInformation_CourseName" Association="Self.FK_HoleInformation_CourseName">
+      <End Role="CourseName" EntitySet="CourseName" />
+      <End Role="HoleInformation" EntitySet="HoleInformation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoleInformation_HoleNumber" Association="Self.FK_HoleInformation_HoleNumber">
+      <End Role="HoleNumber" EntitySet="HoleNumber" />
+      <End Role="HoleInformation" EntitySet="HoleInformation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoleTeeYardage_HoleNumber" Association="Self.FK_HoleTeeYardage_HoleNumber">
+      <End Role="HoleNumber" EntitySet="HoleNumber" />
+      <End Role="HoleTeeYardage" EntitySet="HoleTeeYardage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoleTeeYardage_Tee" Association="Self.FK_HoleTeeYardage_Tee">
+      <End Role="Tee" EntitySet="Tee" />
+      <End Role="HoleTeeYardage" EntitySet="HoleTeeYardage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogInHistory_LogInStatus" Association="Self.FK_LogInHistory_LogInStatus">
+      <End Role="LogInStatus" EntitySet="LogInStatus" />
+      <End Role="LogInHistory" EntitySet="LogInHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogInHistory_PlatformType" Association="Self.FK_LogInHistory_PlatformType">
+      <End Role="PlatformType" EntitySet="PlatformType" />
+      <End Role="LogInHistory" EntitySet="LogInHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogInHistory_UserType" Association="Self.FK_LogInHistory_UserType">
+      <End Role="UserType" EntitySet="UserType" />
+      <End Role="LogInHistory" EntitySet="LogInHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PageRight_Employee" Association="Self.FK_PageRight_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="PageRight" EntitySet="PageRight" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PageRight_Page" Association="Self.FK_PageRight_Page">
+      <End Role="Page" EntitySet="Page" />
+      <End Role="PageRight" EntitySet="PageRight" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParStorke_HoleNumber" Association="Self.FK_ParStorke_HoleNumber">
+      <End Role="HoleNumber" EntitySet="HoleNumber" />
+      <End Role="ParStorke" EntitySet="ParStorke" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PriceTaxMapping_FeeCategory" Association="Self.FK_PriceTaxMapping_FeeCategory">
+      <End Role="FeeCategory" EntitySet="FeeCategory" />
+      <End Role="PriceTaxMapping" EntitySet="PriceTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PriceTaxMapping_Pricing" Association="Self.FK_PriceTaxMapping_Pricing">
+      <End Role="Pricing" EntitySet="Pricing" />
+      <End Role="PriceTaxMapping" EntitySet="PriceTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PriceTaxMapping_Tax" Association="Self.FK_PriceTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Tax" />
+      <End Role="PriceTaxMapping" EntitySet="PriceTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_BookingType" Association="Self.FK_Pricing_BookingType">
+      <End Role="BookingType" EntitySet="BookingType" />
+      <End Role="Pricing" EntitySet="Pricing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_Currency" Association="Self.FK_Pricing_Currency">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Pricing" EntitySet="Pricing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_DayType" Association="Self.FK_Pricing_DayType">
+      <End Role="DayType" EntitySet="DayType" />
+      <End Role="Pricing" EntitySet="Pricing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_HoleType" Association="Self.FK_Pricing_HoleType">
+      <End Role="HoleType" EntitySet="HoleType" />
+      <End Role="Pricing" EntitySet="Pricing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_MemberType" Association="Self.FK_Pricing_MemberType">
+      <End Role="MemberType" EntitySet="MemberType" />
+      <End Role="Pricing" EntitySet="Pricing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_Slot" Association="Self.FK_Pricing_Slot">
+      <End Role="Slot" EntitySet="Slot" />
+      <End Role="Pricing" EntitySet="Pricing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_TimeFormat" Association="Self.FK_Pricing_TimeFormat">
+      <End Role="TimeFormat" EntitySet="TimeFormat" />
+      <End Role="Pricing" EntitySet="Pricing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Promotions_HoleType" Association="Self.FK_Promotions_HoleType">
+      <End Role="HoleType" EntitySet="HoleType" />
+      <End Role="Promotions" EntitySet="Promotions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PromotionsEquipmentMapping_Equipment" Association="Self.FK_PromotionsEquipmentMapping_Equipment">
+      <End Role="Equipment" EntitySet="Equipment" />
+      <End Role="PromotionsEquipmentMapping" EntitySet="PromotionsEquipmentMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PromotionsEquipmentMapping_Promotions" Association="Self.FK_PromotionsEquipmentMapping_Promotions">
+      <End Role="Promotions" EntitySet="Promotions" />
+      <End Role="PromotionsEquipmentMapping" EntitySet="PromotionsEquipmentMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PromotionsTaxMapping_Promotions" Association="Self.FK_PromotionsTaxMapping_Promotions">
+      <End Role="Promotions" EntitySet="Promotions" />
+      <End Role="PromotionsTaxMapping" EntitySet="PromotionsTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PromotionsTaxMapping_Tax" Association="Self.FK_PromotionsTaxMapping_Tax">
+      <End Role="Tax" EntitySet="Tax" />
+      <End Role="PromotionsTaxMapping" EntitySet="PromotionsTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Score_Booking" Association="Self.FK_Score_Booking">
+      <End Role="Booking" EntitySet="Booking" />
+      <End Role="Score" EntitySet="Score" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Score_Golfer" Association="Self.FK_Score_Golfer">
+      <End Role="Golfer" EntitySet="Golfer" />
+      <End Role="Score" EntitySet="Score" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Score_HoleType" Association="Self.FK_Score_HoleType">
+      <End Role="HoleType" EntitySet="HoleType" />
+      <End Role="Score" EntitySet="Score" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole1_Score" Association="Self.FK_ScoreHole1_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole1" EntitySet="ScoreHole1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole10_Score" Association="Self.FK_ScoreHole10_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole10" EntitySet="ScoreHole10" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole11_Score" Association="Self.FK_ScoreHole11_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole11" EntitySet="ScoreHole11" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole12_Score" Association="Self.FK_ScoreHole12_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole12" EntitySet="ScoreHole12" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole13_Score" Association="Self.FK_ScoreHole13_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole13" EntitySet="ScoreHole13" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole14_Score" Association="Self.FK_ScoreHole14_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole14" EntitySet="ScoreHole14" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole15_Score" Association="Self.FK_ScoreHole15_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole15" EntitySet="ScoreHole15" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole16_Score" Association="Self.FK_ScoreHole16_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole16" EntitySet="ScoreHole16" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole17_Score" Association="Self.FK_ScoreHole17_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole17" EntitySet="ScoreHole17" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole18_Score" Association="Self.FK_ScoreHole18_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole18" EntitySet="ScoreHole18" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole19_Score" Association="Self.FK_ScoreHole19_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole19" EntitySet="ScoreHole19" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole2_Score" Association="Self.FK_ScoreHole2_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole2" EntitySet="ScoreHole2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole20_Score" Association="Self.FK_ScoreHole20_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole20" EntitySet="ScoreHole20" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole21_Score" Association="Self.FK_ScoreHole21_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole21" EntitySet="ScoreHole21" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole22_Score" Association="Self.FK_ScoreHole22_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole22" EntitySet="ScoreHole22" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole23_Score" Association="Self.FK_ScoreHole23_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole23" EntitySet="ScoreHole23" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole24_Score" Association="Self.FK_ScoreHole24_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole24" EntitySet="ScoreHole24" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole25_Score" Association="Self.FK_ScoreHole25_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole25" EntitySet="ScoreHole25" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole26_Score" Association="Self.FK_ScoreHole26_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole26" EntitySet="ScoreHole26" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole27_Score" Association="Self.FK_ScoreHole27_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole27" EntitySet="ScoreHole27" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole3_Score" Association="Self.FK_ScoreHole3_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole3" EntitySet="ScoreHole3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole4_Score" Association="Self.FK_ScoreHole4_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole4" EntitySet="ScoreHole4" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole5_Score" Association="Self.FK_ScoreHole5_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole5" EntitySet="ScoreHole5" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole6_Score" Association="Self.FK_ScoreHole6_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole6" EntitySet="ScoreHole6" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole7_Score" Association="Self.FK_ScoreHole7_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole7" EntitySet="ScoreHole7" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole8_Score" Association="Self.FK_ScoreHole8_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole8" EntitySet="ScoreHole8" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScoreHole9_Score" Association="Self.FK_ScoreHole9_Score">
+      <End Role="Score" EntitySet="Score" />
+      <End Role="ScoreHole9" EntitySet="ScoreHole9" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_BookingType" Association="Self.FK_Session_BookingType">
+      <End Role="BookingType" EntitySet="BookingType" />
+      <End Role="Session" EntitySet="Session" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionActivity_LogInHistory" Association="Self.FK_SessionActivity_LogInHistory">
+      <End Role="LogInHistory" EntitySet="LogInHistory" />
+      <End Role="SessionActivity" EntitySet="SessionActivity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionActivity_SessionActivityPage" Association="Self.FK_SessionActivity_SessionActivityPage">
+      <End Role="SessionActivityPage" EntitySet="SessionActivityPage" />
+      <End Role="SessionActivity" EntitySet="SessionActivity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SlotSessionWise_BookingType" Association="Self.FK_SlotSessionWise_BookingType">
+      <End Role="BookingType" EntitySet="BookingType" />
+      <End Role="SlotSessionWise" EntitySet="SlotSessionWise" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SlotSessionWise_Session" Association="Self.FK_SlotSessionWise_Session">
+      <End Role="Session" EntitySet="Session" />
+      <End Role="SlotSessionWise" EntitySet="SlotSessionWise" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SlotSessionWise_Slot" Association="Self.FK_SlotSessionWise_Slot">
+      <End Role="Slot" EntitySet="Slot" />
+      <End Role="SlotSessionWise" EntitySet="SlotSessionWise" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

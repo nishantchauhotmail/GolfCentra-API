@@ -1,0 +1,1560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GolfCentraModelStoreContainer" CdmEntityContainer="GolfCentraEntities">
+    <EntitySetMapping Name="AboutUs">
+      <EntityTypeMapping TypeName="GolfCentraModel.AboutU">
+        <MappingFragment StoreEntitySet="AboutUs">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AboutUsId" ColumnName="AboutUsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Actions">
+      <EntityTypeMapping TypeName="GolfCentraModel.Action">
+        <MappingFragment StoreEntitySet="Action">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ActionId" ColumnName="ActionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActionRights">
+      <EntityTypeMapping TypeName="GolfCentraModel.ActionRight">
+        <MappingFragment StoreEntitySet="ActionRight">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="ActionId" ColumnName="ActionId" />
+          <ScalarProperty Name="ActionRightId" ColumnName="ActionRightId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APIClients">
+      <EntityTypeMapping TypeName="GolfCentraModel.APIClient">
+        <MappingFragment StoreEntitySet="APIClient">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="APIClientId" ColumnName="APIClientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AppVersions">
+      <EntityTypeMapping TypeName="GolfCentraModel.AppVersion">
+        <MappingFragment StoreEntitySet="AppVersion">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PlatformTypeId" ColumnName="PlatformTypeId" />
+          <ScalarProperty Name="ForceUpdate" ColumnName="ForceUpdate" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="AppVersionId" ColumnName="AppVersionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlockSlots">
+      <EntityTypeMapping TypeName="GolfCentraModel.BlockSlot">
+        <MappingFragment StoreEntitySet="BlockSlot">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SlotSessionWiseId" ColumnName="SlotSessionWiseId" />
+          <ScalarProperty Name="BlockSlotRangeId" ColumnName="BlockSlotRangeId" />
+          <ScalarProperty Name="BlockSlotId" ColumnName="BlockSlotId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlockSlotRanges">
+      <EntityTypeMapping TypeName="GolfCentraModel.BlockSlotRange">
+        <MappingFragment StoreEntitySet="BlockSlotRange">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsBookingavailable" ColumnName="IsBookingavailable" />
+          <ScalarProperty Name="IsCustomerAvailable" ColumnName="IsCustomerAvailable" />
+          <ScalarProperty Name="CoursePairingId" ColumnName="CoursePairingId" />
+          <ScalarProperty Name="SlotBlockReasonId" ColumnName="SlotBlockReasonId" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="BlockSlotRangeId" ColumnName="BlockSlotRangeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bookings">
+      <EntityTypeMapping TypeName="GolfCentraModel.Booking">
+        <MappingFragment StoreEntitySet="Booking">
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="PromotionId" ColumnName="PromotionId" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="CoursePairingId" ColumnName="CoursePairingId" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="PaymentStatusId" ColumnName="PaymentStatusId" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="PaymentGatewayBookingId" ColumnName="PaymentGatewayBookingId" />
+          <ScalarProperty Name="CouponId" ColumnName="CouponId" />
+          <ScalarProperty Name="BookingTypeId" ColumnName="BookingTypeId" />
+          <ScalarProperty Name="OnSpot" ColumnName="OnSpot" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="FeeAndTaxes" ColumnName="FeeAndTaxes" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="BallFee" ColumnName="BallFee" />
+          <ScalarProperty Name="NoOfBalls" ColumnName="NoOfBalls" />
+          <ScalarProperty Name="RangeFee" ColumnName="RangeFee" />
+          <ScalarProperty Name="GreenFee" ColumnName="GreenFee" />
+          <ScalarProperty Name="CaddieCount" ColumnName="CaddieCount" />
+          <ScalarProperty Name="CaddieFee" ColumnName="CaddieFee" />
+          <ScalarProperty Name="CartCount" ColumnName="CartCount" />
+          <ScalarProperty Name="CartFee" ColumnName="CartFee" />
+          <ScalarProperty Name="NoOfPlayer" ColumnName="NoOfPlayer" />
+          <ScalarProperty Name="NoOfNonMember" ColumnName="NoOfNonMember" />
+          <ScalarProperty Name="NoOfMember" ColumnName="NoOfMember" />
+          <ScalarProperty Name="BookingStatusId" ColumnName="BookingStatusId" />
+          <ScalarProperty Name="TeeOffSlot" ColumnName="TeeOffSlot" />
+          <ScalarProperty Name="TeeOffDate" ColumnName="TeeOffDate" />
+          <ScalarProperty Name="HoleTypeId" ColumnName="HoleTypeId" />
+          <ScalarProperty Name="BookingDate" ColumnName="BookingDate" />
+          <ScalarProperty Name="GolferId" ColumnName="GolferId" />
+          <ScalarProperty Name="BookingId" ColumnName="BookingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingCourseTaxMappings">
+      <EntityTypeMapping TypeName="GolfCentraModel.BookingCourseTaxMapping">
+        <MappingFragment StoreEntitySet="BookingCourseTaxMapping">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="BookingId" ColumnName="BookingId" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="TaxName" ColumnName="TaxName" />
+          <ScalarProperty Name="TaxId" ColumnName="TaxId" />
+          <ScalarProperty Name="BookingCourseTaxMappingId" ColumnName="BookingCourseTaxMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingEquipmentMappings">
+      <EntityTypeMapping TypeName="GolfCentraModel.BookingEquipmentMapping">
+        <MappingFragment StoreEntitySet="BookingEquipmentMapping">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EquipmentCount" ColumnName="EquipmentCount" />
+          <ScalarProperty Name="EquipmentPrice" ColumnName="EquipmentPrice" />
+          <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+          <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+          <ScalarProperty Name="BookingId" ColumnName="BookingId" />
+          <ScalarProperty Name="BookingEquipmentMappingId" ColumnName="BookingEquipmentMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingPlayerDetails">
+      <EntityTypeMapping TypeName="GolfCentraModel.BookingPlayerDetail">
+        <MappingFragment StoreEntitySet="BookingPlayerDetails">
+          <ScalarProperty Name="Player4ScoreId" ColumnName="Player4ScoreId" />
+          <ScalarProperty Name="Player3ScoreId" ColumnName="Player3ScoreId" />
+          <ScalarProperty Name="Player2ScoreId" ColumnName="Player2ScoreId" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="BookingId" ColumnName="BookingId" />
+          <ScalarProperty Name="Player4" ColumnName="Player4" />
+          <ScalarProperty Name="Player3" ColumnName="Player3" />
+          <ScalarProperty Name="Player2" ColumnName="Player2" />
+          <ScalarProperty Name="Player1" ColumnName="Player1" />
+          <ScalarProperty Name="BookingPlayerDetailsId" ColumnName="BookingPlayerDetailsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingPlayerMappings">
+      <EntityTypeMapping TypeName="GolfCentraModel.BookingPlayerMapping">
+        <MappingFragment StoreEntitySet="BookingPlayerMapping">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PlayerCount" ColumnName="PlayerCount" />
+          <ScalarProperty Name="MemberTypeName" ColumnName="MemberTypeName" />
+          <ScalarProperty Name="MemberTypeId" ColumnName="MemberTypeId" />
+          <ScalarProperty Name="BookingId" ColumnName="BookingId" />
+          <ScalarProperty Name="BookingPlayerMappingId" ColumnName="BookingPlayerMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingStatus">
+      <EntityTypeMapping TypeName="GolfCentraModel.BookingStatu">
+        <MappingFragment StoreEntitySet="BookingStatus">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="BookingStatusId" ColumnName="BookingStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingTypes">
+      <EntityTypeMapping TypeName="GolfCentraModel.BookingType">
+        <MappingFragment StoreEntitySet="BookingType">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ValueToShow" ColumnName="ValueToShow" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="BookingTypeId" ColumnName="BookingTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BucketDetails">
+      <EntityTypeMapping TypeName="GolfCentraModel.BucketDetail">
+        <MappingFragment StoreEntitySet="BucketDetail">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="MemberTypeId" ColumnName="MemberTypeId" />
+          <ScalarProperty Name="DayTypeId" ColumnName="DayTypeId" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Balls" ColumnName="Balls" />
+          <ScalarProperty Name="BucketDetailId" ColumnName="BucketDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BucketTaxMappings">
+      <EntityTypeMapping TypeName="GolfCentraModel.BucketTaxMapping">
+        <MappingFragment StoreEntitySet="BucketTaxMapping">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="BucketId" ColumnName="BucketId" />
+          <ScalarProperty Name="TaxId" ColumnName="TaxId" />
+          <ScalarProperty Name="BucketTaxMappingId" ColumnName="BucketTaxMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="GolfCentraModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="Nicename" ColumnName="Nicename" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PhoneCode" ColumnName="PhoneCode" />
+          <ScalarProperty Name="NumCode" ColumnName="NumCode" />
+          <ScalarProperty Name="ISO" ColumnName="ISO" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Coupons">
+      <EntityTypeMapping TypeName="GolfCentraModel.Coupon">
+        <MappingFragment StoreEntitySet="Coupon">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CouponTypeId" ColumnName="CouponTypeId" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CouponId" ColumnName="CouponId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CouponTypes">
+      <EntityTypeMapping TypeName="GolfCentraModel.CouponType">
+        <MappingFragment StoreEntitySet="CouponType">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CouponTypeId" ColumnName="CouponTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="GolfCentraModel.Course">
+        <MappingFragment StoreEntitySet="Course">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Address2Phone" ColumnName="Address2Phone" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address2Name" ColumnName="Address2Name" />
+          <ScalarProperty Name="RuleAndRegulationURL" ColumnName="RuleAndRegulationURL" />
+          <ScalarProperty Name="PrivacyPolicyPageURL" ColumnName="PrivacyPolicyPageURL" />
+          <ScalarProperty Name="TermsConditionPageURL" ColumnName="TermsConditionPageURL" />
+          <ScalarProperty Name="HoleTypeId" ColumnName="HoleTypeId" />
+          <ScalarProperty Name="ImgUrl" ColumnName="ImgUrl" />
+          <ScalarProperty Name="LongDescription" ColumnName="LongDescription" />
+          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="TechnicalSupportMailId" ColumnName="TechnicalSupportMailId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseNames">
+      <EntityTypeMapping TypeName="GolfCentraModel.CourseName">
+        <MappingFragment StoreEntitySet="CourseName">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="CourseNameId" ColumnName="CourseNameId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CoursePairings">
+      <EntityTypeMapping TypeName="GolfCentraModel.CoursePairing">
+        <MappingFragment StoreEntitySet="CoursePairing">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="HoleTypeId" ColumnName="HoleTypeId" />
+          <ScalarProperty Name="EndCourseNameId" ColumnName="EndCourseNameId" />
+          <ScalarProperty Name="StartCourseNameId" ColumnName="StartCourseNameId" />
+          <ScalarProperty Name="CoursePairingId" ColumnName="CoursePairingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseTaxMappings">
+      <EntityTypeMapping TypeName="GolfCentraModel.CourseTaxMapping">
+        <MappingFragment StoreEntitySet="CourseTaxMapping">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="TaxId" ColumnName="TaxId" />
+          <ScalarProperty Name="CourseTaxMappingId" ColumnName="CourseTaxMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="GolfCentraModel.Currency">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DayTypes">
+      <EntityTypeMapping TypeName="GolfCentraModel.DayType">
+        <MappingFragment StoreEntitySet="DayType">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ValueToShow" ColumnName="ValueToShow" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DayTypeId" ColumnName="DayTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="GolfCentraModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="IsPrimaryPasswordChanged" ColumnName="IsPrimaryPasswordChanged" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="EmployeeTypeId" ColumnName="EmployeeTypeId" />
+          <ScalarProperty Name="GenderTypeId" ColumnName="GenderTypeId" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeTypes">
+      <EntityTypeMapping TypeName="GolfCentraModel.EmployeeType">
+        <MappingFragment StoreEntitySet="EmployeeType">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="EmployeeTypeId" ColumnName="EmployeeTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipments">
+      <EntityTypeMapping TypeName="GolfCentraModel.Equipment">
+        <MappingFragment StoreEntitySet="Equipment">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipmentTaxMappings">
+      <EntityTypeMapping TypeName="GolfCentraModel.EquipmentTaxMapping">
+        <MappingFragment StoreEntitySet="EquipmentTaxMapping">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+          <ScalarProperty Name="TaxId" ColumnName="TaxId" />
+          <ScalarProperty Name="EquipmentTaxMappingId" ColumnName="EquipmentTaxMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ErrorLogs">
+      <EntityTypeMapping TypeName="GolfCentraModel.ErrorLog">
+        <MappingFragment StoreEntitySet="ErrorLog">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="IssueTime" ColumnName="IssueTime" />
+          <ScalarProperty Name="StackInformation" ColumnName="StackInformation" />
+          <ScalarProperty Name="LineNumber" ColumnName="LineNumber" />
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+          <ScalarProperty Name="ErrorTypeId" ColumnName="ErrorTypeId" />
+          <ScalarProperty Name="ErrorLogId" ColumnName="ErrorLogId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ErrorTypes">
+      <EntityTypeMapping TypeName="GolfCentraModel.ErrorType">
+        <MappingFragment StoreEntitySet="ErrorType">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="ErrorTypeId" ColumnName="ErrorTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeeCategories">
+      <EntityTypeMapping TypeName="GolfCentraModel.FeeCategory">
+        <MappingFragment StoreEntitySet="FeeCategory">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FeeCategoryId" ColumnName="FeeCategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GenderTypes">
+      <EntityTypeMapping TypeName="GolfCentraModel.GenderType">
+        <MappingFragment StoreEntitySet="GenderType">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="GenderTypeId" ColumnName="GenderTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Golfers">
+      <EntityTypeMapping TypeName="GolfCentraModel.Golfer">
+        <MappingFragment StoreEntitySet="Golfer">
+          <ScalarProperty Name="IsPrimaryPasswordChanged" ColumnName="IsPrimaryPasswordChanged" />
+          <ScalarProperty Name="SalutationId" ColumnName="SalutationId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="IsBlocked" ColumnName="IsBlocked" />
+          <ScalarProperty Name="LoginAttempt" ColumnName="LoginAttempt" />
+          <ScalarProperty Name="SpecialComments" ColumnName="SpecialComments" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="MaritalStatusId" ColumnName="MaritalStatusId" />
+          <ScalarProperty Name="SpouseName" ColumnName="SpouseName" />
+          <ScalarProperty Name="Occpoution" ColumnName="Occpoution" />
+          <ScalarProperty Name="MemberSince" ColumnName="MemberSince" />
+          <ScalarProperty Name="MemberTypeId" ColumnName="MemberTypeId" />
+          <ScalarProperty Name="GenderTypeId" ColumnName="GenderTypeId" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="VerficationCode" ColumnName="VerficationCode" />
+          <ScalarProperty Name="PlatformTypeId" ColumnName="PlatformTypeId" />
+          <ScalarProperty Name="ImgURL" ColumnName="ImgURL" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ClubMemberId" ColumnName="ClubMemberId" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="PhoneCode" ColumnName="PhoneCode" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GolferId" ColumnName="GolferId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GolferNotifications">
+      <EntityTypeMapping TypeName="GolfCentraModel.GolferNotification">
+        <MappingFragment StoreEntitySet="GolferNotification">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="GolferId" ColumnName="GolferId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="GolferNotificationId" ColumnName="GolferNotificationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoleInformations">
+      <EntityTypeMapping TypeName="GolfCentraModel.HoleInformation">
+        <MappingFragment StoreEntitySet="HoleInformation">
+          <ScalarProperty Name="CourseNameId" ColumnName="CourseNameId" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ImgUrl" ColumnName="ImgUrl" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="HoleNumberId" ColumnName="HoleNumberId" />
+          <ScalarProperty Name="HoleInformationId" ColumnName="HoleInformationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoleNumbers">
+      <EntityTypeMapping TypeName="GolfCentraModel.HoleNumber">
+        <MappingFragment StoreEntitySet="HoleNumber">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="HoleNumberId" ColumnName="HoleNumberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoleTeeYardages">
+      <EntityTypeMapping TypeName="GolfCentraModel.HoleTeeYardage">
+        <MappingFragment StoreEntitySet="HoleTeeYardage">
+          <ScalarProperty Name="UpdateOn" ColumnName="UpdateOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Yardage" ColumnName="Yardage" />
+          <ScalarProperty Name="TeeId" ColumnName="TeeId" />
+          <ScalarProperty Name="HoleNumberId" ColumnName="HoleNumberId" />
+          <ScalarProperty Name="HoleTeeYardageId" ColumnName="HoleTeeYardageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoleTypes">
+      <EntityTypeMapping TypeName="GolfCentraModel.HoleType">
+        <MappingFragment StoreEntitySet="HoleType">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="HoleTypeId" ColumnName="HoleTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogInHistories">
+      <EntityTypeMapping TypeName="GolfCentraModel.LogInHistory">
+        <MappingFragment StoreEntitySet="LogInHistory">
+          <ScalarProperty Name="DeviceTokenId" ColumnName="DeviceTokenId" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PlatformTypeId" ColumnName="PlatformTypeId" />
+          <ScalarProperty Name="UserTypeId" ColumnName="UserTypeId" />
+          <ScalarProperty Name="LoggedOutAt" ColumnName="LoggedOutAt" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="As" ColumnName="As" />
+          <ScalarProperty Name="BrowserVersion" ColumnName="BrowserVersion" />
+          <ScalarProperty Name="BrowserName" ColumnName="BrowserName" />
+          <ScalarProperty Name="UserAgent" ColumnName="UserAgent" />
+          <ScalarProperty Name="OperatingSystem" ColumnName="OperatingSystem" />
+          <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="TimeZone" ColumnName="TimeZone" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="ORG" ColumnName="ORG" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="ISP" ColumnName="ISP" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="LoginStatusId" ColumnName="LoginStatusId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LoginHistoryId" ColumnName="LoginHistoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogInStatus">
+      <EntityTypeMapping TypeName="GolfCentraModel.LogInStatu">
+        <MappingFragment StoreEntitySet="LogInStatus">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LogInStatusId" ColumnName="LogInStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaritalStatus">
+      <EntityTypeMapping TypeName="GolfCentraModel.MaritalStatu">
+        <MappingFragment StoreEntitySet="MaritalStatus">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="MaritalStatusId" ColumnName="MaritalStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MemberTypes">
+      <EntityTypeMapping TypeName="GolfCentraModel.MemberType">
+        <MappingFragment StoreEntitySet="MemberType">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ValueToShow" ColumnName="ValueToShow" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MemberTypeId" ColumnName="MemberTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NationalHolidays">
+      <EntityTypeMapping TypeName="GolfCentraModel.NationalHoliday">
+        <MappingFragment StoreEntitySet="NationalHoliday">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NationalHolidayId" ColumnName="NationalHolidayId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pages">
+      <EntityTypeMapping TypeName="GolfCentraModel.Page">
+        <MappingFragment StoreEntitySet="Page">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Ordering" ColumnName="Ordering" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="ActionName" ColumnName="ActionName" />
+          <ScalarProperty Name="ControllerName" ColumnName="ControllerName" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PageRights">
+      <EntityTypeMapping TypeName="GolfCentraModel.PageRight">
+        <MappingFragment StoreEntitySet="PageRight">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="PageRightId" ColumnName="PageRightId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParStorkes">
+      <EntityTypeMapping TypeName="GolfCentraModel.ParStorke">
+        <MappingFragment StoreEntitySet="ParStorke">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Storke" ColumnName="Storke" />
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleNumberId" ColumnName="HoleNumberId" />
+          <ScalarProperty Name="ParStorkeId" ColumnName="ParStorkeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentGatewayControls">
+      <EntityTypeMapping TypeName="GolfCentraModel.PaymentGatewayControl">
+        <MappingFragment StoreEntitySet="PaymentGatewayControl">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SelectedGolferIds" ColumnName="SelectedGolferIds" />
+          <ScalarProperty Name="AllMembers" ColumnName="AllMembers" />
+          <ScalarProperty Name="EquipmentOffIds" ColumnName="EquipmentOffIds" />
+          <ScalarProperty Name="CaddieFee" ColumnName="CaddieFee" />
+          <ScalarProperty Name="CartFee" ColumnName="CartFee" />
+          <ScalarProperty Name="GreenFee" ColumnName="GreenFee" />
+          <ScalarProperty Name="PaymentGatewayEnable" ColumnName="PaymentGatewayEnable" />
+          <ScalarProperty Name="PaymentGatewayControlId" ColumnName="PaymentGatewayControlId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentStatus">
+      <EntityTypeMapping TypeName="GolfCentraModel.PaymentStatu">
+        <MappingFragment StoreEntitySet="PaymentStatus">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CretaedOn" ColumnName="CretaedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PaymentStatusId" ColumnName="PaymentStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlatformTypes">
+      <EntityTypeMapping TypeName="GolfCentraModel.PlatformType">
+        <MappingFragment StoreEntitySet="PlatformType">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="PlatformTypeId" ColumnName="PlatformTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PriceTaxMappings">
+      <EntityTypeMapping TypeName="GolfCentraModel.PriceTaxMapping">
+        <MappingFragment StoreEntitySet="PriceTaxMapping">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="FeeCategoryId" ColumnName="FeeCategoryId" />
+          <ScalarProperty Name="PricingId" ColumnName="PricingId" />
+          <ScalarProperty Name="TaxId" ColumnName="TaxId" />
+          <ScalarProperty Name="PriceTaxMappingId" ColumnName="PriceTaxMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pricings">
+      <EntityTypeMapping TypeName="GolfCentraModel.Pricing">
+        <MappingFragment StoreEntitySet="Pricing">
+          <ScalarProperty Name="TimeFormatId" ColumnName="TimeFormatId" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsSpecialPrice" ColumnName="IsSpecialPrice" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="SlotId" ColumnName="SlotId" />
+          <ScalarProperty Name="NumberOfAllowedSessions" ColumnName="NumberOfAllowedSessions" />
+          <ScalarProperty Name="BucketFeePerPlayer" ColumnName="BucketFeePerPlayer" />
+          <ScalarProperty Name="RangeFee" ColumnName="RangeFee" />
+          <ScalarProperty Name="ConvenienceFee" ColumnName="ConvenienceFee" />
+          <ScalarProperty Name="AddOnCaddie" ColumnName="AddOnCaddie" />
+          <ScalarProperty Name="AddOnCart" ColumnName="AddOnCart" />
+          <ScalarProperty Name="TaxAndFee" ColumnName="TaxAndFee" />
+          <ScalarProperty Name="GreenFee" ColumnName="GreenFee" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="HoleTypeId" ColumnName="HoleTypeId" />
+          <ScalarProperty Name="DayTypeId" ColumnName="DayTypeId" />
+          <ScalarProperty Name="BookingTypeId" ColumnName="BookingTypeId" />
+          <ScalarProperty Name="MemberTypeId" ColumnName="MemberTypeId" />
+          <ScalarProperty Name="PricingId" ColumnName="PricingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Promotions">
+      <EntityTypeMapping TypeName="GolfCentraModel.Promotion">
+        <MappingFragment StoreEntitySet="Promotions">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Extra" ColumnName="Extra" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CartFee" ColumnName="CartFee" />
+          <ScalarProperty Name="CaddieFee" ColumnName="CaddieFee" />
+          <ScalarProperty Name="GreenFee" ColumnName="GreenFee" />
+          <ScalarProperty Name="HoleTypeId" ColumnName="HoleTypeId" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PromotionsId" ColumnName="PromotionsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PromotionsEquipmentMappings">
+      <EntityTypeMapping TypeName="GolfCentraModel.PromotionsEquipmentMapping">
+        <MappingFragment StoreEntitySet="PromotionsEquipmentMapping">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PromotionsId" ColumnName="PromotionsId" />
+          <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+          <ScalarProperty Name="PromotionsEquipmentId" ColumnName="PromotionsEquipmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PromotionsTaxMappings">
+      <EntityTypeMapping TypeName="GolfCentraModel.PromotionsTaxMapping">
+        <MappingFragment StoreEntitySet="PromotionsTaxMapping">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TaxId" ColumnName="TaxId" />
+          <ScalarProperty Name="PromotionsId" ColumnName="PromotionsId" />
+          <ScalarProperty Name="PromotionsTaxTable" ColumnName="PromotionsTaxTable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RuleAndRegulations">
+      <EntityTypeMapping TypeName="GolfCentraModel.RuleAndRegulation">
+        <MappingFragment StoreEntitySet="RuleAndRegulation">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="RuleAndRegulationId" ColumnName="RuleAndRegulationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Salutations">
+      <EntityTypeMapping TypeName="GolfCentraModel.Salutation">
+        <MappingFragment StoreEntitySet="Salutation">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="SalutationId" ColumnName="SalutationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Scores">
+      <EntityTypeMapping TypeName="GolfCentraModel.Score">
+        <MappingFragment StoreEntitySet="Score">
+          <ScalarProperty Name="BookingId" ColumnName="BookingId" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ScoreSubmittedTime" ColumnName="ScoreSubmittedTime" />
+          <ScalarProperty Name="HoleTypeId" ColumnName="HoleTypeId" />
+          <ScalarProperty Name="ScoreSubmittedDate" ColumnName="ScoreSubmittedDate" />
+          <ScalarProperty Name="GolferId" ColumnName="GolferId" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole1">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole1">
+        <MappingFragment StoreEntitySet="ScoreHole1">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole1Id" ColumnName="ScoreHole1Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole10">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole10">
+        <MappingFragment StoreEntitySet="ScoreHole10">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole10Id" ColumnName="ScoreHole10Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole11">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole11">
+        <MappingFragment StoreEntitySet="ScoreHole11">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole11Id" ColumnName="ScoreHole11Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole12">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole12">
+        <MappingFragment StoreEntitySet="ScoreHole12">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole12Id" ColumnName="ScoreHole12Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole13">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole13">
+        <MappingFragment StoreEntitySet="ScoreHole13">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole13Id" ColumnName="ScoreHole13Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole14">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole14">
+        <MappingFragment StoreEntitySet="ScoreHole14">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole14Id" ColumnName="ScoreHole14Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole15">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole15">
+        <MappingFragment StoreEntitySet="ScoreHole15">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole15Id" ColumnName="ScoreHole15Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole16">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole16">
+        <MappingFragment StoreEntitySet="ScoreHole16">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole16Id" ColumnName="ScoreHole16Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole17">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole17">
+        <MappingFragment StoreEntitySet="ScoreHole17">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole17Id" ColumnName="ScoreHole17Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole18">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole18">
+        <MappingFragment StoreEntitySet="ScoreHole18">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole18Id" ColumnName="ScoreHole18Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole19">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole19">
+        <MappingFragment StoreEntitySet="ScoreHole19">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole19Id" ColumnName="ScoreHole19Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole2">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole2">
+        <MappingFragment StoreEntitySet="ScoreHole2">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole2Id" ColumnName="ScoreHole2Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole20">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole20">
+        <MappingFragment StoreEntitySet="ScoreHole20">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole20Id" ColumnName="ScoreHole20Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole21">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole21">
+        <MappingFragment StoreEntitySet="ScoreHole21">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole21Id" ColumnName="ScoreHole21Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole22">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole22">
+        <MappingFragment StoreEntitySet="ScoreHole22">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole22Id" ColumnName="ScoreHole22Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole23">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole23">
+        <MappingFragment StoreEntitySet="ScoreHole23">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole23Id" ColumnName="ScoreHole23Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole24">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole24">
+        <MappingFragment StoreEntitySet="ScoreHole24">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole24Id" ColumnName="ScoreHole24Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole25">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole25">
+        <MappingFragment StoreEntitySet="ScoreHole25">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole25Id" ColumnName="ScoreHole25Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole26">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole26">
+        <MappingFragment StoreEntitySet="ScoreHole26">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole26Id" ColumnName="ScoreHole26Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole27">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole27">
+        <MappingFragment StoreEntitySet="ScoreHole27">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole27Id" ColumnName="ScoreHole27Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole3">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole3">
+        <MappingFragment StoreEntitySet="ScoreHole3">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole3Id" ColumnName="ScoreHole3Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole4">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole4">
+        <MappingFragment StoreEntitySet="ScoreHole4">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole4Id" ColumnName="ScoreHole4Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole5">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole5">
+        <MappingFragment StoreEntitySet="ScoreHole5">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole5Id" ColumnName="ScoreHole5Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole6">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole6">
+        <MappingFragment StoreEntitySet="ScoreHole6">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole6Id" ColumnName="ScoreHole6Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole7">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole7">
+        <MappingFragment StoreEntitySet="ScoreHole7">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole7Id" ColumnName="ScoreHole7Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole8">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole8">
+        <MappingFragment StoreEntitySet="ScoreHole8">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole8Id" ColumnName="ScoreHole8Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreHole9">
+      <EntityTypeMapping TypeName="GolfCentraModel.ScoreHole9">
+        <MappingFragment StoreEntitySet="ScoreHole9">
+          <ScalarProperty Name="Par" ColumnName="Par" />
+          <ScalarProperty Name="HoleName" ColumnName="HoleName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Sand" ColumnName="Sand" />
+          <ScalarProperty Name="Chips" ColumnName="Chips" />
+          <ScalarProperty Name="Clubs" ColumnName="Clubs" />
+          <ScalarProperty Name="Drive" ColumnName="Drive" />
+          <ScalarProperty Name="Putts" ColumnName="Putts" />
+          <ScalarProperty Name="Storkes" ColumnName="Storkes" />
+          <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+          <ScalarProperty Name="ScoreHole9Id" ColumnName="ScoreHole9Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sessions">
+      <EntityTypeMapping TypeName="GolfCentraModel.Session">
+        <MappingFragment StoreEntitySet="Session">
+          <ScalarProperty Name="BookingTypeId" ColumnName="BookingTypeId" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SessionActivities">
+      <EntityTypeMapping TypeName="GolfCentraModel.SessionActivity">
+        <MappingFragment StoreEntitySet="SessionActivity">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PerformedOn" ColumnName="PerformedOn" />
+          <ScalarProperty Name="ArriveAt" ColumnName="ArriveAt" />
+          <ScalarProperty Name="SessionActivityPageId" ColumnName="SessionActivityPageId" />
+          <ScalarProperty Name="LoginHistoryId" ColumnName="LoginHistoryId" />
+          <ScalarProperty Name="SessionActivityId" ColumnName="SessionActivityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SessionActivityPages">
+      <EntityTypeMapping TypeName="GolfCentraModel.SessionActivityPage">
+        <MappingFragment StoreEntitySet="SessionActivityPage">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="SessionActivityPageId" ColumnName="SessionActivityPageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Slots">
+      <EntityTypeMapping TypeName="GolfCentraModel.Slot">
+        <MappingFragment StoreEntitySet="Slot">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="SlotId" ColumnName="SlotId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SlotBlockReasons">
+      <EntityTypeMapping TypeName="GolfCentraModel.SlotBlockReason">
+        <MappingFragment StoreEntitySet="SlotBlockReason">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="SlotBlockReasonId" ColumnName="SlotBlockReasonId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SlotSessionWises">
+      <EntityTypeMapping TypeName="GolfCentraModel.SlotSessionWise">
+        <MappingFragment StoreEntitySet="SlotSessionWise">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="BookingTypeId" ColumnName="BookingTypeId" />
+          <ScalarProperty Name="SlotId" ColumnName="SlotId" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="SlotSessionWiseId" ColumnName="SlotSessionWiseId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Taxes">
+      <EntityTypeMapping TypeName="GolfCentraModel.Tax">
+        <MappingFragment StoreEntitySet="Tax">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TaxId" ColumnName="TaxId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tees">
+      <EntityTypeMapping TypeName="GolfCentraModel.Tee">
+        <MappingFragment StoreEntitySet="Tee">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TeeId" ColumnName="TeeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TimeFormats">
+      <EntityTypeMapping TypeName="GolfCentraModel.TimeFormat">
+        <MappingFragment StoreEntitySet="TimeFormat">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TimeFormatId" ColumnName="TimeFormatId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTypes">
+      <EntityTypeMapping TypeName="GolfCentraModel.UserType">
+        <MappingFragment StoreEntitySet="UserType">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserTypeId" ColumnName="UserTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

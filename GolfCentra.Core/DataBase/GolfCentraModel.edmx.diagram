@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f2e30af362624db5932fb0592d091e1b" Name="Diagram1">
+        <EntityTypeShape EntityType="GolfCentraModel.AboutU" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.Action" Width="1.5" PointX="13" PointY="183.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.ActionRight" Width="1.5" PointX="15.25" PointY="133.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.APIClient" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.AppVersion" Width="1.5" PointX="6" PointY="134.875" />
+        <EntityTypeShape EntityType="GolfCentraModel.BlockSlot" Width="1.5" PointX="10.5" PointY="93.25" />
+        <EntityTypeShape EntityType="GolfCentraModel.BlockSlotRange" Width="1.5" PointX="8.25" PointY="92.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.Booking" Width="1.5" PointX="8.25" PointY="102.625" />
+        <EntityTypeShape EntityType="GolfCentraModel.BookingCourseTaxMapping" Width="1.5" PointX="13.5" PointY="102.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.BookingEquipmentMapping" Width="1.5" PointX="10.5" PointY="108.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.BookingPlayerDetail" Width="1.5" PointX="10.5" PointY="248.25" />
+        <EntityTypeShape EntityType="GolfCentraModel.BookingPlayerMapping" Width="1.5" PointX="13.5" PointY="106.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.BookingStatu" Width="1.5" PointX="6" PointY="113.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.BookingType" Width="1.5" PointX="6" PointY="81.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.BucketDetail" Width="1.5" PointX="8" PointY="88.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.BucketTaxMapping" Width="1.5" PointX="10.25" PointY="84.875" />
+        <EntityTypeShape EntityType="GolfCentraModel.Country" Width="1.5" PointX="7.75" PointY="5.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.Coupon" Width="1.5" PointX="6" PointY="109" />
+        <EntityTypeShape EntityType="GolfCentraModel.CouponType" Width="1.5" PointX="3.75" PointY="109.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.Course" Width="1.5" PointX="3" PointY="100.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.CourseName" Width="1.5" PointX="3.75" PointY="85.25" />
+        <EntityTypeShape EntityType="GolfCentraModel.CoursePairing" Width="1.5" PointX="6" PointY="92.875" />
+        <EntityTypeShape EntityType="GolfCentraModel.CourseTaxMapping" Width="1.5" PointX="5.25" PointY="102.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.Currency" Width="1.5" PointX="0.75" PointY="97.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.DayType" Width="1.5" PointX="0.75" PointY="88.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.Employee" Width="1.5" PointX="9" PointY="132.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.EmployeeType" Width="1.5" PointX="6.75" PointY="142.625" />
+        <EntityTypeShape EntityType="GolfCentraModel.Equipment" Width="1.5" PointX="8.25" PointY="114.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.EquipmentTaxMapping" Width="1.5" PointX="15.5" PointY="97.625" />
+        <EntityTypeShape EntityType="GolfCentraModel.ErrorLog" Width="1.5" PointX="8" PointY="1" />
+        <EntityTypeShape EntityType="GolfCentraModel.ErrorType" Width="1.5" PointX="5.75" PointY="1.625" />
+        <EntityTypeShape EntityType="GolfCentraModel.FeeCategory" Width="1.5" PointX="3" PointY="77.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.GenderType" Width="1.5" PointX="3.75" PointY="130.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.Golfer" Width="1.5" PointX="6" PointY="126.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.GolferNotification" Width="1.5" PointX="9.75" PointY="5.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.GolferPasswordChange" Width="1.5" PointX="5.75" PointY="9.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.HoleInformation" Width="1.5" PointX="6" PointY="44.875" />
+        <EntityTypeShape EntityType="GolfCentraModel.HoleNumber" Width="1.5" PointX="0.75" PointY="5.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.HoleTeeYardage" Width="1.5" PointX="3" PointY="5" />
+        <EntityTypeShape EntityType="GolfCentraModel.HoleType" Width="1.5" PointX="0.75" PointY="93" />
+        <EntityTypeShape EntityType="GolfCentraModel.LogInHistory" Width="1.5" PointX="9" PointY="123.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.LogInStatu" Width="1.5" PointX="6.75" PointY="123" />
+        <EntityTypeShape EntityType="GolfCentraModel.MaritalStatu" Width="1.5" PointX="3.75" PointY="127.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.MemberType" Width="1.5" PointX="0.75" PointY="101.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.NationalHoliday" Width="1.5" PointX="7.75" PointY="9.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.Page" Width="1.5" PointX="13" PointY="187.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.PageRight" Width="1.5" PointX="15.25" PointY="137.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.ParStorke" Width="1.5" PointX="3" PointY="9.25" />
+        <EntityTypeShape EntityType="GolfCentraModel.PaymentGatewayControl" Width="1.5" PointX="9.75" PointY="9.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.PaymentStatu" Width="1.5" PointX="6" PointY="106.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.PlatformType" Width="1.5" PointX="3.75" PointY="124.25" />
+        <EntityTypeShape EntityType="GolfCentraModel.PriceTaxMapping" Width="1.5" PointX="5.25" PointY="89.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.Pricing" Width="1.5" PointX="3" PointY="91.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.Promotion" Width="1.5" PointX="3" PointY="118.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.PromotionsEquipmentMapping" Width="1.5" PointX="5.25" PointY="119.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.PromotionsTaxMapping" Width="1.5" PointX="8.25" PointY="119.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.RuleAndRegulation" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.Salutation" Width="1.5" PointX="3.75" PointY="133.625" />
+        <EntityTypeShape EntityType="GolfCentraModel.Score" Width="1.5" PointX="10.5" PointY="98.875" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole1" Width="1.5" PointX="12.75" PointY="145" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole10" Width="1.5" PointX="12.75" PointY="57.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole11" Width="1.5" PointX="12.75" PointY="96.25" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole12" Width="1.5" PointX="12.75" PointY="52.625" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole13" Width="1.5" PointX="12.75" PointY="86.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole14" Width="1.5" PointX="12.75" PointY="149.875" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole15" Width="1.5" PointX="12.75" PointY="164.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole16" Width="1.5" PointX="12.75" PointY="76.875" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole17" Width="1.5" PointX="12.75" PointY="115.875" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole18" Width="1.5" PointX="12.75" PointY="91.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole19" Width="1.5" PointX="12.75" PointY="140.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole2" Width="1.5" PointX="12.75" PointY="111.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole20" Width="1.5" PointX="12.75" PointY="174.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole21" Width="1.5" PointX="12.75" PointY="81.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole22" Width="1.5" PointX="12.75" PointY="130.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole23" Width="1.5" PointX="12.75" PointY="47.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole24" Width="1.5" PointX="12.75" PointY="62.25" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole25" Width="1.5" PointX="12.75" PointY="154.625" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole26" Width="1.5" PointX="12.75" PointY="38.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole27" Width="1.5" PointX="12.75" PointY="169.25" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole3" Width="1.5" PointX="12.75" PointY="72" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole4" Width="1.5" PointX="12.75" PointY="159.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole5" Width="1.5" PointX="12.75" PointY="120.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole6" Width="1.5" PointX="12.75" PointY="67.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole7" Width="1.5" PointX="12.75" PointY="125.625" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole8" Width="1.5" PointX="12.75" PointY="42.875" />
+        <EntityTypeShape EntityType="GolfCentraModel.ScoreHole9" Width="1.5" PointX="12.75" PointY="135.25" />
+        <EntityTypeShape EntityType="GolfCentraModel.Session" Width="1.5" PointX="6" PointY="77.625" />
+        <EntityTypeShape EntityType="GolfCentraModel.SessionActivity" Width="1.5" PointX="15.25" PointY="126" />
+        <EntityTypeShape EntityType="GolfCentraModel.SessionActivityPage" Width="1.5" PointX="13" PointY="179.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.Slot" Width="1.5" PointX="6" PointY="85.125" />
+        <EntityTypeShape EntityType="GolfCentraModel.SlotBlockReason" Width="1.5" PointX="6" PointY="97.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.SlotSessionWise" Width="1.5" PointX="8.25" PointY="81" />
+        <EntityTypeShape EntityType="GolfCentraModel.sysdiagram" Width="1.5" PointX="11.75" PointY="3.75" />
+        <EntityTypeShape EntityType="GolfCentraModel.Tax" Width="1.5" PointX="3" PointY="80.375" />
+        <EntityTypeShape EntityType="GolfCentraModel.Tee" Width="1.5" PointX="0.75" PointY="1.5" />
+        <EntityTypeShape EntityType="GolfCentraModel.TimeFormat" Width="1.5" PointX="0.75" PointY="104.875" />
+        <EntityTypeShape EntityType="GolfCentraModel.UserType" Width="1.5" PointX="6.75" PointY="138.875" />
+        <AssociationConnector Association="GolfCentraModel.FK_ActionRight_Action" />
+        <AssociationConnector Association="GolfCentraModel.FK_ActionRight_Employee" />
+        <AssociationConnector Association="GolfCentraModel.FK_AppVersion_PlatformType" />
+        <AssociationConnector Association="GolfCentraModel.FK_BlockSlot_BlockSlotRange" />
+        <AssociationConnector Association="GolfCentraModel.FK_BlockSlot_SlotSessionWise" />
+        <AssociationConnector Association="GolfCentraModel.FK_BlockSlotRange_CoursePairing" />
+        <AssociationConnector Association="GolfCentraModel.FK_BlockSlotRange_SlotBlockReason" />
+        <AssociationConnector Association="GolfCentraModel.FK_Booking_BookingStatus" />
+        <AssociationConnector Association="GolfCentraModel.FK_Booking_BookingType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Booking_Coupon" />
+        <AssociationConnector Association="GolfCentraModel.FK_Booking_CoursePairing" />
+        <AssociationConnector Association="GolfCentraModel.FK_Booking_Currency" />
+        <AssociationConnector Association="GolfCentraModel.FK_Booking_Golfer" />
+        <AssociationConnector Association="GolfCentraModel.FK_Booking_HoleType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Booking_PaymentStatus" />
+        <AssociationConnector Association="GolfCentraModel.FK_Booking_Promotions" />
+        <AssociationConnector Association="GolfCentraModel.FK_BookingCourseTaxMapping_Booking" />
+        <AssociationConnector Association="GolfCentraModel.FK_BookingEquipmentMapping_Booking" />
+        <AssociationConnector Association="GolfCentraModel.FK_BookingPlayerDetails_Booking" />
+        <AssociationConnector Association="GolfCentraModel.FK_BookingPlayerMapping_Booking" />
+        <AssociationConnector Association="GolfCentraModel.FK_Score_Booking" />
+        <AssociationConnector Association="GolfCentraModel.FK_BookingCourseTaxMapping_Tax" />
+        <AssociationConnector Association="GolfCentraModel.FK_BookingEquipmentMapping_Equipment" />
+        <AssociationConnector Association="GolfCentraModel.FK_BookingPlayerMapping_MemberType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Pricing_BookingType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Session_BookingType" />
+        <AssociationConnector Association="GolfCentraModel.FK_SlotSessionWise_BookingType" />
+        <AssociationConnector Association="GolfCentraModel.FK_BucketDetail_Currency" />
+        <AssociationConnector Association="GolfCentraModel.FK_BucketDetail_DayType" />
+        <AssociationConnector Association="GolfCentraModel.FK_BucketDetail_MemberType" />
+        <AssociationConnector Association="GolfCentraModel.FK_BucketTaxMapping_BucketDetail" />
+        <AssociationConnector Association="GolfCentraModel.FK_BucketTaxMapping_Tax" />
+        <AssociationConnector Association="GolfCentraModel.FK_Coupon_CouponType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Coupon_Currency" />
+        <AssociationConnector Association="GolfCentraModel.FK_Course_HoleType" />
+        <AssociationConnector Association="GolfCentraModel.FK_CourseTaxMapping_Course" />
+        <AssociationConnector Association="GolfCentraModel.FK_CoursePairing_CourseName" />
+        <AssociationConnector Association="GolfCentraModel.FK_CoursePairing_CoursePairing" />
+        <AssociationConnector Association="GolfCentraModel.FK_HoleInformation_CourseName" />
+        <AssociationConnector Association="GolfCentraModel.FK_CoursePairing_HoleType" />
+        <AssociationConnector Association="GolfCentraModel.FK_CourseTaxMapping_Tax" />
+        <AssociationConnector Association="GolfCentraModel.FK_Pricing_Currency" />
+        <AssociationConnector Association="GolfCentraModel.FK_Pricing_DayType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Employee_EmployeeType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Employee_GenderType" />
+        <AssociationConnector Association="GolfCentraModel.FK_PageRight_Employee" />
+        <AssociationConnector Association="GolfCentraModel.FK_EquipmentTaxMapping_Equipment" />
+        <AssociationConnector Association="GolfCentraModel.FK_PromotionsEquipmentMapping_Equipment" />
+        <AssociationConnector Association="GolfCentraModel.FK_EquipmentTaxMapping_Tax" />
+        <AssociationConnector Association="GolfCentraModel.FK_ErrorLog_ErrorType" />
+        <AssociationConnector Association="GolfCentraModel.FK_PriceTaxMapping_FeeCategory" />
+        <AssociationConnector Association="GolfCentraModel.FK_Golfer_GenderType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Golfer_MaritalStatus" />
+        <AssociationConnector Association="GolfCentraModel.FK_Golfer_MemberType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Golfer_PlatformType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Golfer_Salutation" />
+        <AssociationConnector Association="GolfCentraModel.FK_Score_Golfer" />
+        <AssociationConnector Association="GolfCentraModel.FK_HoleInformation_HoleNumber" />
+        <AssociationConnector Association="GolfCentraModel.FK_HoleTeeYardage_HoleNumber" />
+        <AssociationConnector Association="GolfCentraModel.FK_ParStorke_HoleNumber" />
+        <AssociationConnector Association="GolfCentraModel.FK_HoleTeeYardage_Tee" />
+        <AssociationConnector Association="GolfCentraModel.FK_Pricing_HoleType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Promotions_HoleType" />
+        <AssociationConnector Association="GolfCentraModel.FK_Score_HoleType" />
+        <AssociationConnector Association="GolfCentraModel.FK_LogInHistory_LogInStatus" />
+        <AssociationConnector Association="GolfCentraModel.FK_LogInHistory_PlatformType" />
+        <AssociationConnector Association="GolfCentraModel.FK_LogInHistory_UserType" />
+        <AssociationConnector Association="GolfCentraModel.FK_SessionActivity_LogInHistory" />
+        <AssociationConnector Association="GolfCentraModel.FK_Pricing_MemberType" />
+        <AssociationConnector Association="GolfCentraModel.FK_PageRight_Page" />
+        <AssociationConnector Association="GolfCentraModel.FK_PriceTaxMapping_Pricing" />
+        <AssociationConnector Association="GolfCentraModel.FK_PriceTaxMapping_Tax" />
+        <AssociationConnector Association="GolfCentraModel.FK_Pricing_Slot" />
+        <AssociationConnector Association="GolfCentraModel.FK_Pricing_TimeFormat" />
+        <AssociationConnector Association="GolfCentraModel.FK_PromotionsEquipmentMapping_Promotions" />
+        <AssociationConnector Association="GolfCentraModel.FK_PromotionsTaxMapping_Promotions" />
+        <AssociationConnector Association="GolfCentraModel.FK_PromotionsTaxMapping_Tax" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole1_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole10_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole11_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole12_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole13_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole14_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole15_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole16_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole17_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole18_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole19_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole2_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole20_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole21_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole22_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole23_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole24_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole25_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole26_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole27_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole3_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole4_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole5_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole6_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole7_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole8_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_ScoreHole9_Score" />
+        <AssociationConnector Association="GolfCentraModel.FK_SlotSessionWise_Session" />
+        <AssociationConnector Association="GolfCentraModel.FK_SessionActivity_SessionActivityPage" />
+        <AssociationConnector Association="GolfCentraModel.FK_SlotSessionWise_Slot" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
